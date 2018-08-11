@@ -83,6 +83,23 @@
 
     </style>
 
+    <style name="EditText_multi">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:digits">[a-zA-Z ]+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+        </item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:singleLine">true</item>
+
+        <item name="android:focusable">true</item>
+
+        <item name="android:clickable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+
+    </style>
+
     <!-- EditText Acept Varchar  Ends. -->
 
 

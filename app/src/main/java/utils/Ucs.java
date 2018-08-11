@@ -1,18 +1,14 @@
 package utils;
 
-import com.google.common.collect.HashMultimap;
-import com.google.common.collect.Multimap;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+/*import com.google.common.collect.HashMultimap;
+import com.google.common.collect.Multimap;*/
 
 /**
  * Created by Umeed-e-Nau on 12/21/2016.
  */
 public class Ucs {
 
-    private static Multimap<String, String> data = HashMultimap.create();
+/*    private static Multimap<String, String> data = HashMultimap.create();
 
     public static List<String> get(String tehsil) {
 
@@ -630,7 +626,10 @@ public class Ucs {
         }
 
 
-        return list;
+        return list;*/
+
+
+
     /*    // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getActivity(),
          android.R.layout.simple_spinner_item, list_UC);
@@ -642,6 +641,6 @@ public class Ucs {
         sp_UC.setAdapter(dataAdapter);
         sp_UC.setSelection(coll_district.size());*/
 
-    }
+//    }
 
 }

@@ -7,8 +7,6 @@ import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import data.C.C3001_C3011;
-import data.C.C3012_C3022;
 import data.N.N2001_N2011;
 import data.N.N2012_N2016;
 
@@ -31,9 +29,6 @@ public class DBHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
 
         db.beginTransaction();
-
-        db.execSQL(C3001_C3011.getCreateQuery()); // C3001_C3011 created here
-        db.execSQL(C3012_C3022.getCreateQuery()); // C3012_C3022 created here
 
         db.execSQL(N2001_N2011.getCreateQuery()); // N2001_N2011 created here
         db.execSQL(N2012_N2016.getCreateQuery()); // N2012_N2016 created here

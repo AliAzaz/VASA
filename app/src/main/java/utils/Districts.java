@@ -1,18 +1,14 @@
 package utils;
 
-import com.google.common.collect.HashMultimap;
-import com.google.common.collect.Multimap;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+/*import com.google.common.collect.HashMultimap;
+import com.google.common.collect.Multimap;*/
 
 /**
  * Created by Umeed-e-Nau on 12/21/2016.
  */
 public class Districts {
 
-    private static Multimap<String, String> data = HashMultimap.create();
+/*    private static Multimap<String, String> data = HashMultimap.create();
 
     public static List<String> get(String province) {
 
@@ -38,6 +34,6 @@ public class Districts {
 
 
         return list;
-    }
+    }*/
 
 }
