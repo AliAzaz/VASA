@@ -3,34 +3,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".N2023_N2026">
 
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="com.example.muhammadfarooqui.neonate.N2023_N2026" />
+    </data>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <!--        <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/mnchmainpsbi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:text="@string/app_name"
-                android:textColor="@color/white"
-                android:textSize="30sp"
-                android:textStyle="bold|italic" />
+                    <TextView
+                        android:id="@+id/mnchmainpsbi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/app_name"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold|italic" />
 
-            <ImageView
-                android:id="@+id/img_psbitest"
-                android:layout_width="90dp"
-                android:layout_height="60sp"
-                android:layout_alignParentTop="true"
-                android:src="@drawable/unwhite" />
+                    <ImageView
+                        android:id="@+id/img_psbitest"
+                        android:layout_width="90dp"
+                        android:layout_height="60sp"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/unwhite" />
 
-        </RelativeLayout>
+                </RelativeLayout>-->
 
         <ScrollView
             android:layout_width="match_parent"
@@ -96,7 +105,9 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2024_1" />
 
-                        <RadioGroup style="@style/RadioGroup">
+                        <RadioGroup
+                            android:id="@+id/rg_N2024_1"
+                            style="@style/RadioGroup">
 
                             <RadioButton
                                 android:id="@+id/rb_N2024_1_1"
@@ -127,23 +138,25 @@
                 <!-- Radio Buttons N2025u Starts -->
                 <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-                    <LinearLayout
-                        android:id="@+id/ll_N2025u"
-                        style="@style/Q_Linerlayout_v">
+                    <LinearLayout style="@style/Q_Linerlayout_v">
 
                         <TextView
                             android:id="@+id/txt_N2025u"
                             style="@style/TextView"
                             android:text="@string/txt_N2025u" />
 
-                        <RadioGroup style="@style/RadioGroup">
+                        <RadioGroup
+                            android:id="@+id/rg_N2025u"
+                            style="@style/RadioGroup">
 
                             <RadioButton
                                 android:id="@+id/rb_N2025u_1"
                                 style="@style/RadioButton"
                                 android:text="@string/days" />
 
-                            <LinearLayout style="@style/Q_Linerlayout_v">
+                            <LinearLayout
+                                style="@style/Q_Linerlayout_v"
+                                android:visibility='@{rbN2025u1.checked ? View.VISIBLE : View.GONE}'>
 
                                 <TextView
                                     android:id="@+id/txt_N2025d"
@@ -153,7 +166,8 @@
                                 <EditText
                                     android:id="@+id/ed_N2025d"
                                     style="@style/EditText_number"
-                                    android:hint="@string/txt_N2025d" />
+                                    android:hint="@string/days"
+                                    android:text='@{rbN2025u1.checked ? txtN2025d.getText.toString : ""  }' />
 
                             </LinearLayout>
 
@@ -173,9 +187,69 @@
 
                 </android.support.v7.widget.CardView>
 
+                <!-- Radio Buttons N2026 Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                    <LinearLayout
+                        android:id="@+id/ll_N2026"
+                        style="@style/Q_Linerlayout_v">
+
+                        <TextView
+                            android:id="@+id/txt_N2026"
+                            style="@style/TextView"
+                            android:text="@string/txt_N2026" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_N2026"
+                            style="@style/RadioGroup">
+
+                            <RadioButton
+                                android:id="@+id/rb_N2026_1"
+                                style="@style/RadioButton"
+                                android:text="@string/yes" />
+
+                            <RadioButton
+                                android:id="@+id/rb_N2026_2"
+                                style="@style/RadioButton"
+                                android:text="@string/no" />
+
+                            <RadioButton
+                                android:id="@+id/rb_N2026_DK"
+                                style="@style/RadioButton"
+                                android:text="@string/dnt" />
+
+                            <RadioButton
+                                android:id="@+id/rb_N2026_RA"
+                                style="@style/RadioButton"
+                                android:text="@string/ra" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--  = = = = =  END OF FORM FIELDS  = = = = = -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="80dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Continue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#1ed61e"
+                        android:onClick="@{() -> callback.BtnContinue()}"
+                        android:text="NEXT SECTION"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
 
             </LinearLayout>
-
 
         </ScrollView>
 
