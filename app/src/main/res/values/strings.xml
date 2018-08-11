@@ -2986,6 +2986,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="years">Years</string>
     <string name="days_hint">Enter days &amp; if you don\'t know enter \'99\'</string>
     <string name="grade_year">Grade/Year</string>
+    <string name="kg">Kilograms</string>
 
 
     <string name="A4001">A4001: What was the first or given name(s) of the deceased?</string>
