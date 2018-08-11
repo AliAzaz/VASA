@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.muhammadfarooqui.neonate">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".N2001_N2011">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".N2012_N2016" />
+        <activity android:name=".N2017_N2022_3" />
+        <activity android:name=".N2023_N2026" />
+        <activity android:name=".N2051_N2078" />
+        <activity android:name=".N2080_N2107" />
+        <activity android:name=".N2110_N2189a" />
+        <activity android:name=".N2190_N2191" />
+        <activity android:name=".N2192_N2202" />
+        <activity android:name=".N2211_N2248" />
+        <activity android:name=".N2251_N2260" />
+        <activity android:name=".N2271_N2284" />
+        <activity android:name=".N2291_N2304" />
+        <activity android:name=".N2311_N2317" />
+        <activity android:name=".N2321_N2322"></activity>
+    </application>
+
+</manifest>
