@@ -1,5 +1,6 @@
 package com.example.muhammadfarooqui.neonate;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -48,6 +49,6 @@ public class N2251_N2260 extends AppCompatActivity {
     }
 
     public void BtnContinue() {
-
+        startActivity(new Intent(this, N2271_N2284.class));
     }
 }
