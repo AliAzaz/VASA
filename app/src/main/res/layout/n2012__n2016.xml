@@ -223,6 +223,40 @@
                 </android.support.v7.widget.CardView>
                 <!-- Radio Buttons N2015 Ends -->
 
+                <!-- Radio Buttons N2016 Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_N2016"
+                        style="@style/Q_Linerlayout_v">
+
+                        <TextView
+                            android:id="@+id/txt_N2016"
+                            style="@style/TextView"
+                            android:text="@string/txt_N2016" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_N2016"
+                            style="@style/RadioGroup">
+
+                            <RadioButton
+                                android:id="@+id/rb_N2016_1"
+                                style="@style/RadioButton"
+                                android:text="@string/rb_N2016_1" />
+
+                            <RadioButton
+                                android:id="@+id/rb_N2016_2"
+                                style="@style/RadioButton"
+                                android:text="@string/rb_N2016_2" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <!-- Radio Buttons N2016 Ends -->
+
                 <!--  = = = = =  END OF FORM FIELDS  = = = = = -->
 
                 <!-- Next Buttons Starts -->

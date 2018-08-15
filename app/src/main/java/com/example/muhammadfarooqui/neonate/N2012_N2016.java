@@ -21,7 +21,8 @@ public class N2012_N2016 extends AppCompatActivity {
     }
 
     public void BtnContinue() {
-        startActivity(new Intent(this, N2017_N2022_3.class));
+        startActivity(new Intent(this, N2017_N2022_3.class)
+                .putExtra("checkFlag", bi.rbN20161.isChecked()));
     }
 
 }
