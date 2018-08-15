@@ -1,5 +1,6 @@
 package utils;
 
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -27,6 +28,19 @@ public class ClearAllcontrol {
                     ((RadioGroup) view).clearCheck();
                 } else if (view instanceof EditText) {
                     ((EditText) view).setText("");
+                } else if (view instanceof CardView) {
+                    for (int j = 0; j < ((CardView) view).getChildCount(); j++) {
+                        View view1 = lv.getChildAt(i);
+                        if (view1 instanceof CheckBox) {
+                            ((CheckBox) view1).setChecked(false);
+                        } else if (view1 instanceof RadioGroup) {
+                            ((RadioGroup) view1).clearCheck();
+                        } else if (view1 instanceof EditText) {
+                            ((EditText) view1).setText("");
+                        }
+                    }
+                } else if (view instanceof LinearLayout) {
+                    ClearAll((LinearLayout) view);
                 }
 
             }

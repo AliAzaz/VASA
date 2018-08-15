@@ -2978,6 +2978,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="ra">Refused to Answer</string>
     <string name="ot_someone">Someone else (specify)</string>
     <string name="ot_other">Other (specify)</string>
+    <string name="other">Other (specify)</string>
     <string name="minutes">Minutes</string>
     <string name="hours">Hours</string>
     <string name="days">Days</string>

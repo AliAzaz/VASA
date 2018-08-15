@@ -276,10 +276,10 @@
                                         style="@style/RadioButton"
                                         android:text="@string/ra" />
 
-                                    <EditText
+                                    <RadioButton
                                         android:id="@+id/rb_N2190_3_OT"
-                                        style="@style/EditText_varchar"
-                                        android:hint="Other" />
+                                        style="@style/RadioButton"
+                                        android:text="@string/other" />
 
                                 </RadioGroup>
 
