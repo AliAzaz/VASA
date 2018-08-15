@@ -12,8 +12,8 @@
 
     <string name="rb_yes">Yes</string>
     <string name="rb_no">No</string>
-    <string name="rb_dk">Donot Know</string>
-    <string name="rb_ra">Rafuesd to answer</string>
+    <string name="rb_dk">Don\'t Know</string>
+    <string name="rb_ra">Refused to answer</string>
 
 
     <!--NEW FROM IRFAN-->
@@ -56,158 +56,161 @@
 
     <!-- 0 t0 27 starts ..........................-->
 
-    <string name="txt_N2001">Was the child part of a multiple birth?"></string>
-    <string name="txt_N2002">Was the child the first, second, or later in the birth order?"></string>
-    <string name="txt_N2003">Is the mother still alive?"></string>
-    <string name="txt_N2004">Did the mother die before, during or after the delivery?"></string>
-    <string name="txt_N2005u">How long after the delivery did the mother die?"></string>
-    <string name="txt_N2005d">How many days after the delivery did the mother die?"></string>
-    <string name="txt_N2005w">How many weeks after the delivery did the mother die?"></string>
-    <string name="txt_N2005m">How long after the delivery did the mother die?"></string>
-    <string name="txt_N2006">Where was the deceased born?"></string>
-    <string name="txt_N2008">Who (at the facility) delivered the baby?"></string>
-    <string name="txt_N2009_1">At birth, was the baby of usual size?"></string>
-    <string name="txt_N2009_2">At birth, was the baby smaller than usual, (weighing under 2.5 kg)?"></string>
-    <string name="txt_N2009_3">At birth, was the baby very much smaller than usual, (weighing under 1 kg)?"></string>
-    <string name="txt_N2009_4">At birth, was the baby larger than usual, (weighing over 4.5 kg)?"></string>
-    <string name="txt_N2010">What was the weight of the deceased at birth?"></string>
-    <string name="txt_N2011">Record the source of the birth weight information."></string>
-    <string name="txt_N2012">Was the child born alive or dead?"></string>
-    <string name="txt_N2013">Did the baby ever cry?"></string>
-    <string name="txt_N2014">Did the baby ever move?"></string>
-    <string name="txt_N2015">Did the baby ever breathe?"></string>
-    <string name="txt_N2016">Refer to N2012-N2015. If “Dead” and no crying, movement or breathing, mark “Stillbirth.”  If “Alive” and  N2013-N2015= “No,” or if “Dead” and N2013-N2014 or N2015= “Yes,” then discuss and  correct."></string>
-    <string name="txt_N2017">Was the baby moving in the last few days before the birth?"></string>
-    <string name="txt_N2018">Did the baby stop moving in the womb before labor started?"></string>
-    <string name="txt_N2019u">How long before labor did you/the mother last feel the baby move?"></string>
-    <string name="txt_N2019h">[Enter how long before labor (you / the mother) last felt the baby move, in hours]:"></string>
-    <string name="txt_N2019d">[Enter how long before labor did (you / the mother) last felt the baby move, in days]:"></string>
-    <string name="txt_N2020">Were there any bruises or signs of injury on the baby’s body at birth?"></string>
-    <string name="txt_N2021">Was the baby ’s body soft, pulpy and discoloured and the skin peeling away?"></string>
-    <string name="txt_N2022">Was any part of the baby physically abnormal at the time of delivery? (for example: body part too large or too small, additional growth on body)"></string>
-    <string name="txt_N2022_1">Did the baby/ child have a swelling or defect on the back at time of birth?"></string>
-    <string name="txt_N2022_2">Did the baby/ child have a very large head at time of birth?"></string>
-    <string name="txt_N2022_3">Did the baby/ child have a very small head at time of birth?"></string>
-    <string name="txt_N2023">What was the first or given name(s) of the deceased?"></string>
-    <string name="txt_N2024">How old in days was the baby when the illness started?"></string>
-    <string name="txt_N2024_1">Before the illness that led to death, was (the baby / the child) growing normally?"></string>
-    <string name="txt_N2025u">For how long was (s)he ill before death?"></string>
-    <string name="txt_N2025d">Days:"></string>
-    <string name="txt_N2026">Did (s)he die suddenly?"></string>
-    <string name="txt_N2051">How many births, including stillbirths, did (you / the baby’s mother) have before this baby?"></string>
-    <string name="txt_N2052">During the pregnancy, did (you / the mother) see anyone for antenatal care?"></string>
-    <string name="txt_N2053">Whom did (you / she) see?"></string>
-    <string name="txt_N2054">How many times did (you / the mother) receive antenatal care during this pregnancy?"></string>
-    <string name="txt_N2055">During which month of the pregnancy did (you / the mother) first receive antenatal care?"></string>
-    <string name="txt_N2056">During which month of the pregnancy did (you / the mother) last receive antenatal care?"></string>
-    <string name="txt_N2057">As part of (your / the mother’s) antenatal care during this pregnancy, were any of the following done at least once:"></string>
+
+    <string name="txt_N2001">N2001	:	Was the child part of a multiple birth?	">	</string>
+    <string name="txt_N2002">N2002	:	Was the child the first, second, or later in the birth order?	">	</string>
+    <string name="txt_N2003">N2003	:	Is the mother still alive?	">	</string>
+    <string name="txt_N2004">N2004	:	Did the mother die before, during or after the delivery?	">	</string>
+    <string name="txt_N2005u">N2005u	:	How long after the delivery did the mother die?	">	</string>
+    <string name="txt_N2005d">N2005d	:	How many days after the delivery did the mother die?	">	</string>
+    <string name="txt_N2005w">N2005w	:	How many weeks after the delivery did the mother die?	">	</string>
+    <string name="txt_N2005m">N2005m	:	How long after the delivery did the mother die?	">	</string>
+    <string name="txt_N2006">N2006	:	Where was the deceased born?	">	</string>
+    <string name="txt_N2008">N2008	:	Who (at the facility) delivered the baby?	">	</string>
+    <string name="txt_N2009_1">N2009_1	:	At birth, was the baby of usual size?	">	</string>
+    <string name="txt_N2009_2">N2009_2	:	At birth, was the baby smaller than usual, (weighing under 2.5 kg)?	">	</string>
+    <string name="txt_N2009_3">N2009_3	:	At birth, was the baby very much smaller than usual, (weighing under 1 kg)?	">	</string>
+    <string name="txt_N2009_4">N2009_4	:	At birth, was the baby larger than usual, (weighing over 4.5 kg)?	">	</string>
+    <string name="txt_N2010">N2010	:	What was the weight of the deceased at birth?	">	</string>
+    <string name="txt_N2011">N2011	:	Record the source of the birth weight information.	">	</string>
+    <string name="txt_N2012">N2012	:	Was the child born alive or dead?	">	</string>
+    <string name="txt_N2013">N2013	:	Did the baby ever cry?	">	</string>
+    <string name="txt_N2014">N2014	:	Did the baby ever move?	">	</string>
+    <string name="txt_N2015">N2015	:	Did the baby ever breathe?	">	</string>
+    <string name="txt_N2016">N2016	:	Refer to N2012-N2015. If “Dead” &amp; no crying, movement or breathing, mark “Stillbirth.”  If “Alive” &amp; N2013-N2015= “No,” or if “Dead” and N2013-N2014 or N2015= “Yes,” then discuss &amp; correct.	">	</string>
+    <string name="txt_N2017">N2017	:	Was the baby moving in the last few days before the birth?	">	</string>
+    <string name="txt_N2018">N2018	:	Did the baby stop moving in the womb before labor started?	">	</string>
+    <string name="txt_N2019u">N2019u	:	How long before labor did you/the mother last feel the baby move?	">	</string>
+    <string name="txt_N2019h">N2019h	:	[Enter how long before labor (you / the mother) last felt the baby move, in hours]: 	">	</string>
+    <string name="txt_N2019d">N2019d	:	[Enter how long before labor did (you / the mother) last felt the baby move, in days]: 	">	</string>
+    <string name="txt_N2020">N2020	:	Were there any bruises or signs of injury on the baby’s body at birth?	">	</string>
+    <string name="txt_N2021">N2021	:	Was the baby ’s body soft, pulpy and discoloured and the skin peeling away?	">	</string>
+    <string name="txt_N2022">N2022 	:	Was any part of the baby physically abnormal at the time of delivery? (for example: body part too large or too small, additional growth on body) 	">	</string>
+    <string name="txt_N2022_1">N2022_1	:	Did the baby/ child have a swelling or defect on the back at time of birth?	">	</string>
+    <string name="txt_N2022_2">N2022_2	:	Did the baby/ child have a very large head at time of birth?	">	</string>
+    <string name="txt_N2022_3">N2022_3	:	Did the baby/ child have a very small head at time of birth?	">	</string>
+    <string name="txt_N2023">N2023	:	What was the first or given name(s) of the deceased?	">	</string>
+    <string name="txt_N2024">N2024	:	How old in days was the baby when the illness started?	">	</string>
+    <string name="txt_N2024_1">N2024_1	:	Before the illness that led to death, was (the baby / the child) growing normally?	">	</string>
+    <string name="txt_N2025u">N2025u	:	For how long was (s)he ill before death?	">	</string>
+    <string name="txt_N2025d">N2025d	:	Days:	">	</string>
+    <string name="txt_N2026">N2026	:	Did (s)he die suddenly? 	">	</string>
+    <string name="txt_N2051">N2051 	:	How many births, including stillbirths, did (you / the baby’s mother) have before this baby?	">	</string>
+    <string name="txt_N2052">N2052	:	During the pregnancy, did (you / the mother) see anyone for antenatal care?	">	</string>
+    <string name="txt_N2053">N2053	:	Whom did (you / she) see? 	">	</string>
+    <string name="txt_N2054">N2054	:	How many times did (you / the mother) receive antenatal care during this pregnancy?	">	</string>
+    <string name="txt_N2055">N2055	:	During which month of the pregnancy did (you / the mother) first receive antenatal care?	">	</string>
+    <string name="txt_N2056">N2056	:	During which month of the pregnancy did (you / the mother) last receive antenatal care?	">	</string>
+    <string name="txt_N2057">N2057	:	As part of (your / the mother’s) antenatal care during this pregnancy, were any of the following done at least once:	">	</string>
 
 
-    <string name="txt_N2057_1">Was your blood pressure measured? </string>
-    <string name="txt_N2057_2">Did you give a urine sample? </string>
-    <string name="txt_N2057_3">Did you give a blood sample? </string>
-    <string name="txt_N2057_4">Did the provider tell (you / her) to eat more high energy foods like (HIGH ENERGY FOODS) and high protein foods like (HIGH PROTEIN FOODS) than when not pregnant? </string>
-    <string name="txt_N2057_5">Did the provider tell (you / her) about the danger signs during pregnancy? </string>
-    <string name="txt_N2057_6">Did the provider tell (you / her) where to go if (you / she) had any danger signs? </string>
+    <string name="txt_N2057_1">N2057_1: Was your blood pressure measured? </string>
+    <string name="txt_N2057_2">N2057_2: Did you give a urine sample? </string>
+    <string name="txt_N2057_3">N2057_3: Did you give a blood sample? </string>
+    <string name="txt_N2057_4">N2057_4: Did the provider tell (you / her) to eat more high energy foods like (HIGH ENERGY FOODS) and high protein foods like (HIGH PROTEIN FOODS) than when not pregnant? </string>
+    <string name="txt_N2057_5">N2057_5: Did the provider tell (you / her) about the danger signs during pregnancy? </string>
+    <string name="txt_N2057_6">N2057_6: Did the provider tell (you / her) where to go if (you / she) had any danger signs? </string>
 
-    <string name="txt_N2058">Please tell me the danger signs during pregnancy or labor and delivery that you should seek care for immediately."></string>
-
-
-    <string name="txt_N2059">During this pregnancy, (were you / was the mother) given an injection in the arm to prevent the baby from getting tetanus, that is, convulsions after birth?"></string>
-    <string name="txt_N2060">During this pregnancy, how many times did (you / she) get this injection?"></string>
-    <string name="txt_N2061">At any time before this pregnancy, did (you / the mother) receive any tetanus injection, either to protect yourself or another baby?"></string>
-    <string name="txt_N2062">Before this pregnancy, how many other times did (you / she) receive a tetanus injection?"></string>
-    <string name="txt_N2063">During this pregnancy, did (you / the mother) sleep under an insecticide treated bed net?"></string>
-    <string name="txt_N2064">During this pregnancy, did (you / the mother) take any drug such as (MOH RECOMMENDED DRUGS) to prevent (you / her) from getting malaria?"></string>
-    <string name="txt_N2065">During this pregnancy, how many times did (you / she) take this drug?"></string>
-    <string name="txt_N2066">Was the baby born more than one month early?"></string>
-    <string name="txt_N2067">How many months long was the pregnancy before the child was born?"></string>
-    <string name="txt_N2068">How many hours did the labor and delivery take?"></string>
-    <string name="txt_N2069_1">Was the delivery normal vaginal, without forceps or vacuum?"></string>
-    <string name="txt_N2069_2">Was the delivery vaginal, with forceps or vacuum?"></string>
-    <string name="txt_N2069_3">Was the delivery performed by C-section?"></string>
-    <string name="txt_N2070">During labor but before delivery, did (you / the mother) receive any kind of injection?"></string>
-    <string name="txt_N2071">Did the water break before labor or during labor?"></string>
-    <string name="txt_N2072">How many hours before labor did the water break?"></string>
-    <string name="txt_N2073">Was the baby born 24 hours or more after the water broke?"></string>
-    <string name="txt_N2074">What was the color of the liquor when the water broke?"></string>
-    <string name="txt_N2075">Was the liquor foul smelling?"></string>
-    <string name="txt_N2076">Earlier, you told me that the baby was delivered at (DELIVERY PLACE). Who decided that (this / a health provider or facility) was the right place to deliver the baby?"></string>
-    <string name="txt_N2077">If she did not deliver or try to deliver with a health provider or facility (N2006=12 or N2006=1-2 and N2008≠1-3), ask: Did (you / the mother) have any concerns or problems that kept (you / her) from delivering with a health provider or facility?"></string>
-    <string name="txt_N2078">What concerns or problems did (you / she) have?"></string>
-    <string name="txt_N2080">Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by any of the following symptoms that started before labor?"></string>
-
-    <string name="txt_N2080_1">Convulsions? </string>
-    <string name="txt_N2080_2">High blood pressure? </string>
-    <string name="txt_N2080_3">Severe anemia or pallor and shortness of breath? </string>
-    <string name="txt_N2080_4">Diabetes mellitus? </string>
-    <string name="txt_N2080_5">Severe headache? </string>
-    <string name="txt_N2080_6">Blurred vision? </string>
-    <string name="txt_N2080_7">Too weak to get out of bed? </string>
-    <string name="txt_N2080_8">Severe abdominal pain? (before labor, not labor pain) </string>
-    <string name="txt_N2080_9">Fast or difficult breathing? </string>
-    <string name="txt_N2080_10">Puffy face? </string>
-    <string name="txt_N2080_11"> Any vaginal bleeding before labor? </string>
-    <string name="txt_N2080_12"> Fever? </string>
-    <string name="txt_N2080_13">Foul smelling vaginal discharge? </string>
-    <string name="txt_N2080_14">Water broke 6 hours or more before labor </string>
-    <string name="txt_N2080_15"> Any other symptom? </string>
-    <string name="txt_N2080_16">No symptoms before labor </string>
+    <string name="txt_N2058">	N2058	:	Please tell me the danger signs during pregnancy or labor and delivery that you should seek care for immediately.	">	</string>
+    <string name="txt_N2059">	N2059 	:	During this pregnancy, (were you / was the mother) given an injection in the arm to prevent the baby from getting tetanus, that is, convulsions after birth?	">	</string>
+    <string name="txt_N2060">	N2060 	:	During this pregnancy, how many times did (you / she) get this injection?	">	</string>
+    <string name="txt_N2061">	N2061	:	At any time before this pregnancy, did (you / the mother) receive any tetanus injection, either to protect yourself or another baby?	">	</string>
+    <string name="txt_N2062">	N2062	:	Before this pregnancy, how many other times did (you / she) receive a tetanus injection?	">	</string>
+    <string name="txt_N2063">	N2063	:	During this pregnancy, did (you / the mother) sleep under an insecticide treated bed net?	">	</string>
+    <string name="txt_N2064">	N2064	:	During this pregnancy, did (you / the mother) take any drug such as \'MOH RECOMMENDED DRUGS\' to prevent (you / her) from getting malaria?	">	</string>
+    <string name="txt_N2065">	N2065	:	During this pregnancy, how many times did (you / she) take this drug?	">	</string>
+    <string name="txt_N2066">	N2066	:	Was the baby born more than one month early?	">	</string>
+    <string name="txt_N2067">	N2067 	:	How many months long was the pregnancy before the child was born? 	">	</string>
+    <string name="txt_N2068">	N2068 	:	How many hours did the labor and delivery take?	">	</string>
+    <string name="txt_N2069_1">	N2069_1 	:	Was the delivery normal vaginal, without forceps or vacuum?	">	</string>
+    <string name="txt_N2069_2">	N2069_2 	:	Was the delivery vaginal, with forceps or vacuum?	">	</string>
+    <string name="txt_N2069_3">	N2069_3 	:	Was the delivery performed by C-section?	">	</string>
+    <string name="txt_N2070">	N2070	:	During labor but before delivery, did (you / the mother) receive any kind of injection?	">	</string>
+    <string name="txt_N2071">	N2071	:	Did the water break before labor or during labor?	">	</string>
+    <string name="txt_N2072">	N2072	:	How many hours before labor did the water break?	">	</string>
+    <string name="txt_N2073">	N2073 	:	Was the baby born 24 hours or more after the water broke?	">	</string>
+    <string name="txt_N2074">	N2074	:	What was the color of the liquor when the water broke?	">	</string>
+    <string name="txt_N2075">	N2075 	:	Was the liquor foul smelling?	">	</string>
+    <string name="txt_N2076">	N2076	:	Earlier, you told me that the baby was delivered at \'DELIVERY PLACE\'. Who decided that (this / a health provider or facility) was the right place to deliver the baby?	">	</string>
+    <string name="txt_N2077">	N2077	:	If she did not deliver or try to deliver with a health provider or facility (N2006=12 or N2006=1-2 and N2008≠1-3), ask: Did (you / the mother) have any concerns or problems that kept (you / her) from delivering with a health provider or facility?	">	</string>
+    <string name="txt_N2078">	N2078	:	What concerns or problems did (you / she) have?	">	</string>
 
 
-    <string name="txt_N2081">Did (you / the mother) seek care from any person or health facility for (any of) the pregnancy symptom(s) that started before labor?"></string>
-    <string name="txt_N2082">Where did (you / she) seek this care?"></string>
-    <string name="txt_N2083">If more than one symptom started before labor and she sought care from a health provider (Q4003 = 1-4), ask:"></string>
-    <string name="txt_N2084">For which symptom(s) did (you / she) go?"></string>
-    <string name="txt_N2085">If she never went to a health provider (Q4002 = 2 or Q4003 = only 5-7) for any of the pregnancy symptoms, ask: Did (you / the mother) have any concerns or problems that kept (you / her) from going to a health provider or facility for the problem(s) that started before labor?"></string>
-    <string name="txt_N2086">What concerns or problems did (you / she) have?"></string>
-    <string name="txt_N2087">(Were you / Was the mother) admitted to hospital for (any of) the symptom(s) that started before labor?"></string>
-    <string name="txt_N2088">Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have any of the following symptoms during labor or delivery?"></string>
+    <string name="txt_N2080">N2080: Now I’d like to ask you about any symptoms (you / the mother) might have had during the late part of the pregnancy. Were the last 3 months of the pregnancy complicated by any of the following symptoms that started before labor?"></string>
 
-    <string name="txt_N2088_1">Convulsions? </string>
-    <string name="txt_N2088_2">High blood pressure? </string>
-    <string name="txt_N2088_3">Severe anemia or pallor and shortness of breath? </string>
-    <string name="txt_N2088_4">Severe headache? </string>
-    <string name="txt_N2088_5">Blurred vision? </string>
-    <string name="txt_N2088_6">Too weak to get out of bed? </string>
-    <string name="txt_N2088_7">Severe abdominal pain? (not labor pain, between contractions) </string>
-    <string name="txt_N2088_8">Fast or difficult breathing? </string>
-    <string name="txt_N2088_9">Puffy face? </string>
-    <string name="txt_N2088_10">Excessive bleeding during labor or delivery </string>
-    <string name="txt_N2088_11"> Fever? </string>
-    <string name="txt_N2088_12">Foul smelling vaginal discharge? </string>
-    <string name="txt_N2088_13"> Early/preterm labor (before 9 months) </string>
-    <string name="txt_N2088_14"> Labor that lasted 12 hours or more </string>
-    <string name="txt_N2088_15">Baby’s bottom, feet, arm or hand delivered before its head? </string>
-    <string name="txt_N2088_16">The umbilical cord delivered first? </string>
-    <string name="txt_N2088_17">The umbilical cord wrapped more than once around the neck of the child at birth? </string>
-    <string name="txt_N2088_18"> Any other symptom? </string>
-    <string name="txt_N2088_19">No symptoms during labor/delivery </string>
+    <string name="txt_N2080_1">N2080_1: Convulsions? </string>
+    <string name="txt_N2080_2">N2080_2: High blood pressure? </string>
+    <string name="txt_N2080_3">N2080_3: Severe anemia or pallor and shortness of breath? </string>
+    <string name="txt_N2080_4">N2080_4: Diabetes mellitus? </string>
+    <string name="txt_N2080_5">N2080_5: Severe headache? </string>
+    <string name="txt_N2080_6">N2080_6: Blurred vision? </string>
+    <string name="txt_N2080_7">N2080_7: Too weak to get out of bed? </string>
+    <string name="txt_N2080_8">N2080_8: Severe abdominal pain? (before labor, not labor pain) </string>
+    <string name="txt_N2080_9">N2080_9: Fast or difficult breathing? </string>
+    <string name="txt_N2080_10">N2080_10: Puffy face? </string>
+    <string name="txt_N2080_11">N2080_11:  Any vaginal bleeding before labor? </string>
+    <string name="txt_N2080_12">N2080_12:  Fever? </string>
+    <string name="txt_N2080_13">N2080_13: Foul smelling vaginal discharge? </string>
+    <string name="txt_N2080_14">N2080_14: Water broke 6 hours or more before labor </string>
+    <string name="txt_N2080_15">N2080_15:  Any other symptom? </string>
+    <string name="txt_N2080_16">N2080_16: No symptoms before labor </string>
+
+    <string name="txt_N2081">	N2081	:	Did (you / the mother) seek care from any person or health facility for (any of) the pregnancy symptom(s) that started before labor?	">	</string>
+    <string name="txt_N2082">	N2082	:	Where did (you / she) seek this care?	">	</string>
+    <string name="txt_N2083">	N2083	:	If more than one symptom started before labor and she sought care from a health provider (Q4003 = 1-4), ask:	">	</string>
+    <string name="txt_N2084">	N2084	:	For which symptom(s) did (you / she) go?	">	</string>
+    <string name="txt_N2085">	N2085	:	If she never went to a health provider (Q4002 = 2 or Q4003 = only 5-7) for any of the pregnancy symptoms, ask: Did (you / the mother) have any concerns or problems that kept (you / her) from going to a health provider or facility for the problem(s) that started before labor?	">	</string>
+    <string name="txt_N2086">	N2086	:	What concerns or problems did (you / she) have?	">	</string>
+    <string name="txt_N2087">	N2087	:	(Were you / Was the mother) admitted to hospital for (any of) the symptom(s) that started before labor?	">	</string>
 
 
-    <string name="txt_N2089">Where (were you / was the mother) when (this / the first) symptom began?"></string>
-    <string name="txt_N2090">Did (you / she) ever receive or seek any care or treatment for (any of) the labor or delivery symptom(s) including any care or treatment at home?"></string>
-    <string name="txt_N2091">Where did (you / she) receive or seek this care or treatment?"></string>
-    <string name="txt_N2092">Who decided that seeing a health provider was the right thing to do?"></string>
-    <string name="txt_N2093">Refer to N2006 and N2008 to determine the delivery place and attendant. Discuss with respondent to confirm or correct the delivery place and attendant. Use option 3 or 4 if the woman delivered at home (N2006=1, 2) with a trained nurse or midwife (N2008=2, 3)."></string>
-    <string name="txt_N2094">So, including where (you / the mother) received or sought care for the labor or delivery symptom(s) and for the delivery, how many health providers or facilities did (you / she) go to?"></string>
-    <string name="txt_N2095">Was there any particular symptom or symptoms for which (you / the mother) went to the (first) health provider?"></string>
-    <string name="txt_N2096">></string>
-    <string name="txt_N2097">How long after the labor or delivery symptom(s) began was it decided to go to the (first) health provider?"></string>
-    <string name="txt_N2098">If she delivered at or was on the way to deliver at a health provider or facility (N2006=3-11 or N2006=1-2 and N2008=1-3), read: Earlier you said that (you / the mother) delivered at (DELIVERY PLACE). (Confirm N2006 delivery place and N2008 birth attendant if at home.)"></string>
-    <string name="txt_N2099">Did (you / the mother) have to pay any money to travel to this provider?"></string>
-    <string name="txt_N2100">How did (you / the mother) arrange for the money to travel?"></string>
-    <string name="txt_N2101">What transportation method was used to go there?</string>
-    <string name="txt_N2102">Did (you / the mother) reach the (HEALTH PROVIDER) before delivering the baby?"></string>
-    <string name="txt_N2103">After deciding to seek care for (the labor or delivery symptoms / the delivery), how long did it take ((you / the mother) to reach the (LAST HEALTH PROVIDER) / for the (LAST HEALTH PROVIDER) to reach (you / the mother))?"></string>
-    <string name="txt_N2104">(Were you / Was the mother) admitted to the hospital?"></string>
-    <string name="txt_N2105">Did the (LAST HEALTH PROVIDER) refer (you / the mother) to another health provider or facility?"></string>
-    <string name="txt_N2106">Was the baby delivered by the (LAST HEALTH PROVIDER)?"></string>
-    <string name="txt_N2107">Now, I’d like to ask about symptoms after the delivery of the baby. Did (you / the mother) have any of the following symptoms that started within 6 weeks after the delivery?"></string>
+    <string name="txt_N2088">N2088: Now I’d like to ask you about any symptoms (you / the mother) might have had during labor or delivery. Did (you / the mother) have any of the following symptoms during labor or delivery?"></string>
 
-    <string name="txt_N2107_1">Convulsions? </string>
-    <string name="txt_N2107_2">Heavy bleeding? </string>
-    <string name="txt_N2107_3">Fever with smelly vaginal discharge or abdominal pain? </string>
+    <string name="txt_N2088_1">N2088_1: Convulsions? </string>
+    <string name="txt_N2088_2">N2088_2: High blood pressure? </string>
+    <string name="txt_N2088_3">N2088_3: Severe anemia or pallor and shortness of breath? </string>
+    <string name="txt_N2088_4">N2088_4: Severe headache? </string>
+    <string name="txt_N2088_5">N2088_5: Blurred vision? </string>
+    <string name="txt_N2088_6">N2088_6: Too weak to get out of bed? </string>
+    <string name="txt_N2088_7"> N2088_7: Severe abdominal pain? (not labor pain, between contractions) </string>
+    <string name="txt_N2088_8">N2088_8: Fast or difficult breathing? </string>
+    <string name="txt_N2088_9">N2088_9: Puffy face? </string>
+    <string name="txt_N2088_10">N2088_10: Excessive bleeding during labor or delivery </string>
+    <string name="txt_N2088_11">N2088_11: Fever? </string>
+    <string name="txt_N2088_12">N2088_12: Foul smelling vaginal discharge? </string>
+    <string name="txt_N2088_13">N2088_13: Early/preterm labor (before 9 months) </string>
+    <string name="txt_N2088_14">N2088_14: Labor that lasted 12 hours or more </string>
+    <string name="txt_N2088_15">N2088_15: Baby’s bottom, feet, arm or hand delivered before its head? </string>
+    <string name="txt_N2088_16">N2088_16: The umbilical cord delivered first? </string>
+    <string name="txt_N2088_17">N2088_17: The umbilical cord wrapped more than once around the neck of the child at birth? </string>
+    <string name="txt_N2088_18">N2088_18: Any other symptom? </string>
+    <string name="txt_N2088_19">N2088_19: No symptoms during labor/delivery </string>
+
+    <string name="txt_N2089">N2089:	Where (were you / was the mother) when (this / the first) symptom began?	">	</string>
+    <string name="txt_N2090">N2090:	Did (you / she) ever receive or seek any care or treatment for (any of) the labor or delivery symptom(s) including any care or treatment at home?	">	</string>
+    <string name="txt_N2091">N2091:	Where did (you / she) receive or seek this care or treatment?	">	</string>
+    <string name="txt_N2092">N2092:	Who decided that seeing a health provider was the right thing to do?	">	</string>
+    <string name="txt_N2093">N2093:	Refer to N2006 and N2008 to determine the delivery place and attendant. Discuss with respondent to confirm or correct the delivery place and attendant. Use option 3 or 4 if the woman delivered at home (N2006=1, 2) with a trained nurse or midwife (N2008=2, 3). 	">	</string>
+    <string name="txt_N2094">N2094:	So, including where (you / the mother) received or sought care for the labor or delivery symptom(s) and for the delivery, how many health providers or facilities did (you / she) go to?	">	</string>
+    <string name="txt_N2095">N2095:	Was there any particular symptom or symptoms for which (you / the mother) went to the (first) health provider?	">	</string>
+    <string name="txt_N2096">N2096:		">	</string>
+    <string name="txt_N2097">N2097:	How long after the labor or delivery symptom(s) began was it decided to go to the (first) health provider?	">	</string>
+    <string name="txt_N2098">N2098:	If she delivered at or was on the way to deliver at a health provider or facility (N2006=3-11 or N2006=1-2 and N2008=1-3), read: Earlier you said that (you / the mother) delivered at \'DELIVERY PLACE\'. (Confirm N2006 delivery place and N2008 birth attendant if at home.)	">	</string>
+    <string name="txt_N2099">N2099:	Did (you / the mother) have to pay any money to travel to this provider?	">	</string>
+    <string name="txt_N2100">N2100:	How did (you / the mother) arrange for the money to travel?	">	</string>
+    <string name="txt_N2101">N2101:	What transportation method was used to go there?	">	</string>
+    <string name="txt_N2102">N2102:	Did (you / the mother) reach the \'HEALTH PROVIDER\' before delivering the baby?	">	</string>
+    <string name="txt_N2103">N2103:	After deciding to seek care for (the labor or delivery symptoms / the delivery), how long did it take ((you / the mother) to reach the \'LAST HEALTH PROVIDER\' / for the \'LAST HEALTH PROVIDER\' to reach (you / the mother))?">	</string>
+    <string name="txt_N2104">N2104:	(Were you / Was the mother) admitted to the hospital?	">	</string>
+    <string name="txt_N2105">N2105:	Did the \'LAST HEALTH PROVIDER\' refer (you / the mother) to another health provider or facility?	">	</string>
+    <string name="txt_N2106">N2106:	Was the baby delivered by the \'LAST HEALTH PROVIDER\'?	">	</string>
+
+
+    <string name="txt_N2107">N2107: Now, I’d like to ask about symptoms after the delivery of the baby. Did (you / the mother) have any of the following symptoms that started within 6 weeks after the delivery?"></string>
+
+    <string name="txt_N2107_1">N2107_1: Convulsions? </string>
+    <string name="txt_N2107_2">N2107_2: Heavy bleeding? </string>
+    <string name="txt_N2107_3">N2107_3: Fever with smelly vaginal discharge or abdominal pain? </string>
 
     <!-- Responces starts  .....................  -->
 
@@ -598,50 +601,51 @@
 
     <!-- Questions starts  .....................  -->
 
+    <string name="txt_N2251">N2251:	Did ?NAME? receive any treatment for the illness that led to death?	</string>
+    <string name="txt_N2252_1">N222_1:	Did (s)he receive oral rehydration salts?	</string>
+    <string name="txt_N2252_2">N222_2:	Did (s)he receive intravenous fluids (drip) treatment?	</string>
+    <string name="txt_N2252_3">N222_3:	Did (s)he receive a blood transfusion?	</string>
+    <string name="txt_N2252_4">N222_4:	Did (s)he receive treatment/food through a tube passed through the nose?	</string>
+    <string name="txt_N2252_5">N222_5:	Did (s)he receive injectable antibiotics?	</string>
+    <string name="txt_N2252_6">N222_6:	Did (s)he receive antiretroviral therapy (ART)?	</string>
+    <string name="txt_N2252_7">N222_7:	Did (s)he have an operation for the illness?	</string>
+    <string name="txt_N2253">N2253:	Do you have any health care records that belonged to the deceased?	</string>
+    <string name="txt_N2254">N2254:	Can I see the health records?	</string>
+    <string name="txt_N2255_1check">N2255_1check:	Is the date of the most recent (last) visit available?	</string>
+    <string name="txt_N2255_1">N255_1 	:	Record the date of the most recent (last) visit	</string>
+    <string name="txt_N2255_2check">N2255_2check	:	Is the date of the second most recent visit available?	</string>
+    <string name="txt_N2255_2">N255_2 	:	Record the date of the second most recent visit	</string>
+    <string name="txt_N2256">N2256:	Record the date of the last note on the health records	</string>
+    <string name="txt_N2257">N2257:	Record the weight (in kilograms) written at the most recent (last) visit	</string>
+    <string name="txt_N2258">N2258:	Transcribe the last note on the health record	</string>
+    <string name="txt_N2259">N2259:	Did a health care worker tell you the cause of death?	</string>
+    <string name="txt_N2260">N2260:	What did the health worker say?	</string>
+    <string name="txt_N2271">N2271:	Was a death certificate issued?	</string>
+    <string name="txt_N2272">N2272:	Can I see the death certificate?	</string>
+    <string name="txt_N2273">N2273:	Record the immediate cause of death from the death certificate	</string>
+    <string name="txt_N2274">N2274:	Duration (1a)	</string>
+    <string name="txt_N2275">N2275:	Record the first underlying cause of death from the death certificate	</string>
+    <string name="txt_N2276">N2276:	Duration (1b)	</string>
+    <string name="txt_N2277">N2277:	Record the second underlying cause of death from the death certificate	</string>
+    <string name="txt_N2278">N2278:	Duration (1c)	</string>
+    <string name="txt_N2283">N2283:	Was the death registered?	</string>
+    <string name="txt_N2284">N2284:	Record the death registration number	</string>
+    <string name="txt_N2291">N2291:	How old (is the child’s mother / was the child’s mother when she died)?	</string>
+    <string name="txt_N2292">N2292:	Did the child’s mother ever attend school?	</string>
+    <string name="txt_N2293">N2293:	What is the highest level of school she attended: primary, secondary, or higher?	</string>
+    <string name="txt_N2294">N2294:	What is the highest [GRADE/YEAR] she completed at that level?	</string>
+    <string name="txt_N2295">N2295:	At the time of the child’s death, (were you / was the child’s mother) married or living together with a man as if married?	</string>
+    <string name="txt_N2296">N2296:	How old (were you when you / was she when she) first married (or lived with a man)?	</string>
+    <string name="txt_N2297">N2297:	Did (your / the mother’s) (husband/partner) ever attend school?	</string>
+    <string name="txt_N2298">N2298:	What was the highest level of school he attended: primary, secondary, or higher?	</string>
+    <string name="txt_N2299">N2299:	What was the highest [GRADE/FORM/YEAR] he completed at that level? 	</string>
+    <string name="txt_N2300">N2300:	Is this the house (where we are now) where (you / the mother) stayed during the (last days of the pregnancy )?	</string>
+    <string name="txt_N2301">N2301:	Where did (you / the mother) stay at that time?	</string>
+    <string name="txt_N2302">N2302:	What is the address of the place where (you / she) stayed?	</string>
+    <string name="txt_N2303">N2303:	At the time of the illness events, how long had (you / the mother / your \'RELATIVES\' / the mother’s \'RELATIVES\') been living continuously in (this / that) community?	</string>
+    <string name="txt_N2304">N2304:	In an emergency, how long would it take to reach the nearest health facility from (this / that) location?	</string>
 
-    <string name="txt_N2251">Did (s) receive any treatment for the illness that led to death?</string>
-    <string name="txt_N2252_1">Did (s)he receive oral rehydration salts?</string>
-    <string name="txt_N2252_2">Did (s)he receive intravenous fluids (drip) treatment?</string>
-    <string name="txt_N2252_3">Did (s)he receive a blood transfusion?</string>
-    <string name="txt_N2252_4">Did (s)he receive treatment/food through a tube passed through the nose?</string>
-    <string name="txt_N2252_5">Did (s)he receive injectable antibiotics?</string>
-    <string name="txt_N2252_6">Did (s)he receive antiretroviral therapy (ART)?</string>
-    <string name="txt_N2252_7">Did (s)he have an operation for the illness?</string>
-    <string name="txt_N2253">Do you have any health care records that belonged to the deceased?</string>
-    <string name="txt_N2254">Can I see the health records?</string>
-    <string name="txt_N2255_1check">Is the date of the most recent (last) visit available?</string>
-    <string name="txt_N2255_1">Record the date of the most recent (last) visit</string>
-    <string name="txt_N2255_2check">Is the date of the second most recent visit available?</string>
-    <string name="txt_N2255_2">Record the date of the second most recent visit</string>
-    <string name="txt_N2256">Record the date of the last note on the health records</string>
-    <string name="txt_N2257">Record the weight (in kilograms) written at the most recent (last) visit</string>
-    <string name="txt_N2258">Transcribe the last note on the health record</string>
-    <string name="txt_N2259">Did a health care worker tell you the cause of death?</string>
-    <string name="txt_N2260">What did the health worker say?</string>
-    <string name="txt_N2271">Was a death certificate issued?</string>
-    <string name="txt_N2272">Can I see the death certificate?</string>
-    <string name="txt_N2273">Record the immediate cause of death from the death certificate</string>
-    <string name="txt_N2274">Duration (1a)</string>
-    <string name="txt_N2275">Record the first underlying cause of death from the death certificate</string>
-    <string name="txt_N2276">Duration (1b)</string>
-    <string name="txt_N2277">Record the second underlying cause of death from the death certificate</string>
-    <string name="txt_N2278">Duration (1c)</string>
-    <string name="txt_N2283">Was the death registered?</string>
-    <string name="txt_N2284">Record the death registration number</string>
-    <string name="txt_N2291">How old (is the child’s mother / was the child’s mother when she died)?</string>
-    <string name="txt_N2292">Did the child’s mother ever attend school?</string>
-    <string name="txt_N2293">What is the highest level of school she attended: primary, secondary, or higher?</string>
-    <string name="txt_N2294">What is the highest [GRADE/YEAR] she completed at that level?</string>
-    <string name="txt_N2295">At the time of the child’s death, (were you / was the child’s mother) married or living together with a man as if married?</string>
-    <string name="txt_N2296">How old (were you when you / was she when she) first married (or lived with a man)?</string>
-    <string name="txt_N2297">Did (your / the mother’s) (husband/partner) ever attend school?</string>
-    <string name="txt_N2298">What was the highest level of school he attended: primary, secondary, or higher?</string>
-    <string name="txt_N2299">What was the highest [GRADE/FORM/YEAR] he completed at that level? </string>
-    <string name="txt_N2300">Is this the house (where we are now) where (you / the mother) stayed during the (last days of the pregnancy )?</string>
-    <string name="txt_N2301">Where did (you / the mother) stay at that time?</string>
-    <string name="txt_N2302">What is the address of the place where (you / she) stayed?</string>
-    <string name="txt_N2303">At the time of the illness events, how long had (you / the mother / your (RELATIVES) / the mother’s (RELATIVES) been living continuously in (this / that) community?</string>
-    <string name="txt_N2304">In an emergency, how long would it take to reach the nearest health facility from (this / that) location?</string>
+
     <string name="txt_N2311">In the 12 months before (s) death, did the people in the (village / neighborhood) work together on any of the following issues that affect the entire community or part of the community?</string>
 
 
@@ -702,12 +706,13 @@
     <string name="txt_N2313_OT"> Other (specify)</string>
 
 
-    <string name="txt_N2314">Did the child ever have a positive HIV test?</string>
-    <string name="txt_N2315">Was there any diagnosis by a health professional that the child had AIDS?</string>
-    <string name="txt_N2316">Did (you / the child’s biological mother) ever have a positive HIV test?</string>
-    <string name="txt_N2317">Was there any diagnosis by a health professional that (you / the child’s biological mother) had AIDS?</string>
-    <string name="txt_N2321">Write the respondent’s exact words. After s/he has finished, read this back and ask her to correct any errors in what you wrote.</string>
-    <string name="txt_N2322">Are any of the following words of interest mentioned in the above narrative?</string>
+    <string name="txt_N2314">N2314:	Did the child ever have a positive HIV test?	</string>
+    <string name="txt_N2315">N2315:	Was there any diagnosis by a health professional that the child had AIDS?	</string>
+    <string name="txt_N2316">N2316:	Did (you / the child’s biological mother) ever have a positive HIV test?	</string>
+    <string name="txt_N2317">N2317:	Was there any diagnosis by a health professional that (you / the child’s biological mother) had AIDS?	</string>
+    <string name="txt_N2321">N2321:	Write the respondent’s exact words. After s/he has finished, read this back and ask her to correct any errors in what you wrote.	</string>
+    <string name="txt_N2322">N2322:	Are any of the following words of interest mentioned in the above narrative?	</string>
+
 
     <!-- Responcestxt_ XML .....................  -->
 
@@ -799,33 +804,35 @@
 
     <!-- quesiotn txt_starts-->
 
-    <string name="txt_N2110">What tool was used for cutting the cord?</string>
-    <string name="txt_N2111">What material was used for tying the cord?</string>
-    <string name="txt_N2112">Was anything applied to the umbilical cord stump after birth?</string>
-    <string name="txt_N2113">What was it?</string>
-    <string name="txt_N2114">Were there any bruises or signs of injury on the baby’s body at birth?</string>
-    <string name="txt_N2115">Was any part of the baby physically abnormal at the time of delivery? (for example: body part too large or too small, additional growth on body) </string>
-    <string name="txt_N2116_1">Did the baby/ child have a swelling or defect on the back at time of birth?</string>
-    <string name="txt_N2116_2">Did the baby/ child have a very large head at time of birth?</string>
-    <string name="txt_N2116_3">Did the baby/ child have a very small head at time of birth?</string>
-    <string name="txt_N2117">Was the baby blue in color at birth?</string>
-    <string name="txt_N2118">Did the baby breathe immediately after birth, even a little?</string>
-    <string name="txt_N2119">Did the baby have difficulty breathing? </string>
-    <string name="txt_N2120">Was anything done to try to help the baby breathe at birth?</string>
-    <string name="txt_N2121">Did the baby cry immediately after birth, even if only a little bit? </string>
-    <string name="txt_N2122">How many minutes after birth did the baby first cry?</string>
-    <string name="txt_N2123">Did the baby stop being able to cry? </string>
-    <string name="txt_N2124">How many hours before death did the baby stop crying?</string>
-    <string name="txt_N2125">Was the baby put in an incubator after the birth?</string>
-    <string name="txt_N2126">After the birth, was the baby put directly on the bare skin of (your / the mother’s) chest?</string>
-    <string name="txt_N2127">How long after the birth was the baby put on the bare skin of (your / the mother’s) chest?</string>
-    <string name="txt_N2128">Before being placed on the bare skin of (your / the mother’s) chest, was the baby wrapped up?</string>
-    <string name="txt_N2129">For babies delivered preterm (N2066=1 or N2067 less then9 months) in a health facility (N2006=3-10), ask: For how many hours each day was the baby directly on the bare skin of (your / the mother’s) chest?</string>
-    <string name="txt_N2130">For babies delivered preterm (N2066=1 or N2067 less then 9 months) in a health facility (N2006=3-10), ask: For how many days was the baby put directly on the bare skin of (your / the mother’s) chest?</string>
-    <string name="txt_N2131">How long after birth was the baby first bathed?</string>
-    <string name="txt_N2132">Did (you / the mother) or a wet nurse ever breastfeed the baby?</string>
-    <string name="txt_N2133">How long after birth was the baby first put to the breast?</string>
-    <string name="txt_N2134">On the day before the fatal illness began, was the baby being breastfed?</string>
+    <string name="txt_N2110">N2110:	What tool was used for cutting the cord?	</string>
+    <string name="txt_N2111">N2111:	What material was used for tying the cord?	</string>
+    <string name="txt_N2112">N2112:	Was anything applied to the umbilical cord stump after birth?	</string>
+    <string name="txt_N2113">N2113:	What was it?	</string>
+    <string name="txt_N2114">N2114:	Were there any bruises or signs of injury on the baby’s body at birth?	</string>
+    <string name="txt_N2115">N2115:	Was any part of the baby physically abnormal at the time of delivery? (for example: body part too large or too small, additional growth on body) 	</string>
+    <string name="txt_N2116_1">N2116_1:	Did the baby/ child have a swelling or defect on the back at time of birth?	</string>
+    <string name="txt_N2116_2">N2116_2:	Did the baby/ child have a very large head at time of birth?	</string>
+    <string name="txt_N2116_3">N2116_3:	Did the baby/ child have a very small head at time of birth?	</string>
+    <string name="txt_N2117">N2117:	Was the baby blue in color at birth?	</string>
+    <string name="txt_N2118">N2118:	Did the baby breathe immediately after birth, even a little?	</string>
+    <string name="txt_N2119">N2119:	Did the baby have difficulty breathing? 	</string>
+    <string name="txt_N2120">N2120:	Was anything done to try to help the baby breathe at birth?	</string>
+    <string name="txt_N2121">N2121:	Did the baby cry immediately after birth, even if only a little bit? 	</string>
+    <string name="txt_N2122">N2122:	How many minutes after birth did the baby first cry?	</string>
+    <string name="txt_N2123">N2123:	Did the baby stop being able to cry? 	</string>
+    <string name="txt_N2124">N2124:	How many hours before death did the baby stop crying?	</string>
+    <string name="txt_N2125">N2125:	Was the baby put in an incubator after the birth?	</string>
+    <string name="txt_N2126">N2126:	After the birth, was the baby put directly on the bare skin of (your / the mother’s) chest?	</string>
+    <string name="txt_N2127">N2127:	How long after the birth was the baby put on the bare skin of (your / the mother’s) chest?	</string>
+    <string name="txt_N2128">N2128:	Before being placed on the bare skin of (your / the mother’s) chest, was the baby wrapped up?	</string>
+    <string name="txt_N2129">N2129:	For babies delivered preterm (N2066=1 or N2067&lt;9 months) in a health facility (N2006=3-10), ask: For how many hours each day was the baby directly on the bare skin of (your / the mother’s) chest?	</string>
+    <string name="txt_N2130">N2130:	For babies delivered preterm (N2066=1 or N2067&lt;9 months) in a health facility (N2006=3-10), ask: For how many days was the baby put directly on the bare skin of (your / the mother’s) chest?	</string>
+    <string name="txt_N2131">N2131:	How long after birth was the baby first bathed?	</string>
+    <string name="txt_N2132">N2132:	Did (you / the mother) or a wet nurse ever breastfeed the baby?	</string>
+    <string name="txt_N2133">N2133:	How long after birth was the baby first put to the breast?	</string>
+    <string name="txt_N2134">N2134:	On the day before the fatal illness began, was the baby being breastfed?	</string>
+
+
     <string name="txt_N2135">On the day before the illness began, was the baby given any…? </string>
 
     <string name="txt_N2135_1">Milk (other than breast milk) </string>
@@ -841,99 +848,99 @@
     <string name="txt_N2135_11">Any other liquid or semisolid or soft food </string>
     <string name="txt_N2135_12"> (Specify other liquid, semisolid, soft food) </string>
 
+    <string name="txt_N2136">N2136:	Was the baby able to suckle or bottle-feed in a normal way during the first day of life?	</string>
+    <string name="txt_N2137">N2137:	Did the baby ever suckle in a normal way? 	</string>
+    <string name="txt_N2138">N2138:	Did the baby stop being able to suckle in a normal way? 	</string>
+    <string name="txt_N2139">N2139:	How many days after birth did the baby stop suckling?	</string>
+    <string name="txt_N2140">N2140:	Was the baby able to open her/his mouth at the time s/he stopped suckling?	</string>
+    <string name="txt_N2141">N2141:	During the illness that led to death, did the baby have spasms or convulsions?	</string>
+    <string name="txt_N2142">N2142:	Did the baby have convulsions in the first 24 hours of life?	</string>
+    <string name="txt_N2143">N2143:	Did the baby have convulsions starting more than 24 hours after birth?	</string>
+    <string name="txt_N2144">N2144:	Did the baby’s body become stiff, with the head arched backwards?	</string>
+    <string name="txt_N2145">N2145:	During the illness that led to death, did the baby become unresponsive or unconscious?	</string>
+    <string name="txt_N2146">N2146:	Did the baby become unresponsive or unconscious soon after birth, within less than 24 hours?	</string>
+    <string name="txt_N2147">N2147:	Did the baby become unresponsive or unconscious more than 24 hours after birth?	</string>
+    <string name="txt_N2148">N2148:	Was s/he unconscious for more than 24 hours before death?	</string>
+    <string name="txt_N2149">N2149:	During the illness that led to death, did the baby become lethargic, after a period of normal activity?	</string>
+    <string name="txt_N2150">N2150:	During the illness that led to death, did the baby have pus drainage from the umbilical cord stump?	</string>
+    <string name="txt_N2151">N2151:	During the illness that led to death, did the baby have redness of the umbilical cord stump?	</string>
+    <string name="txt_N2152">N2152:	Did the redness of the umbilical cord stump extend onto the abdominal skin?	</string>
+    <string name="txt_N2153">N2153:	During the illness that led to death, did the baby have skin bumps containing pus or a single large area with pus?	</string>
+    <string name="txt_N2154">N2154:	During the illness that led to death, did the baby have skin ulcer(s) (pit(s))?	</string>
+    <string name="txt_N2155">N2155:	During the illness that led to death, did the baby have fever?	</string>
+    <string name="txt_N2156">N2156:	At what age did the fever start?	</string>
+    <string name="txt_N2157">N2157:	How many days did the fever last?	</string>
+    <string name="txt_N2158">N2158:	Did the fever continue until death?	</string>
+    <string name="txt_N2159">N2159:	During the illness that led to death, did the baby become cold to touch?	</string>
+    <string name="txt_N2160">N2160:	How many days old was the baby when s/he started feeling cold to touch?	</string>
+    <string name="txt_N2161">N2161:	How many days did the baby feel cold to touch?	</string>
+    <string name="txt_N2162">N2162:	Did the baby have a cough?	</string>
+    <string name="txt_N2163">N2163:	Did s/he make a whooping sound when coughing?	</string>
+    <string name="txt_N2164">N2164:	Did the child vomit after s/he coughed? 	</string>
+    <string name="txt_N2165">N2165:	During the illness that led to death, did the baby have difficulty breathing?	</string>
+    <string name="txt_N2166">N2166:	At what age did the difficult breathing start?	</string>
+    <string name="txt_N2166_1">N2166_1:	For how many days did the difficult breathing last?	</string>
+    <string name="txt_N2167">N2167:	During the illness that led to death, did the baby have fast breathing?	</string>
+    <string name="txt_N2168">N2168:	At what age did the fast breathing start? 	</string>
+    <string name="txt_N2169">N2169:	For how many days did the fast breathing last?	</string>
+    <string name="txt_N2170">N2170:	During the illness that led to death, did the baby have breathlessness?	</string>
+    <string name="txt_N2171">N2171:	For how many days did the breathlessness last?	</string>
+    <string name="txt_N2172">N2172:	During the illness that led to death, did you see the lower chest wall/ribs being pulled in as the baby breathed? 	</string>
+    <string name="txt_N2173">N2173:	During the illness that led to death, did her/his breathing sound like any of the following?	</string>
+    <string name="txt_N2174">N2174:	Stridor	</string>
+    <string name="txt_N2175">N2175:	Grunting	</string>
+    <string name="txt_N2176">N2176:	Wheezing	</string>
+    <string name="txt_N2177a">N2177a:	Did ?NAME? have a bulging or raised fontanelle during the illness that led to death?	</string>
+    <string name="txt_N2177">N2177:	Did s/he have a sunken fontanelle during the illness that led to death?	</string>
+    <string name="txt_N2178">N2178:	During the illness that led to death, did s/he have yellow skin, palms (hand) or soles (foot)?	</string>
+    <string name="txt_N2179">N2179:	During the illness that led to death, did the baby have yellow discoloration of the eyes?	</string>
+    <string name="txt_N2180">N2180:	During the illness that led to death, did the baby have any skin rash?	</string>
+    <string name="txt_N2181">N2181:	During the illness that led to death, did the baby have an area(s) of skin with redness and swelling?	</string>
+    <string name="txt_N2182">N2182:	During the illness that led to death, did s/he have areas of the skin that turned black?	</string>
+    <string name="txt_N2183">N2183:	During the illness that led to death, did the baby bleed from anywhere?	</string>
+    <string name="txt_N2184">N2184:	Record from where the baby bled:	</string>
+    <string name="txt_N2185">N2185:	During the illness that led to death, did s/he have more frequent loose or liquid stools than usual?	</string>
+    <string name="txt_N2186">N2186:	How many stools did the baby have on the day that loose liquid stools were most frequent?	</string>
+    <string name="txt_N2187">N2187:	How many days before death did the frequent loose or liquid stools start?	</string>
+    <string name="txt_N2188">N2188:	At any time during the fatal illness was there blood in the stools?	</string>
+    <string name="txt_N2189">N2189:	During the illness that led to death, did the baby vomit everything?	</string>
+    <string name="txt_N2189a">N2189a:	Did s/he vomit in the week preceding death?	</string>
+    <string name="txt_N2190">N2190:	Did ?NAME? suffer from any injury or accident that led to her/his death?	</string>
+    <string name="txt_N2190_1">N2190_1:	Was it a road traffic accident?	</string>
+    <string name="txt_N2190_2">N2190_2:	What was her/his role in the road traffic accident?	</string>
+    <string name="txt_N2190_3">N2190_3:	What was the counterpart that was hit during the road traffic accident?	</string>
+    <string name="txt_N2190_4">N2190_4:	Was (s)he injured in a non-road transport accident?	</string>
+    <string name="txt_N2190_5">N2190_5:	Was (s)he injured in a fall?	</string>
+    <string name="txt_N2190_6">N2190_6:	Was there any poisoning?	</string>
+    <string name="txt_N2190_7">N2190_7:	Did (s)he die of drowning?	</string>
+    <string name="txt_N2190_8">N2190_8:	Was (s)he injured by a bite or sting by venomous animal?	</string>
+    <string name="txt_N2190_9">N2190_9:	Was (s)he injured by an animal or insect (non-venomous)?	</string>
+    <string name="txt_N2190_10">N2190_10:	What was the animal/insect?	</string>
+    <string name="txt_N2190_11">N2190_11:	Was (s)he injured by burns/fire? 	</string>
+    <string name="txt_N2190_12">N2190_12:	Was (s)he subject to violence (homicide, abuse)?	</string>
+    <string name="txt_N2190_13">N2190_13:	Was (s)he injured by a firearm?	</string>
+    <string name="txt_N2190_14">N2190_14:	Was (s)he stabbed, cut or pierced?	</string>
+    <string name="txt_N2190_15">N2190_15:	Was (s)he strangled?	</string>
+    <string name="txt_N2190_16">N2190_16:	Was (s)he injured by a blunt force?	</string>
+    <string name="txt_N2190_17">N2190_17:	Was (s)he injured by a force of nature?	</string>
+    <string name="txt_N2190_18">N2190_18:	Was it electrocution?	</string>
+    <string name="txt_N2190_19">N2190_19:	Did (s)he encounter any other injury?	</string>
+    <string name="txt_N2190_20">N2190_20:	Was the injury accidental?	</string>
+    <string name="txt_N2190_21">N2190_21:	Was the injury self-inflicted?	</string>
+    <string name="txt_N2190_22">N2190_22:	Was the injury intentionally inflicted by someone else?	</string>
+    <string name="txt_N2191">N2191:	How long did ?NAME? survive after the injury?	</string>
+    <string name="txt_N2192">N2192:	Check N2006 to determine if the baby was born in a health facility (codes 3-10): </string>
+    <string name="txt_N2193">N2193:	Did the baby leave the delivery facility alive or did s/he die in the facility?	</string>
+    <string name="txt_N2194">N2194:	How long after birth did the baby leave the facility?	</string>
+    <string name="txt_N2195">N2195:	Before leaving the facility, did anyone physically examine the baby, for example, check the temperature or check the cord?	</string>
+    <string name="txt_N2196">N2196:	Prior to being discharged, did a health worker counsel (you / the mother) on breastfeeding the baby?	</string>
+    <string name="txt_N2197">N2197:	Prior to being discharged, (were you / was the mother) told about signs and symptoms for which the baby needs immediate care? 	</string>
 
-    <string name="txt_N2136">Was the baby able to suckle or bottle-feed in a normal way during the first day of life?</string>
-    <string name="txt_N2137">Did the baby ever suckle in a normal way? </string>
-    <string name="txt_N2138">Did the baby stop being able to suckle in a normal way? </string>
-    <string name="txt_N2139">How many days after birth did the baby stop suckling?</string>
-    <string name="txt_N2140">Was the baby able to open her/his mouth at the time s/he stopped suckling?</string>
-    <string name="txt_N2141">During the illness that led to death, did the baby have spasms or convulsions?</string>
-    <string name="txt_N2142">Did the baby have convulsions in the first 24 hours of life?</string>
-    <string name="txt_N2143">Did the baby have convulsions starting more than 24 hours after birth?</string>
-    <string name="txt_N2144">Did the baby’s body become stiff, with the head arched backwards?</string>
-    <string name="txt_N2145">During the illness that led to death, did the baby become unresponsive or unconscious?</string>
-    <string name="txt_N2146">Did the baby become unresponsive or unconscious soon after birth, within less than 24 hours?</string>
-    <string name="txt_N2147">Did the baby become unresponsive or unconscious more than 24 hours after birth?</string>
-    <string name="txt_N2148">Was s/he unconscious for more than 24 hours before death?</string>
-    <string name="txt_N2149">During the illness that led to death, did the baby become lethargic, after a period of normal activity?</string>
-    <string name="txt_N2150">During the illness that led to death, did the baby have pus drainage from the umbilical cord stump?</string>
-    <string name="txt_N2151">During the illness that led to death, did the baby have redness of the umbilical cord stump?</string>
-    <string name="txt_N2152">Did the redness of the umbilical cord stump extend onto the abdominal skin?</string>
-    <string name="txt_N2153">During the illness that led to death, did the baby have skin bumps containing pus or a single large area with pus?</string>
-    <string name="txt_N2154">During the illness that led to death, did the baby have skin ulcer(s) (pit(s))?</string>
-    <string name="txt_N2155">During the illness that led to death, did the baby have fever?</string>
-    <string name="txt_N2156">At what age did the fever start?</string>
-    <string name="txt_N2157">How many days did the fever last?</string>
-    <string name="txt_N2158">Did the fever continue until death?</string>
-    <string name="txt_N2159">During the illness that led to death, did the baby become cold to touch?</string>
-    <string name="txt_N2160">How many days old was the baby when s/he started feeling cold to touch?</string>
-    <string name="txt_N2161">How many days did the baby feel cold to touch?</string>
-    <string name="txt_N2162">Did the baby have a cough?</string>
-    <string name="txt_N2163">Did s/he make a whooping sound when coughing?</string>
-    <string name="txt_N2164">Did the child vomit after s/he coughed? </string>
-    <string name="txt_N2165">During the illness that led to death, did the baby have difficulty breathing?</string>
-    <string name="txt_N2166">At what age did the difficult breathing start?</string>
-    <string name="txt_N2166_1">For how many days did the difficult breathing last?</string>
-    <string name="txt_N2167">During the illness that led to death, did the baby have fast breathing?</string>
-    <string name="txt_N2168">At what age did the fast breathing start? </string>
-    <string name="txt_N2169">For how many days did the fast breathing last?</string>
-    <string name="txt_N2170">During the illness that led to death, did the baby have breathlessness?</string>
-    <string name="txt_N2171">For how many days did the breathlessness last?</string>
-    <string name="txt_N2172">During the illness that led to death, did you see the lower chest wall/ribs being pulled in as the baby breathed? </string>
-    <string name="txt_N2173">During the illness that led to death, did her/his breathing sound like any of the following?</string>
-    <string name="txt_N2174">Stridor</string>
-    <string name="txt_N2175">Grunting</string>
-    <string name="txt_N2176">Wheezing</string>
-    <string name="txt_N2177a">Did  have a bulging or raised fontanelle during the illness that led to death?</string>
-    <string name="txt_N2177">Did s/he have a sunken fontanelle during the illness that led to death?</string>
-    <string name="txt_N2178">During the illness that led to death, did s/he have yellow skin, palms (hand) or soles (foot)?</string>
-    <string name="txt_N2179">During the illness that led to death, did the baby have yellow discoloration of the eyes?</string>
-    <string name="txt_N2180">During the illness that led to death, did the baby have any skin rash?</string>
-    <string name="txt_N2181">During the illness that led to death, did the baby have an area(s) of skin with redness and swelling?</string>
-    <string name="txt_N2182">During the illness that led to death, did s/he have areas of the skin that turned black?</string>
-    <string name="txt_N2183">During the illness that led to death, did the baby bleed from anywhere?</string>
-    <string name="txt_N2184">Record from where the baby bled:</string>
-    <string name="txt_N2185">During the illness that led to death, did s/he have more frequent loose or liquid stools than usual?</string>
-    <string name="txt_N2186">How many stools did the baby have on the day that loose liquid stools were most frequent?</string>
-    <string name="txt_N2187">How many days before death did the frequent loose or liquid stools start?</string>
-    <string name="txt_N2188">At any time during the fatal illness was there blood in the stools?</string>
-    <string name="txt_N2189">During the illness that led to death, did the baby vomit everything?</string>
-    <string name="txt_N2189a">Did s/he vomit in the week preceding death?</string>
-    <string name="txt_N2190">Did suffer from any injury or accident that led to her/his death?</string>
-    <string name="txt_N2190_1">Was it a road traffic accident?</string>
-    <string name="txt_N2190_2">What was her/his role in the road traffic accident?</string>
-    <string name="txt_N2190_3">What was the counterpart that was hit during the road traffic accident?</string>
-    <string name="txt_N2190_4">Was (s)he injured in a non-road transport accident?</string>
-    <string name="txt_N2190_5">Was (s)he injured in a fall?</string>
-    <string name="txt_N2190_6">Was there any poisoning?</string>
-    <string name="txt_N2190_7">Did (s)he die of drowning?</string>
-    <string name="txt_N2190_8">Was (s)he injured by a bite or sting by venomous animal?</string>
-    <string name="txt_N2190_9">Was (s)he injured by an animal or insect (non-venomous)?</string>
-    <string name="txt_N2190_10">What was the animal/insect?</string>
-    <string name="txt_N2190_11">Was (s)he injured by burns/fire? </string>
-    <string name="txt_N2190_12">Was (s)he subject to violence (homicide, abuse)?</string>
-    <string name="txt_N2190_13">Was (s)he injured by a firearm?</string>
-    <string name="txt_N2190_14">Was (s)he stabbed, cut or pierced?</string>
-    <string name="txt_N2190_15">Was (s)he strangled?</string>
-    <string name="txt_N2190_16">Was (s)he injured by a blunt force?</string>
-    <string name="txt_N2190_17">Was (s)he injured by a force of nature?</string>
-    <string name="txt_N2190_18">Was it electrocution?</string>
-    <string name="txt_N2190_19">Did (s)he encounter any other injury?</string>
-    <string name="txt_N2190_20">Was the injury accidental?</string>
-    <string name="txt_N2190_21">Was the injury self-inflicted?</string>
-    <string name="txt_N2190_22">Was the injury intentionally inflicted by someone else?</string>
-    <string name="txt_N2191">How long did survive after the injury?</string>
-    <string name="txt_N2192">Check N2006 to determine if the baby was born in a health facility (codes 3-10):</string>
-    <string name="txt_N2193">Did the baby leave the delivery facility alive or did s/he die in the facility?</string>
-    <string name="txt_N2194">How long after birth did the baby leave the facility?</string>
-    <string name="txt_N2195">Before leaving the facility, did anyone physically examine the baby, for example, check the temperature or check the cord?</string>
-    <string name="txt_N2196">Prior to being discharged, did a health worker counsel (you / the mother) on breastfeeding the baby?</string>
-    <string name="txt_N2197">Prior to being discharged, (were you / was the mother) told about signs and symptoms for which the baby needs immediate care? </string>
-    <string name="txt_N2198">After discharge, before the fatal illness began, was the baby ever seen by a trained health worker or nurse at home or in the community, or by a doctor or nurse at a health facility?</string>
-    <string name="txt_N2199">After the birth, did the delivery attendant examine the baby, for example, check the temperature or check the cord?</string>
-    <string name="txt_N2200">After the birth of the baby, did the delivery attendant counsel (you / the mother) on breastfeeding the baby?</string>
-    <string name="txt_N2201">After the birth of the baby, did the delivery attendant tell (you / the mother) about signs and symptoms for which the baby needs immediate care?</string>
-    <string name="txt_N2202">In the days after delivery, before the fatal illness began, was the baby ever seen by a trained health worker or nurse at home or in the community, or by a doctor or nurse at a health facility?</string>
+    <string name="txt_N2198">N2198:	After discharge, before the fatal illness began, was the baby ever seen by a trained health worker or nurse at home or in the community, or by a doctor or nurse at a health facility?	</string>
+    <string name="txt_N2199">N2199:	After the birth, did the delivery attendant examine the baby, for example, check the temperature or check the cord?	</string>
+    <string name="txt_N2200">N2200:	After the birth of the baby, did the delivery attendant counsel (you / the mother) on breastfeeding the baby?	</string>
+    <string name="txt_N2201">N2201:	After the birth of the baby, did the delivery attendant tell (you / the mother) about signs and symptoms for which the baby needs immediate care?	</string>
+    <string name="txt_N2202">N2202:	In the days after delivery, before the fatal illness began, was the baby ever seen by a trained health worker or nurse at home or in the community, or by a doctor or nurse at a health facility?	</string>
 
 
     <!-- responces starts -->
