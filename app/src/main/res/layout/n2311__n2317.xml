@@ -593,7 +593,7 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2312_2" />
 
-                            <RadoGroup
+                            <RadioGroup
                                 android:id="@+id/rg_N2312_2"
                                 style="@style/RadioGroup">
 
@@ -612,7 +612,7 @@
                                     style="@style/RadioButton"
                                     android:text="@string/dnt" />
 
-                            </RadoGroup>
+                            </RadioGroup>
 
                         </LinearLayout>
 
