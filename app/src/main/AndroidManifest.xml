@@ -9,16 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".N2001_N2011"></activity>
-        <activity android:name=".N2012_N2016" />
-        <activity android:name=".N2017_N2022_3" />
-        <activity android:name=".N2023_N2026">
+        <activity android:name=".N2001_N2011">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".N2012_N2016" />
+        <activity android:name=".N2017_N2022_3" />
+        <activity android:name=".N2023_N2026"></activity>
         <activity android:name=".N2051_N2078" />
         <activity android:name=".N2080_N2107" />
         <activity android:name=".N2110_N2189a" />

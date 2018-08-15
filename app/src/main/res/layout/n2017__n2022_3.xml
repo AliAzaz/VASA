@@ -1,480 +1,506 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".N2017_N2022_3">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <data>
 
-        <TextView
-            android:id="@+id/mnchmainpsbi"
-            android:layout_width="wrap_content"
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="com.example.muhammadfarooqui.neonate.N2017_N2022_3" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--        <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/mnchmainpsbi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/app_name"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold|italic" />
+
+                    <ImageView
+                        android:id="@+id/img_psbitest"
+                        android:layout_width="90dp"
+                        android:layout_height="60sp"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/unwhite" />
+
+                </RelativeLayout>-->
+
+        <ScrollView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:text="@string/app_name"
-            android:textColor="@color/white"
-            android:textSize="30sp"
-            android:textStyle="bold|italic" />
+            android:layout_marginBottom="5sp"
+            android:fadeScrollbars="false"
+            android:fillViewport="true"
+            android:paddingBottom="5sp"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:paddingTop="5sp"
+            android:scrollbarSize="10dip">
 
-        <ImageView
-            android:id="@+id/img_psbitest"
-            android:layout_width="90dp"
-            android:layout_height="60sp"
-            android:layout_alignParentTop="true"
-            android:src="@drawable/unwhite" />
+            <LinearLayout style="@style/Q_Linerlayout_v">
 
-    </RelativeLayout>
+                <!-- Radio Buttons N2017 Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5sp"
-        android:fadeScrollbars="false"
-        android:fillViewport="true"
-        android:paddingBottom="5sp"
-        android:paddingLeft="5sp"
-        android:paddingRight="5sp"
-        android:paddingTop="5sp"
-        android:scrollbarSize="10dip">
+                    <LinearLayout
+                        android:id="@+id/ll_N2017"
+                        style="@style/Q_Linerlayout_v">
 
+                        <TextView
+                            android:id="@+id/txt_N2017"
+                            style="@style/TextView"
+                            android:text="@string/txt_N2017" />
 
-        <LinearLayout style="@style/Q_Linerlayout_v">
+                        <RadioGroup style="@style/RadioGroup">
 
+                            <RadioButton
+                                android:id="@+id/rb_N2017_1"
+                                style="@style/RadioButton"
+                                android:text="@string/yes" />
 
-            <!-- Radio Buttons N2017 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+                            <RadioButton
+                                android:id="@+id/rb_N2017_2"
+                                style="@style/RadioButton"
+                                android:text="@string/no" />
 
+                            <RadioButton
+                                android:id="@+id/rb_N2017_DK"
+                                style="@style/RadioButton"
+                                android:text="@string/dnt" />
 
-                <LinearLayout
-                    android:id="@+id/ll_N2017"
-                    style="@style/Q_Linerlayout_v">
+                            <RadioButton
+                                android:id="@+id/rb_N2017_RA"
+                                style="@style/RadioButton"
+                                android:text="@string/ra" />
 
-                    <TextView
-                        android:id="@+id/txt_N2017"
-                        style="@style/TextView"
-                        android:text="@string/txt_N2017" />
+                        </RadioGroup>
 
-                    <RadioGroup style="@style/RadioGroup">
+                    </LinearLayout>
 
-                        <RadioButton
-                            android:id="@+id/rb_N2017_1"
-                            style="@style/RadioButton"
-                            android:text="@string/yes" />
+                </android.support.v7.widget.CardView>
+                <!-- Radio Buttons N2017 Ends -->
 
-                        <RadioButton
-                            android:id="@+id/rb_N2017_2"
-                            style="@style/RadioButton"
-                            android:text="@string/no" />
+                <!-- Radio Buttons N2018 Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-                        <RadioButton
-                            android:id="@+id/rb_N2017_DK"
-                            style="@style/RadioButton"
-                            android:text="@string/dnt" />
 
-                        <RadioButton
-                            android:id="@+id/rb_N2017_RA"
-                            style="@style/RadioButton"
-                            android:text="@string/ra" />
+                    <LinearLayout
+                        android:id="@+id/ll_N2018"
+                        style="@style/Q_Linerlayout_v">
 
-                    </RadioGroup>
+                        <TextView
+                            android:id="@+id/txt_N2018"
+                            style="@style/TextView"
+                            android:text="@string/txt_N2018" />
 
-                </LinearLayout>
+                        <RadioGroup style="@style/RadioGroup">
 
-            </android.support.v7.widget.CardView>
-            <!-- Radio Buttons N2017 Ends -->
+                            <RadioButton
+                                android:id="@+id/rb_N2018_1"
+                                style="@style/RadioButton"
+                                android:text="@string/yes" />
 
-            <!-- Radio Buttons N2018 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+                            <RadioButton
+                                android:id="@+id/rb_N2018_2"
+                                style="@style/RadioButton"
+                                android:text="@string/no" />
 
+                            <RadioButton
+                                android:id="@+id/rb_N2018_DK"
+                                style="@style/RadioButton"
+                                android:text="@string/dnt" />
 
-                <LinearLayout
-                    android:id="@+id/ll_N2018"
-                    style="@style/Q_Linerlayout_v">
+                            <RadioButton
+                                android:id="@+id/rb_N2018_RA"
+                                style="@style/RadioButton"
+                                android:text="@string/ra" />
 
-                    <TextView
-                        android:id="@+id/txt_N2018"
-                        style="@style/TextView"
-                        android:text="@string/txt_N2018" />
+                        </RadioGroup>
 
-                    <RadioGroup style="@style/RadioGroup">
+                    </LinearLayout>
 
-                        <RadioButton
-                            android:id="@+id/rb_N2018_1"
-                            style="@style/RadioButton"
-                            android:text="@string/yes" />
+                </android.support.v7.widget.CardView>
+                <!-- Radio Buttons N2018 Ends -->
 
-                        <RadioButton
-                            android:id="@+id/rb_N2018_2"
-                            style="@style/RadioButton"
-                            android:text="@string/no" />
+                <!-- Radio Buttons N2019u Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-                        <RadioButton
-                            android:id="@+id/rb_N2018_DK"
-                            style="@style/RadioButton"
-                            android:text="@string/dnt" />
 
-                        <RadioButton
-                            android:id="@+id/rb_N2018_RA"
-                            style="@style/RadioButton"
-                            android:text="@string/ra" />
+                    <LinearLayout
+                        android:id="@+id/ll_N2019u"
+                        style="@style/Q_Linerlayout_v">
 
-                    </RadioGroup>
+                        <TextView
+                            android:id="@+id/txt_N2019u"
+                            style="@style/TextView"
+                            android:text="@string/txt_N2019u" />
 
-                </LinearLayout>
+                        <RadioGroup style="@style/RadioGroup">
 
-            </android.support.v7.widget.CardView>
-            <!-- Radio Buttons N2018 Ends -->
+                            <RadioButton
+                                android:id="@+id/rb_N2019u_1"
+                                style="@style/RadioButton"
+                                android:text="@string/hours" />
 
-            <!-- Radio Buttons N2019u Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+                            <RadioButton
+                                android:id="@+id/rb_N2019u_2"
+                                style="@style/RadioButton"
+                                android:text="@string/days" />
 
+                            <RadioButton
+                                android:id="@+id/rb_N2019u_DK"
+                                style="@style/RadioButton"
+                                android:text="@string/dnt" />
 
-                <LinearLayout
-                    android:id="@+id/ll_N2019u"
-                    style="@style/Q_Linerlayout_v">
+                            <RadioButton
+                                android:id="@+id/rb_N2019u_RA"
+                                style="@style/RadioButton"
+                                android:text="@string/ra" />
 
-                    <TextView
-                        android:id="@+id/txt_N2019u"
-                        style="@style/TextView"
-                        android:text="@string/txt_N2019u" />
+                        </RadioGroup>
 
-                    <RadioGroup style="@style/RadioGroup">
+                    </LinearLayout>
 
-                        <RadioButton
-                            android:id="@+id/rb_N2019u_1"
-                            style="@style/RadioButton"
-                            android:text="@string/hours" />
+                </android.support.v7.widget.CardView>
+                <!-- Radio Buttons N2019u Ends -->
 
-                        <RadioButton
-                            android:id="@+id/rb_N2019u_2"
-                            style="@style/RadioButton"
-                            android:text="@string/days" />
+                <!-- EditText N2019h Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-                        <RadioButton
-                            android:id="@+id/rb_N2019u_DK"
-                            style="@style/RadioButton"
-                            android:text="@string/dnt" />
 
-                        <RadioButton
-                            android:id="@+id/rb_N2019u_RA"
-                            style="@style/RadioButton"
-                            android:text="@string/ra" />
+                    <LinearLayout
+                        android:id="@+id/ll_N2019h"
+                        style="@style/Q_Linerlayout_v">
 
-                    </RadioGroup>
+                        <TextView
+                            android:id="@+id/txt_N2019h"
+                            style="@style/TextView"
+                            android:text="@string/txt_N2019h" />
 
-                </LinearLayout>
 
-            </android.support.v7.widget.CardView>
-            <!-- Radio Buttons N2019u Ends -->
+                        <EditText
+                            android:id="@+id/ed_N2019h"
+                            style="@style/EditText_number"
+                            android:hint="in hours]: Less than 1 hour = ‘00’ hours" />
 
-            <!-- EditText N2019h Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+                    </LinearLayout>
 
+                </android.support.v7.widget.CardView>
+                <!-- EditText N2019h Ends -->
 
-                <LinearLayout
-                    android:id="@+id/ll_N2019h"
-                    style="@style/Q_Linerlayout_v">
+                <!-- EditText N2019d Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-                    <TextView
-                        android:id="@+id/txt_N2019h"
-                        style="@style/TextView"
-                        android:text="@string/txt_N2019h" />
 
+                    <LinearLayout
+                        android:id="@+id/ll_N2019d"
+                        style="@style/Q_Linerlayout_v">
 
-                    <EditText
-                        android:id="@+id/ed_N2019h"
-                        style="@style/EditText_number"
-                        android:hint="in hours]: Less than 1 hour = ‘00’ hours" />
+                        <TextView
+                            android:id="@+id/txt_N2019d"
+                            style="@style/TextView"
+                            android:text="@string/txt_N2019d" />
 
-                </LinearLayout>
 
-            </android.support.v7.widget.CardView>
-            <!-- EditText N2019h Ends -->
+                        <EditText
+                            android:id="@+id/ed_N2019d"
+                            style="@style/EditText_number"
+                            android:hint="in days]: 1 week = 7 days" />
 
-            <!-- EditText N2019d Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+                    </LinearLayout>
 
+                </android.support.v7.widget.CardView>
+                <!-- EditText N2019d Ends -->
 
-                <LinearLayout
-                    android:id="@+id/ll_N2019d"
-                    style="@style/Q_Linerlayout_v">
+                <!-- Radio Buttons N2020 Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-                    <TextView
-                        android:id="@+id/txt_N2019d"
-                        style="@style/TextView"
-                        android:text="@string/txt_N2019d" />
 
+                    <LinearLayout
+                        android:id="@+id/ll_N2020"
+                        style="@style/Q_Linerlayout_v">
 
-                    <EditText
-                        android:id="@+id/ed_N2019d"
-                        style="@style/EditText_number"
-                        android:hint="in days]: 1 week = 7 days" />
+                        <TextView
+                            android:id="@+id/txt_N2020"
+                            style="@style/TextView"
+                            android:text="@string/txt_N2020" />
 
-                </LinearLayout>
+                        <RadioGroup style="@style/RadioGroup">
 
-            </android.support.v7.widget.CardView>
-            <!-- EditText N2019d Ends -->
+                            <RadioButton
+                                android:id="@+id/rb_N2020_1"
+                                style="@style/RadioButton"
+                                android:text="@string/yes" />
 
-            <!-- Radio Buttons N2020 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+                            <RadioButton
+                                android:id="@+id/rb_N2020_2"
+                                style="@style/RadioButton"
+                                android:text="@string/no" />
 
+                            <RadioButton
+                                android:id="@+id/rb_N2020_DK"
+                                style="@style/RadioButton"
+                                android:text="@string/dnt" />
 
-                <LinearLayout
-                    android:id="@+id/ll_N2020"
-                    style="@style/Q_Linerlayout_v">
+                            <RadioButton
+                                android:id="@+id/rb_N2020_RA"
+                                style="@style/RadioButton"
+                                android:text="@string/ra" />
 
-                    <TextView
-                        android:id="@+id/txt_N2020"
-                        style="@style/TextView"
-                        android:text="@string/txt_N2020" />
+                        </RadioGroup>
 
-                    <RadioGroup style="@style/RadioGroup">
+                    </LinearLayout>
 
-                        <RadioButton
-                            android:id="@+id/rb_N2020_1"
-                            style="@style/RadioButton"
-                            android:text="@string/yes" />
+                </android.support.v7.widget.CardView>
+                <!-- Radio Buttons N2020 Ends -->
 
-                        <RadioButton
-                            android:id="@+id/rb_N2020_2"
-                            style="@style/RadioButton"
-                            android:text="@string/no" />
+                <!-- Radio Buttons N2021 Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-                        <RadioButton
-                            android:id="@+id/rb_N2020_DK"
-                            style="@style/RadioButton"
-                            android:text="@string/dnt" />
 
-                        <RadioButton
-                            android:id="@+id/rb_N2020_RA"
-                            style="@style/RadioButton"
-                            android:text="@string/ra" />
+                    <LinearLayout
+                        android:id="@+id/ll_N2021"
+                        style="@style/Q_Linerlayout_v">
 
-                    </RadioGroup>
+                        <TextView
+                            android:id="@+id/txt_N2021"
+                            style="@style/TextView"
+                            android:text="@string/txt_N2021" />
 
-                </LinearLayout>
+                        <RadioGroup style="@style/RadioGroup">
 
-            </android.support.v7.widget.CardView>
-            <!-- Radio Buttons N2020 Ends -->
+                            <RadioButton
+                                android:id="@+id/rb_N2021_1"
+                                style="@style/RadioButton"
+                                android:text="@string/yes" />
 
-            <!-- Radio Buttons N2021 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+                            <RadioButton
+                                android:id="@+id/rb_N2021_2"
+                                style="@style/RadioButton"
+                                android:text="@string/no" />
 
+                            <RadioButton
+                                android:id="@+id/rb_N2021_DK"
+                                style="@style/RadioButton"
+                                android:text="@string/dnt" />
 
-                <LinearLayout
-                    android:id="@+id/ll_N2021"
-                    style="@style/Q_Linerlayout_v">
+                            <RadioButton
+                                android:id="@+id/rb_N2021_RA"
+                                style="@style/RadioButton"
+                                android:text="@string/ra" />
 
-                    <TextView
-                        android:id="@+id/txt_N2021"
-                        style="@style/TextView"
-                        android:text="@string/txt_N2021" />
+                        </RadioGroup>
 
-                    <RadioGroup style="@style/RadioGroup">
+                    </LinearLayout>
 
-                        <RadioButton
-                            android:id="@+id/rb_N2021_1"
-                            style="@style/RadioButton"
-                            android:text="@string/yes" />
+                </android.support.v7.widget.CardView>
+                <!-- Radio Buttons N2021 Ends -->
 
-                        <RadioButton
-                            android:id="@+id/rb_N2021_2"
-                            style="@style/RadioButton"
-                            android:text="@string/no" />
+                <!-- Radio Buttons N2022 Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-                        <RadioButton
-                            android:id="@+id/rb_N2021_DK"
-                            style="@style/RadioButton"
-                            android:text="@string/dnt" />
 
-                        <RadioButton
-                            android:id="@+id/rb_N2021_RA"
-                            style="@style/RadioButton"
-                            android:text="@string/ra" />
+                    <LinearLayout
+                        android:id="@+id/ll_N2022"
+                        style="@style/Q_Linerlayout_v">
 
-                    </RadioGroup>
+                        <TextView
+                            android:id="@+id/txt_N2022"
+                            style="@style/TextView"
+                            android:text="@string/txt_N2022" />
 
-                </LinearLayout>
+                        <RadioGroup style="@style/RadioGroup">
 
-            </android.support.v7.widget.CardView>
-            <!-- Radio Buttons N2021 Ends -->
+                            <RadioButton
+                                android:id="@+id/rb_N2022_1"
+                                style="@style/RadioButton"
+                                android:text="@string/yes" />
 
-            <!-- Radio Buttons N2022 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+                            <RadioButton
+                                android:id="@+id/rb_N2022_2"
+                                style="@style/RadioButton"
+                                android:text="@string/no" />
 
+                            <RadioButton
+                                android:id="@+id/rb_N2022_DK"
+                                style="@style/RadioButton"
+                                android:text="@string/dnt" />
 
-                <LinearLayout
-                    android:id="@+id/ll_N2022"
-                    style="@style/Q_Linerlayout_v">
+                            <RadioButton
+                                android:id="@+id/rb_N2022_RA"
+                                style="@style/RadioButton"
+                                android:text="@string/ra" />
 
-                    <TextView
-                        android:id="@+id/txt_N2022"
-                        style="@style/TextView"
-                        android:text="@string/txt_N2022" />
+                        </RadioGroup>
 
-                    <RadioGroup style="@style/RadioGroup">
+                    </LinearLayout>
 
-                        <RadioButton
-                            android:id="@+id/rb_N2022_1"
-                            style="@style/RadioButton"
-                            android:text="@string/yes" />
+                </android.support.v7.widget.CardView>
+                <!-- Radio Buttons N2022 Ends -->
 
-                        <RadioButton
-                            android:id="@+id/rb_N2022_2"
-                            style="@style/RadioButton"
-                            android:text="@string/no" />
+                <!-- Radio Buttons N2022_1 Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-                        <RadioButton
-                            android:id="@+id/rb_N2022_DK"
-                            style="@style/RadioButton"
-                            android:text="@string/dnt" />
 
-                        <RadioButton
-                            android:id="@+id/rb_N2022_RA"
-                            style="@style/RadioButton"
-                            android:text="@string/ra" />
+                    <LinearLayout
+                        android:id="@+id/ll_N2022_1"
+                        style="@style/Q_Linerlayout_v">
 
-                    </RadioGroup>
+                        <TextView
+                            android:id="@+id/txt_N2022_1"
+                            style="@style/TextView"
+                            android:text="@string/txt_N2022_1" />
 
-                </LinearLayout>
+                        <RadioGroup style="@style/RadioGroup">
 
-            </android.support.v7.widget.CardView>
-            <!-- Radio Buttons N2022 Ends -->
+                            <RadioButton
+                                android:id="@+id/rb_N2022_1_1"
+                                style="@style/RadioButton"
+                                android:text="@string/yes" />
 
-            <!-- Radio Buttons N2022_1 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+                            <RadioButton
+                                android:id="@+id/rb_N2022_1_2"
+                                style="@style/RadioButton"
+                                android:text="@string/no" />
 
+                            <RadioButton
+                                android:id="@+id/rb_N2022_1_DK"
+                                style="@style/RadioButton"
+                                android:text="@string/dnt" />
 
-                <LinearLayout
-                    android:id="@+id/ll_N2022_1"
-                    style="@style/Q_Linerlayout_v">
+                            <RadioButton
+                                android:id="@+id/rb_N2022_1_RA"
+                                style="@style/RadioButton"
+                                android:text="@string/ra" />
 
-                    <TextView
-                        android:id="@+id/txt_N2022_1"
-                        style="@style/TextView"
-                        android:text="@string/txt_N2022_1" />
+                        </RadioGroup>
 
-                    <RadioGroup style="@style/RadioGroup">
+                    </LinearLayout>
 
-                        <RadioButton
-                            android:id="@+id/rb_N2022_1_1"
-                            style="@style/RadioButton"
-                            android:text="@string/yes" />
+                </android.support.v7.widget.CardView>
+                <!-- Radio Buttons N2022_1 Ends -->
 
-                        <RadioButton
-                            android:id="@+id/rb_N2022_1_2"
-                            style="@style/RadioButton"
-                            android:text="@string/no" />
+                <!-- Radio Buttons N2022_2 Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-                        <RadioButton
-                            android:id="@+id/rb_N2022_1_DK"
-                            style="@style/RadioButton"
-                            android:text="@string/dnt" />
 
-                        <RadioButton
-                            android:id="@+id/rb_N2022_1_RA"
-                            style="@style/RadioButton"
-                            android:text="@string/ra" />
+                    <LinearLayout
+                        android:id="@+id/ll_N2022_2"
+                        style="@style/Q_Linerlayout_v">
 
-                    </RadioGroup>
+                        <TextView
+                            android:id="@+id/txt_N2022_2"
+                            style="@style/TextView"
+                            android:text="@string/txt_N2022_2" />
 
-                </LinearLayout>
+                        <RadioGroup style="@style/RadioGroup">
 
-            </android.support.v7.widget.CardView>
-            <!-- Radio Buttons N2022_1 Ends -->
+                            <RadioButton
+                                android:id="@+id/rb_N2022_2_1"
+                                style="@style/RadioButton"
+                                android:text="@string/yes" />
 
-            <!-- Radio Buttons N2022_2 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+                            <RadioButton
+                                android:id="@+id/rb_N2022_2_2"
+                                style="@style/RadioButton"
+                                android:text="@string/no" />
 
+                            <RadioButton
+                                android:id="@+id/rb_N2022_2_DK"
+                                style="@style/RadioButton"
+                                android:text="@string/dnt" />
 
-                <LinearLayout
-                    android:id="@+id/ll_N2022_2"
-                    style="@style/Q_Linerlayout_v">
+                            <RadioButton
+                                android:id="@+id/rb_N2022_2_RA"
+                                style="@style/RadioButton"
+                                android:text="@string/ra" />
 
-                    <TextView
-                        android:id="@+id/txt_N2022_2"
-                        style="@style/TextView"
-                        android:text="@string/txt_N2022_2" />
+                        </RadioGroup>
 
-                    <RadioGroup style="@style/RadioGroup">
+                    </LinearLayout>
 
-                        <RadioButton
-                            android:id="@+id/rb_N2022_2_1"
-                            style="@style/RadioButton"
-                            android:text="@string/yes" />
+                </android.support.v7.widget.CardView>
+                <!-- Radio Buttons N2022_2 Ends -->
 
-                        <RadioButton
-                            android:id="@+id/rb_N2022_2_2"
-                            style="@style/RadioButton"
-                            android:text="@string/no" />
+                <!-- Radio Buttons N2022_3 Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-                        <RadioButton
-                            android:id="@+id/rb_N2022_2_DK"
-                            style="@style/RadioButton"
-                            android:text="@string/dnt" />
 
-                        <RadioButton
-                            android:id="@+id/rb_N2022_2_RA"
-                            style="@style/RadioButton"
-                            android:text="@string/ra" />
+                    <LinearLayout
+                        android:id="@+id/ll_N2022_3"
+                        style="@style/Q_Linerlayout_v">
 
-                    </RadioGroup>
+                        <TextView
+                            android:id="@+id/txt_N2022_3"
+                            style="@style/TextView"
+                            android:text="@string/txt_N2022_3" />
 
-                </LinearLayout>
+                        <RadioGroup style="@style/RadioGroup">
 
-            </android.support.v7.widget.CardView>
-            <!-- Radio Buttons N2022_2 Ends -->
+                            <RadioButton
+                                android:id="@+id/rb_N2022_3_1"
+                                style="@style/RadioButton"
+                                android:text="@string/yes" />
 
-            <!-- Radio Buttons N2022_3 Starts -->
-            <android.support.v7.widget.CardView style="@style/Q_CardView">
+                            <RadioButton
+                                android:id="@+id/rb_N2022_3_2"
+                                style="@style/RadioButton"
+                                android:text="@string/no" />
 
+                            <RadioButton
+                                android:id="@+id/rb_N2022_3_DK"
+                                style="@style/RadioButton"
+                                android:text="@string/dnt" />
 
-                <LinearLayout
-                    android:id="@+id/ll_N2022_3"
-                    style="@style/Q_Linerlayout_v">
+                            <RadioButton
+                                android:id="@+id/rb_N2022_3_RA"
+                                style="@style/RadioButton"
+                                android:text="@string/ra" />
 
-                    <TextView
-                        android:id="@+id/txt_N2022_3"
-                        style="@style/TextView"
-                        android:text="@string/txt_N2022_3" />
+                        </RadioGroup>
 
-                    <RadioGroup style="@style/RadioGroup">
+                    </LinearLayout>
 
-                        <RadioButton
-                            android:id="@+id/rb_N2022_3_1"
-                            style="@style/RadioButton"
-                            android:text="@string/yes" />
+                </android.support.v7.widget.CardView>
+                <!-- Radio Buttons N2022_3 Ends -->
 
-                        <RadioButton
-                            android:id="@+id/rb_N2022_3_2"
-                            style="@style/RadioButton"
-                            android:text="@string/no" />
+                <!--  = = = = =  END OF FORM FIELDS  = = = = = -->
 
-                        <RadioButton
-                            android:id="@+id/rb_N2022_3_DK"
-                            style="@style/RadioButton"
-                            android:text="@string/dnt" />
+                <!-- Next Buttons Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-                        <RadioButton
-                            android:id="@+id/rb_N2022_3_RA"
-                            style="@style/RadioButton"
-                            android:text="@string/ra" />
 
-                    </RadioGroup>
+                    <Button
+                        android:id="@+id/btn_Continue"
+                        style="@style/Button_collder"
+                        android:layout_margin="10dp"
+                        android:onClick="@{() -> callback.BtnContinue()}"
+                        android:text="NEXT SECTION" />
 
-                </LinearLayout>
 
-            </android.support.v7.widget.CardView>
-            <!-- Radio Buttons N2022_3 Ends -->
+                </android.support.v7.widget.CardView>
+                <!-- Next Buttons Ends -->
 
-        </LinearLayout>
+            </LinearLayout>
 
-    </ScrollView>
+        </ScrollView>
 
-</LinearLayout>
+    </LinearLayout>
+</layout>
