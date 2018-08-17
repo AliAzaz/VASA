@@ -30,13 +30,9 @@ public class ClearAllcontrol {
                     ((EditText) view).setText("");
                 } else if (view instanceof CardView) {
                     for (int j = 0; j < ((CardView) view).getChildCount(); j++) {
-                        View view1 = lv.getChildAt(i);
-                        if (view1 instanceof CheckBox) {
-                            ((CheckBox) view1).setChecked(false);
-                        } else if (view1 instanceof RadioGroup) {
-                            ((RadioGroup) view1).clearCheck();
-                        } else if (view1 instanceof EditText) {
-                            ((EditText) view1).setText("");
+                        View view1 = ((CardView) view).getChildAt(i);
+                        if (view1 instanceof LinearLayout) {
+                            ClearAll((LinearLayout) view1);
                         }
                     }
                 } else if (view instanceof LinearLayout) {
