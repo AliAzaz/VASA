@@ -734,7 +734,9 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2081" />
 
-                            <RadioGroup style="@style/RadioGroup">
+                            <RadioGroup
+                                android:id="@+id/rg_N2081"
+                                style="@style/RadioGroup">
 
                                 <RadioButton
                                     android:id="@+id/rb_N2081_1"
@@ -849,7 +851,9 @@
                                         style="@style/TextView"
                                         android:text="@string/txt_N2083" />
 
-                                    <RadioGroup style="@style/RadioGroup">
+                                    <RadioGroup
+                                        android:id="@+id/rg_N2083"
+                                        style="@style/RadioGroup">
 
                                         <RadioButton
                                             android:id="@+id/rb_N2083_1"
@@ -888,7 +892,9 @@
                                         style="@style/TextView"
                                         android:text="@string/txt_N2084" />
 
-                                    <RadioGroup style="@style/RadioGroup">
+                                    <RadioGroup
+                                        android:id="@+id/rg_N2084"
+                                        style="@style/RadioGroup">
 
                                         <RadioButton
                                             android:id="@+id/rb_N2084_1"
@@ -995,7 +1001,9 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2085" />
 
-                                <RadioGroup style="@style/RadioGroup">
+                                <RadioGroup
+                                    android:id="@+id/rg_N2085"
+                                    style="@style/RadioGroup">
 
                                     <RadioButton
                                         android:id="@+id/rb_N2085_1"
@@ -1126,7 +1134,9 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2087" />
 
-                            <RadioGroup style="@style/RadioGroup">
+                            <RadioGroup
+                                android:id="@+id/rg_N2087"
+                                style="@style/RadioGroup">
 
                                 <RadioButton
                                     android:id="@+id/rb_N2087_1"
@@ -1930,7 +1940,9 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2089" />
 
-                            <RadioGroup style="@style/RadioGroup">
+                            <RadioGroup
+                                android:id="@+id/rg_N2089"
+                                style="@style/RadioGroup">
 
                                 <RadioButton
                                     android:id="@+id/rb_N2089_1"
@@ -1951,6 +1963,11 @@
                                     android:id="@+id/rb_N2089_DK"
                                     style="@style/RadioButton"
                                     android:text="@string/rb_N2089_DK" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_N2089_OT"
+                                    style="@style/RadioButton"
+                                    android:text="@string/rb_N2089_OT" />
 
                                 <EditText
                                     android:id="@+id/ed_N2089_OT"
@@ -1983,7 +2000,9 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2090" />
 
-                                <RadioGroup style="@style/RadioGroup">
+                                <RadioGroup
+                                    android:id="@+id/rg_N2090"
+                                    style="@style/RadioGroup">
 
                                     <RadioButton
                                         android:id="@+id/rb_N2090_1"
@@ -2091,7 +2110,9 @@
                                         style="@style/TextView"
                                         android:text="@string/txt_N2092" />
 
-                                    <RadioGroup style="@style/RadioGroup">
+                                    <RadioGroup
+                                        android:id="@+id/rg_N2092"
+                                        style="@style/RadioGroup">
 
                                         <RadioButton
                                             android:id="@+id/rb_N2092_1"
@@ -2270,7 +2291,9 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2095" />
 
-                            <RadioGroup style="@style/RadioGroup">
+                            <RadioGroup
+                                android:id="@+id/rg_N2095"
+                                style="@style/RadioGroup">
 
                                 <RadioButton
                                     android:id="@+id/rb_N2095_1"
@@ -2459,7 +2482,9 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2098" />
 
-                                <RadioGroup style="@style/RadioGroup">
+                                <RadioGroup
+                                    android:id="@+id/rg_N2098"
+                                    style="@style/RadioGroup">
 
                                     <RadioButton
                                         android:id="@+id/rb_N2098_1"
@@ -2552,7 +2577,9 @@
                                         style="@style/TextView"
                                         android:text="@string/txt_N2099" />
 
-                                    <RadioGroup style="@style/RadioGroup">
+                                    <RadioGroup
+                                        android:id="@+id/rg_N2099"
+                                        style="@style/RadioGroup">
 
                                         <RadioButton
                                             android:id="@+id/rb_N2099_1"
@@ -2712,7 +2739,9 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2102" />
 
-                                <RadioGroup style="@style/RadioGroup">
+                                <RadioGroup
+                                    android:id="@+id/rg_N2102"
+                                    style="@style/RadioGroup">
 
                                     <RadioButton
                                         android:id="@+id/rb_N2102_1"
