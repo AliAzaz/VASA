@@ -1358,6 +1358,20 @@
     <string name="txt_N2211_1">Feeding normally, feeding poorly, or not feeding at all? </string>
     <string name="txt_N2211_2">Normally active, less active than normal, or not moving? </string>
     <string name="txt_N2212">Did (NAME) receive, or did you give or seek, any care or treatment for the fatal illness? </string>
+    <string name="txt_N2213">Please tell me everything that was done for ?NAME?’s fatal illness inside the home and all the places outside the home (he / she) went or was taken for health care. Start with the first care or treatment ?NAME? received and then, in order, tell me all the other care and treatments s/he received. Also tell me what symptoms were present when each action was taken. </string>
+    <string name="txt_N2213_2">Other care</string>
+    <string name="txt_N2213_3">Health care providers</string>
+    <string name="txt_N2213_4">What symptoms were present when the action was taken?</string>
+
+    <string name="cb_N2213_2A">Home care (own, relative, neighbor, friend) </string>
+    <string name="cb_N2213_2B">Tra-ditional or non-formal provider </string>
+    <string name="cb_N2213_2C">Phar-macist or drug seller </string>
+    <string name="cb_N2213_3A">Trained community health worker (CHW), nurse, or midwife </string>
+    <string name="cb_N2213_3B">Private doctor or clinic(formal/unsure)</string>
+    <string name="cb_N2213_3C">NGO or govern-ment clinic</string>
+    <string name="cb_N2213_3D">Hospital</string>
+    <string name="cb_N2213_3E_2A">Illness began at provider where child was delivered</string>
+
 
     <string name="txt_N2214">if any formal care given or sought, ask: Who decided to seek care for (NAME)’s illness from the (FIRST FORMAL PROVIDER)?  </string>
 

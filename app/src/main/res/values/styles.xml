@@ -145,6 +145,24 @@
 
     </style>
 
+    <style name="TextViewHead">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/colorPrimary</item>
+
+        <item name="android:focusable">true</item>
+
+        <item name="android:clickable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
     <!-- TextView   Ends. -->
 
 

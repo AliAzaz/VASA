@@ -174,6 +174,80 @@
                 </android.support.v7.widget.CardView>
                 <!-- Radio Buttons N2212 Ends -->
 
+                <!-- Radio Buttons N2213 Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
+
+                    <LinearLayout
+                        android:id="@+id/ll_N2213"
+                        style="@style/Q_Linerlayout_v">
+
+                        <TextView
+                            android:id="@+id/txt_N2213"
+                            style="@style/TextView"
+                            android:text="@string/txt_N2213" />
+
+                        <TextView
+                            style="@style/TextViewHead"
+                            android:text="@string/txt_N2213_2" />
+
+                        <CheckBox
+                            android:id="@+id/cb_N2213_2A"
+                            style="@style/CheckBox"
+                            android:text="@string/cb_N2213_2A" />
+
+                        <CheckBox
+                            android:id="@+id/cb_N2213_2B"
+                            style="@style/CheckBox"
+                            android:text="@string/cb_N2213_2B" />
+
+                        <CheckBox
+                            android:id="@+id/cb_N2213_2C"
+                            style="@style/CheckBox"
+                            android:text="@string/cb_N2213_2C" />
+
+                        <TextView
+                            style="@style/TextViewHead"
+                            android:text="@string/txt_N2213_3" />
+
+                        <CheckBox
+                            android:id="@+id/cb_N2213_3A"
+                            style="@style/CheckBox"
+                            android:text="@string/cb_N2213_3A" />
+
+                        <CheckBox
+                            android:id="@+id/cb_N2213_3B"
+                            style="@style/CheckBox"
+                            android:text="@string/cb_N2213_3B" />
+
+                        <CheckBox
+                            android:id="@+id/cb_N2213_3C"
+                            style="@style/CheckBox"
+                            android:text="@string/cb_N2213_3C" />
+
+                        <CheckBox
+                            android:id="@+id/cb_N2213_3D"
+                            style="@style/CheckBox"
+                            android:text="@string/cb_N2213_3D" />
+
+                        <CheckBox
+                            android:id="@+id/cb_N2213_3E_2A"
+                            style="@style/CheckBox"
+                            android:text="@string/cb_N2213_3E_2A" />
+
+                        <TextView
+                            style="@style/TextViewHead"
+                            android:text="@string/txt_N2213_4" />
+
+                        <EditText
+                            android:id="@+id/ed_N2213_4"
+                            style="@style/EditText_varchar"
+                            android:hint="@string/txt_N2213_4" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <!-- Radio Buttons N2213 Ends -->
+
                 <!-- Radio Buttons N2214 Starts -->
                 <android.support.v7.widget.CardView style="@style/Q_CardView">
 
