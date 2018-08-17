@@ -9,27 +9,57 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".N2001_N2011">
+        <activity
+            android:name=".N2001_N2011"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".N2012_N2016" />
-        <activity android:name=".N2017_N2022_3" />
-        <activity android:name=".N2023_N2026"></activity>
-        <activity android:name=".N2051_N2078" />
-        <activity android:name=".N2080_N2107" />
-        <activity android:name=".N2110_N2189a" />
-        <activity android:name=".N2190_N2191" />
-        <activity android:name=".N2192_N2202" />
-        <activity android:name=".N2211_N2248" />
-        <activity android:name=".N2251_N2260" />
-        <activity android:name=".N2271_N2284" />
-        <activity android:name=".N2291_N2304" />
-        <activity android:name=".N2311_N2317" />
-        <activity android:name=".N2321_N2322"></activity>
+        <activity
+            android:name=".N2012_N2016"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".N2017_N2022_3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".N2023_N2026"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".N2051_N2078"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".N2080_N2107"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".N2110_N2189a"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".N2190_N2191"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".N2192_N2202"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".N2211_N2248"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".N2251_N2260"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".N2271_N2284"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".N2291_N2304"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".N2311_N2317"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".N2321_N2322"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
