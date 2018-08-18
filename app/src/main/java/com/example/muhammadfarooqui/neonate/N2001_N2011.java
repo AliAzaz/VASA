@@ -5,10 +5,12 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.example.muhammadfarooqui.neonate.databinding.N2001N2011Binding;
 
 import utils.ClearAllcontrol;
+import utils.Gothrough;
 
 public class N2001_N2011 extends AppCompatActivity {
 
@@ -92,7 +94,106 @@ public class N2001_N2011 extends AppCompatActivity {
     }
 
     public void BtnContinue() {
-        startActivity(new Intent(this, N2012_N2016.class));
+        if (validateField()) {
+            startActivity(new Intent(this, N2012_N2016.class));
+        } else {
+            Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
+        }
     }
 
+    public Boolean validateField() {
+
+        //ll_N2001
+        if (!Gothrough.IamHiden(bi.llN2001)) {
+            return false;
+        }
+
+        if (bi.rbN20011.isChecked()) {
+            //ll_N2002
+            if (!Gothrough.IamHiden(bi.llN2002)) {
+                return false;
+            }
+        }
+
+        //ll_N2003
+        if (!Gothrough.IamHiden(bi.llN2003)) {
+            return false;
+        }
+
+        if (!bi.rbN20031.isChecked()) {
+            //ll_N2004
+            if (!Gothrough.IamHiden(bi.llN2004)) {
+                return false;
+            }
+
+            if (bi.rbN20043.isChecked()) {
+                //ll_N2005u
+                if (!Gothrough.IamHiden(bi.llN2005u)) {
+                    return false;
+                }
+
+                if (!bi.rbN2005uDK.isChecked() || !bi.rbN2005uRA.isChecked()) {
+                    //ll_N2005d
+                    if (!Gothrough.IamHiden(bi.llN2005d)) {
+                        return false;
+                    }
+
+                    //ll_N2005w
+                    if (!Gothrough.IamHiden(bi.llN2005w)) {
+                        return false;
+                    }
+
+                    //ll_N2005m
+                    if (!Gothrough.IamHiden(bi.llN2005m)) {
+                        return false;
+                    }
+
+                }
+            }
+        }
+
+        //ll_N2006
+        if (!Gothrough.IamHiden(bi.llN2006)) {
+            return false;
+        }
+
+        //ll_N2008
+        if (!Gothrough.IamHiden(bi.llN2008)) {
+            return false;
+        }
+
+        //ll_N2009_1
+        if (!Gothrough.IamHiden(bi.llN20091)) {
+            return false;
+        }
+
+        if (!bi.rbN200911.isChecked()) {
+            //ll_N2009_2
+            if (!Gothrough.IamHiden(bi.llN20092)) {
+                return false;
+            }
+
+            if (!bi.rbN200921.isChecked()) {
+                //ll_N2009_3
+                if (!Gothrough.IamHiden(bi.llN20093)) {
+                    return false;
+                }
+
+                if (!bi.rbN200931.isChecked()) {
+                    //ll_N2009_4
+                    if (!Gothrough.IamHiden(bi.llN20094)) {
+                        return false;
+                    }
+                }
+            }
+        }
+
+        //ll_N2010
+        if (!Gothrough.IamHiden(bi.llN2010)) {
+            return false;
+        }
+
+        //ll_N2011
+        return Gothrough.IamHiden(bi.llN2011);
+    }
 }

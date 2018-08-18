@@ -5,10 +5,12 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.example.muhammadfarooqui.neonate.databinding.N2017N20223Binding;
 
 import utils.ClearAllcontrol;
+import utils.Gothrough;
 
 public class N2017_N2022_3 extends AppCompatActivity {
 
@@ -56,6 +58,80 @@ public class N2017_N2022_3 extends AppCompatActivity {
     }
 
     public void BtnContinue() {
-        startActivity(new Intent(this, bi.rbN20221.isChecked() || !bi.rbN202221.isChecked() ? N2023_N2026.class : N2051_N2078.class));
+        if (!validateField()) {
+            startActivity(new Intent(this, bi.rbN20221.isChecked() || !bi.rbN202221.isChecked() ? N2023_N2026.class : N2051_N2078.class));
+        } else {
+            Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public Boolean validateField() {
+
+        //ll_N2017
+        if (!Gothrough.IamHiden(bi.llN2017)) {
+            return false;
+        }
+
+        //ll_N2018
+        if (!Gothrough.IamHiden(bi.llN2018)) {
+            return false;
+        }
+
+        if (!bi.rbN20182.isChecked()) {
+            //ll_N2019u
+            if (!Gothrough.IamHiden(bi.llN2019u)) {
+                return false;
+            }
+
+            if (bi.rbN2019u1.isChecked()) {
+                //ll_N2019h
+                if (!Gothrough.IamHiden(bi.llN2019h)) {
+                    return false;
+                }
+            }
+
+            if (bi.rbN2019u2.isChecked()) {
+                //ll_N2019d
+                if (!Gothrough.IamHiden(bi.llN2019d)) {
+                    return false;
+                }
+            }
+
+        }
+
+        //ll_N2020
+        if (!Gothrough.IamHiden(bi.llN2020)) {
+            return false;
+        }
+
+        //ll_N2021
+        if (!Gothrough.IamHiden(bi.llN2021)) {
+            return false;
+        }
+
+        //ll_N2022
+        if (!Gothrough.IamHiden(bi.llN2022)) {
+            return false;
+        }
+
+        if (bi.rbN20221.isChecked()) {
+            //ll_N2022_1
+            if (!Gothrough.IamHiden(bi.llN20221)) {
+                return false;
+            }
+
+            //ll_N2022_2
+            if (!Gothrough.IamHiden(bi.llN20222)) {
+                return false;
+            }
+
+            if (!bi.rbN202221.isChecked()) {
+                //ll_N2022_3
+                return Gothrough.IamHiden(bi.llN20223);
+
+            }
+        }
+
+        return true;
     }
 }
