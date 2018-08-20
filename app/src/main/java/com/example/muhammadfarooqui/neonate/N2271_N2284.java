@@ -5,10 +5,12 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.example.muhammadfarooqui.neonate.databinding.N2271N2284Binding;
 
 import utils.ClearAllcontrol;
+import utils.Gothrough;
 
 public class N2271_N2284 extends AppCompatActivity {
 
@@ -48,6 +50,65 @@ public class N2271_N2284 extends AppCompatActivity {
     }
 
     public void BtnContinue() {
-        startActivity(new Intent(this, N2291_N2304.class));
+        if (!validateField()) {
+            startActivity(new Intent(this, N2291_N2304.class));
+        } else {
+            Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
+        }
     }
+
+    public Boolean validateField() {
+
+        //ll_N2271
+        if (!Gothrough.IamHiden(bi.llN2271)) {
+            return false;
+        }
+
+        if (bi.rbN22711.isChecked()) {
+            //ll_N2272
+            if (!Gothrough.IamHiden(bi.llN2272)) {
+                return false;
+            }
+
+            if (bi.rbN22721.isChecked()) {
+                //ll_N2273
+                if (!Gothrough.IamHiden(bi.llN2273)) {
+                    return false;
+                }
+                //ll_N2274
+                if (!Gothrough.IamHiden(bi.llN2274)) {
+                    return false;
+                }
+                //ll_N2275
+                if (!Gothrough.IamHiden(bi.llN2275)) {
+                    return false;
+                }
+                //ll_N2276
+                if (!Gothrough.IamHiden(bi.llN2276)) {
+                    return false;
+                }
+                //ll_N2277
+                if (!Gothrough.IamHiden(bi.llN2277)) {
+                    return false;
+                }
+                //ll_N2278
+                if (!Gothrough.IamHiden(bi.llN2278)) {
+                    return false;
+                }
+            }
+        }
+
+        //ll_N2283
+        if (!Gothrough.IamHiden(bi.llN2283)) {
+            return false;
+        }
+
+        if (bi.rbN22831.isChecked()) {
+            //ll_N2284
+            return Gothrough.IamHiden(bi.llN2284);
+        }
+
+        return true;
+    }
+
 }
