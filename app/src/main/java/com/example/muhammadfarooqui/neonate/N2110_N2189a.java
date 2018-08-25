@@ -76,9 +76,11 @@ public class N2110_N2189a extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                if (bi.edN2122.getText().equals("98")) {
+                if (bi.edN2122.getText().toString().trim().equals("98")) {
                     bi.llN2124N2125.setVisibility(View.GONE); //ll_N2124_N2125
                     ClearAllcontrol.ClearAll(bi.llN2124N2125); //ll_N2124_N2125
+                } else {
+                    bi.llN2124N2125.setVisibility(View.VISIBLE); //ll_N2124_N2125
                 }
             }
 
@@ -220,10 +222,14 @@ public class N2110_N2189a extends AppCompatActivity {
         if (!Gothrough.IamHiden(bi.llN2112)) {
             return false;
         }
-        //ll_N2113
-        if (!Gothrough.IamHiden(bi.llN2113)) {
-            return false;
+
+        if (bi.rbN21121.isChecked()) {
+            //ll_N2113
+            if (!Gothrough.IamHiden(bi.llN2113)) {
+                return false;
+            }
         }
+
         //ll_N2114
         if (!Gothrough.IamHiden(bi.llN2114)) {
             return false;
@@ -283,7 +289,7 @@ public class N2110_N2189a extends AppCompatActivity {
             }
         }
 
-        if (!bi.edN2122.getText().equals("98")) {
+        if (!bi.edN2122.getText().toString().trim().equals("98")) {
             //ll_N2123
             if (!Gothrough.IamHiden(bi.llN2123)) {
                 return false;

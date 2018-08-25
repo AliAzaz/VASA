@@ -39,8 +39,9 @@ public class Gothrough {
                     if (((RadioGroup) view).getCheckedRadioButtonId() != -1) {
                         return true;
                     }
+
                 } else if (view instanceof EditText) {
-                    if (((EditText) view).getText().length() > 0) {
+                    if (((EditText) view).getText().toString().trim().length() > 0) {
                         return true;
                     }
 
