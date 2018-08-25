@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -35,8 +36,9 @@ public class N2080_N2107 extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
                     ClearAllcontrol.ClearAll(bi.llN2081N2087); //ll_N2081_N2087
+                    bi.llN2081N2087.setVisibility(View.GONE);
                 } else {
-
+                    bi.llN2081N2087.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -58,10 +60,15 @@ public class N2080_N2107 extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
                     ClearAllcontrol.ClearAll(bi.llN2083N2084); //ll_N2083_N2084
+                    bi.llN2083N2084.setVisibility(View.GONE);
                     if (bi.cbN2082DK.isChecked()) {
                         ClearAllcontrol.ClearAll(bi.llN2085N2086); //ll_N2085_N2086
                         bi.rgN2087.clearCheck();
+                        bi.llN2085N2086.setVisibility(View.GONE);
                     }
+                } else {
+                    bi.llN2083N2084.setVisibility(View.VISIBLE);
+                    bi.llN2085N2086.setVisibility(View.VISIBLE);
                 }
             }
         };
@@ -94,6 +101,9 @@ public class N2080_N2107 extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
                     ClearAllcontrol.ClearAll(bi.llN2089N2106); //ll_N2089_N2106
+                    bi.llN2089N2106.setVisibility(View.GONE);
+                } else {
+                    bi.llN2089N2106.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -121,6 +131,9 @@ public class N2080_N2107 extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
                     bi.rgN2092.clearCheck();
+                    bi.llN2092.setVisibility(View.GONE); //ll_N2092
+                } else {
+                    bi.llN2092.setVisibility(View.VISIBLE);
                 }
             }
         };

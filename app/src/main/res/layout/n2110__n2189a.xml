@@ -3088,6 +3088,10 @@
                         style="@style/Hedaer_textview"
                         android:text="@string/txt_N2173" />
 
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
+
                     <LinearLayout
                         android:id="@+id/ll_N2174"
                         style="@style/Q_Linerlayout_v"
@@ -3124,6 +3128,10 @@
 
                     </LinearLayout>
 
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
+
                     <LinearLayout
                         android:id="@+id/ll_N2175"
                         style="@style/Q_Linerlayout_v"
@@ -3159,6 +3167,11 @@
                         </RadioGroup>
 
                     </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
+
 
                     <LinearLayout
                         android:id="@+id/ll_N2176"
@@ -3197,7 +3210,7 @@
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
-                <!--N2173, N2174, N2175, N2176 Radio Button Ends-->​
+                <!--N2173, N2174, N2175, N2176 Radio Button Ends​-->
 
 
                 <!-- Radio Buttons N2177a Starts -->
