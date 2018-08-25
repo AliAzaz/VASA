@@ -36,11 +36,7 @@ public class Gothrough {
                         ((CheckBox) view).setError("Select Atleast One");
                     }
                 } else if (view instanceof RadioGroup) {
-                    if (((RadioGroup) view).getCheckedRadioButtonId() != -1)
-
-                    //if(((RadioButton) view).isChecked())
-                    {
-
+                    if (((RadioGroup) view).getCheckedRadioButtonId() != -1) {
                         return true;
                     }
                 } else if (view instanceof EditText) {

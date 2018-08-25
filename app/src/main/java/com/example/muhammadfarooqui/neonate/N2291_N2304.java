@@ -79,7 +79,7 @@ public class N2291_N2304 extends AppCompatActivity {
     }
 
     public void BtnContinue() {
-        if (!validateField()) {
+        if (validateField()) {
             startActivity(new Intent(this, N2311_N2317.class).putExtra("valFlag", bi.rbN2300DK.isChecked()));
         } else {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();

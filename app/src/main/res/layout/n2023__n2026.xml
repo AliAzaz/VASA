@@ -69,9 +69,8 @@
 
                         <EditText
                             android:id="@+id/ed_N2023"
-                            style="@style/EditText_number"
-                            android:hint="@string/txt_N2023"
-                            android:maxLength="2" />
+                            style="@style/EditText_Name"
+                            android:hint="@string/txt_N2023" />
 
                     </LinearLayout>
 
@@ -92,7 +91,8 @@
                         <EditText
                             android:id="@+id/ed_N2024"
                             style="@style/EditText_number"
-                            android:hint="@string/txt_N2024" />
+                            android:hint="@string/txt_N2024"
+                            android:maxLength="2" />
 
                     </LinearLayout>
 

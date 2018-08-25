@@ -492,7 +492,7 @@
                 <!-- Radio Buttons N2022_3 Starts -->
                 <android.support.v7.widget.CardView
                     style="@style/Q_CardView"
-                    android:visibility="@{!rbN202221.checked || rbN202221.checked ? View.GONE : View.VISIBLE}">
+                    android:visibility="@{!rbN20221.checked || rbN202221.checked ? View.GONE : View.VISIBLE}">
 
 
                     <LinearLayout
