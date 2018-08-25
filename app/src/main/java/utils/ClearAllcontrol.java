@@ -30,7 +30,7 @@ public class ClearAllcontrol {
                     ((EditText) view).setText("");
                 } else if (view instanceof CardView) {
                     for (int j = 0; j < ((CardView) view).getChildCount(); j++) {
-                        View view1 = ((CardView) view).getChildAt(i);
+                        View view1 = ((CardView) view).getChildAt(j);
                         if (view1 instanceof LinearLayout) {
                             ClearAll((LinearLayout) view1);
                         }

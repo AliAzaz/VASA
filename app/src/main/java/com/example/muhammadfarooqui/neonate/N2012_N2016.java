@@ -25,8 +25,7 @@ public class N2012_N2016 extends AppCompatActivity {
 
     public void BtnContinue() {
         if (validateField()) {
-            startActivity(new Intent(this, N2017_N2022_3.class)
-                    .putExtra("checkFlag", bi.rbN20161.isChecked()));
+            startActivity(new Intent(this, bi.rbN20161.isChecked() ? N2017_N2022_3.class : N2023_N2026.class));
         } else {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
         }

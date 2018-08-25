@@ -169,7 +169,7 @@ public class N2080_N2107 extends AppCompatActivity {
     }
 
     public void BtnContinue() {
-        if (!validateField()) {
+        if (validateField()) {
             startActivity(new Intent(this, N2110_N2189a.class));
         } else {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
@@ -253,10 +253,10 @@ public class N2080_N2107 extends AppCompatActivity {
             return false;
         }
 
-        //ll_N2080_16
+/*        //ll_N2080_16
         if (!Gothrough.IamHiden(bi.llN208016)) {
             return false;
-        }
+        }*/
 
         if (!bi.cbN2080161.isChecked()) {
             //ll_N2081

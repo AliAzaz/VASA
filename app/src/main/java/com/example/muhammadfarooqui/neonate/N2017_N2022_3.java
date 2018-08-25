@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -16,7 +15,6 @@ import utils.Gothrough;
 public class N2017_N2022_3 extends AppCompatActivity {
 
     N2017N20223Binding bi;
-    boolean checkFlag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +22,6 @@ public class N2017_N2022_3 extends AppCompatActivity {
 
         bi = DataBindingUtil.setContentView(this, R.layout.n2017__n2022_3);
         bi.setCallback(this);
-
-        checkFlag = getIntent().getBooleanExtra("checkFlag", true);
 
         SetContentUI();
     }
@@ -46,6 +42,7 @@ public class N2017_N2022_3 extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i != bi.rbN20221.getId()) {
                     ClearAllcontrol.ClearAll(bi.llN20221N2051);//ll_N2022_1_N2051
+                    bi.rgN20223.clearCheck();
                 }
             }
         });
@@ -59,16 +56,10 @@ public class N2017_N2022_3 extends AppCompatActivity {
             }
         });
 
-        if (checkFlag) {
-            bi.llN2017N2022.setVisibility(View.VISIBLE);
-        } else {
-            bi.llN2017N2022.setVisibility(View.GONE);
-        }
-
     }
 
     public void BtnContinue() {
-        if (!validateField()) {
+        if (validateField()) {
             startActivity(new Intent(this, bi.rbN20221.isChecked() || !bi.rbN202221.isChecked() ? N2023_N2026.class : N2051_N2078.class));
         } else {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
@@ -77,7 +68,6 @@ public class N2017_N2022_3 extends AppCompatActivity {
 
     public Boolean validateField() {
 
-        if (checkFlag) {
             //ll_N2017
             if (!Gothrough.IamHiden(bi.llN2017)) {
                 return false;
@@ -136,9 +126,8 @@ public class N2017_N2022_3 extends AppCompatActivity {
                     return false;
                 }
             }
-        }
 
-        if (!bi.rbN20221.isChecked() || bi.rbN202221.isChecked()) {
+        if (!bi.rbN20221.isChecked() || !bi.rbN202221.isChecked()) {
             //ll_N2022_3
             return Gothrough.IamHiden(bi.llN20223);
         }

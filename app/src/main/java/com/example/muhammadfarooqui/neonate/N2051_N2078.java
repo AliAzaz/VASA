@@ -68,7 +68,7 @@ public class N2051_N2078 extends AppCompatActivity {
     }
 
     public void BtnContinue() {
-        if (!validateField()) {
+        if (validateField()) {
             startActivity(new Intent(this, N2080_N2107.class));
         } else {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();

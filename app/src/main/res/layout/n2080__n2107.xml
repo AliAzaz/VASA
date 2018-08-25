@@ -706,7 +706,7 @@
 
                         <CheckBox
                             android:id="@+id/cb_N2080_16_1"
-                            style="@style/RadioButton"
+                            style="@style/CheckBox"
                             android:text="@string/yes" />
 
                     </LinearLayout>

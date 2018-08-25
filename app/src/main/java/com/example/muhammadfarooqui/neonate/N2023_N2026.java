@@ -24,7 +24,7 @@ public class N2023_N2026 extends AppCompatActivity {
     }
 
     public void BtnContinue() {
-        if (!validateField()) {
+        if (validateField()) {
             startActivity(new Intent(this, N2051_N2078.class));
         } else {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
@@ -53,9 +53,11 @@ public class N2023_N2026 extends AppCompatActivity {
             return false;
         }
 
-        //ll_N2025d
-        if (!Gothrough.IamHiden(bi.llN2025d)) {
-            return false;
+        if (bi.rbN2025u1.isChecked()) {
+            //ll_N2025d
+            if (!Gothrough.IamHiden(bi.llN2025d)) {
+                return false;
+            }
         }
 
         //ll_N2026
