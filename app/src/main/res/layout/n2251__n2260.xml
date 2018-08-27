@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".N2251_N2260">
 
@@ -98,8 +99,8 @@
                 </android.support.v7.widget.CardView>
 
                 <!-- Radio Buttons N2252_1 Starts -->
-
                 <LinearLayout
+                    android:id="@+id/ll_N2252_N2252"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -525,57 +526,36 @@
                             style="@style/Q_CardView"
                             android:visibility="@{rbN22551check1.checked ? View.VISIBLE : View.GONE}">
 
-                            <LinearLayout
-                                android:id="@+id/ll_N2255_1d"
-                                style="@style/Q_Linerlayout_v">
+                            <LinearLayout style="@style/Q_Linerlayout_v">
 
                                 <TextView
-                                    android:id="@+id/txt_N2255_1d"
+                                    android:id="@+id/txt_N2255_1"
                                     style="@style/TextView"
-                                    android:text="@string/days" />
+                                    android:text="@string/txt_N2255_1" />
 
-                                <EditText
-                                    android:id="@+id/ed_N2255_1d"
-                                    style="@style/EditText_number"
-                                    android:hint="@string/days"
-                                    android:maxLength="2"
-                                    android:text='@{rbN22551check1.checked ? edN22551d.getText.toString : ""}' />
+                                <LinearLayout
+                                    android:id="@+id/ll_N2255_1"
+                                    style="@style/Q_Linerlayout_v">
 
-                            </LinearLayout>
+                                    <io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText
+                                        android:id="@+id/ed_N2255_1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:enabled='@{cbN22551.checked ? false : true }'
+                                        android:focusable="true"
+                                        android:hint="@string/txt_N2255_1"
+                                        android:text='@{rbN22551check1.checked &amp;&amp; !cbN22551.checked ? edN22551.getText.toString : ""}'
+                                        android:textColor="@android:color/black"
+                                        app:dateFormat="dd/MM/yyyy" />
 
-                            <LinearLayout
-                                android:id="@+id/ll_N2255_1m"
-                                style="@style/Q_Linerlayout_v">
+                                </LinearLayout>
 
-                                <TextView
-                                    android:id="@+id/txt_N2255_1m"
-                                    style="@style/TextView"
-                                    android:text="@string/months" />
-
-                                <EditText
-                                    android:id="@+id/ed_N2255_1m"
-                                    style="@style/EditText_number"
-                                    android:hint="@string/months"
-                                    android:maxLength="2"
-                                    android:text='@{rbN22551check1.checked ? edN22551m.getText.toString : ""}' />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:id="@+id/ll_N2255_1y"
-                                style="@style/Q_Linerlayout_v">
-
-                                <TextView
-                                    android:id="@+id/txt_N2255_1y"
-                                    style="@style/TextView"
-                                    android:text="@string/years" />
-
-                                <EditText
-                                    android:id="@+id/ed_N2255_1y"
-                                    style="@style/EditText_number"
-                                    android:hint="@string/years"
-                                    android:maxLength="4"
-                                    android:text='@{rbN22551check1.checked ? edN22551y.getText.toString : ""}' />
+                                <CheckBox
+                                    android:id="@+id/cb_N2255_1"
+                                    style="@style/CheckBox"
+                                    android:checked="@{rbN22551check2.checked ? false : false}"
+                                    android:text="@string/dnt" />
 
                             </LinearLayout>
 
@@ -618,57 +598,36 @@
                             style="@style/Q_CardView"
                             android:visibility="@{rbN22552check1.checked ? View.VISIBLE : View.GONE}">
 
-                            <LinearLayout
-                                android:id="@+id/ll_N2255_2d"
-                                style="@style/Q_Linerlayout_v">
+                            <LinearLayout style="@style/Q_Linerlayout_v">
 
                                 <TextView
                                     android:id="@+id/txt_N2255_2d"
                                     style="@style/TextView"
-                                    android:text="@string/days" />
+                                    android:text="@string/txt_N2255_2" />
 
-                                <EditText
-                                    android:id="@+id/ed_N2255_2d"
-                                    style="@style/EditText_number"
-                                    android:hint="@string/days"
-                                    android:maxLength="2"
-                                    android:text='@{rbN22552check1.checked ? edN22552d.getText.toString : ""}' />
+                                <LinearLayout
+                                    android:id="@+id/ll_N2255_2"
+                                    style="@style/Q_Linerlayout_v">
 
-                            </LinearLayout>
+                                    <io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText
+                                        android:id="@+id/ed_N2255_2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:enabled='@{cbN22552.checked ? false : true }'
+                                        android:focusable="true"
+                                        android:hint="@string/txt_N2255_2"
+                                        android:text='@{rbN22552check1.checked &amp;&amp; !cbN22552.checked ? edN22552.getText.toString : ""}'
+                                        android:textColor="@android:color/black"
+                                        app:dateFormat="dd/MM/yyyy" />
 
-                            <LinearLayout
-                                android:id="@+id/ll_N2255_2m"
-                                style="@style/Q_Linerlayout_v">
+                                </LinearLayout>
 
-                                <TextView
-                                    android:id="@+id/txt_N2255_2m"
-                                    style="@style/TextView"
-                                    android:text="@string/months" />
-
-                                <EditText
-                                    android:id="@+id/ed_N2255_2m"
-                                    style="@style/EditText_number"
-                                    android:hint="@string/months"
-                                    android:maxLength="2"
-                                    android:text='@{rbN22552check1.checked ? edN22552m.getText.toString : ""}' />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:id="@+id/ll_N2255_2y"
-                                style="@style/Q_Linerlayout_v">
-
-                                <TextView
-                                    android:id="@+id/txt_N2255_2y"
-                                    style="@style/TextView"
-                                    android:text="@string/years" />
-
-                                <EditText
-                                    android:id="@+id/ed_N2255_2y"
-                                    style="@style/EditText_number"
-                                    android:hint="@string/years"
-                                    android:maxLength="4"
-                                    android:text='@{rbN22552check1.checked ? edN22552y.getText.toString : ""}' />
+                                <CheckBox
+                                    android:id="@+id/cb_N2255_2"
+                                    style="@style/CheckBox"
+                                    android:checked="@{rbN22552check2.checked ? false : false}"
+                                    android:text="@string/dnt" />
 
                             </LinearLayout>
 
@@ -677,57 +636,36 @@
                         <!-- EditText N2256 Starts -->
                         <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-                            <LinearLayout
-                                android:id="@+id/ll_N2256d"
-                                style="@style/Q_Linerlayout_v">
+                            <LinearLayout style="@style/Q_Linerlayout_v">
 
                                 <TextView
                                     android:id="@+id/txt_N2256d"
                                     style="@style/TextView"
-                                    android:text="@string/days" />
+                                    android:text="@string/txt_N2256" />
 
-                                <EditText
-                                    android:id="@+id/ed_N2256d"
-                                    style="@style/EditText_number"
-                                    android:hint="@string/days"
-                                    android:maxLength="2"
-                                    android:text='@{rbN22531.checked || rbN22541.checked ? edN2256d.getText.toString : ""}' />
+                                <LinearLayout
+                                    android:id="@+id/ll_N2256"
+                                    style="@style/Q_Linerlayout_v">
 
-                            </LinearLayout>
+                                    <io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText
+                                        android:id="@+id/ed_N2256"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="1dp"
+                                        android:enabled='@{cbN2256.checked ? false : true }'
+                                        android:focusable="true"
+                                        android:hint="@string/txt_N2256"
+                                        android:text='@{(rbN22531.checked || rbN22541.checked) &amp;&amp; !cbN2256.checked ? edN2256.getText.toString : ""}'
+                                        android:textColor="@android:color/black"
+                                        app:dateFormat="dd/MM/yyyy" />
 
-                            <LinearLayout
-                                android:id="@+id/ll_N2256m"
-                                style="@style/Q_Linerlayout_v">
+                                </LinearLayout>
 
-                                <TextView
-                                    android:id="@+id/txt_N2256m"
-                                    style="@style/TextView"
-                                    android:text="@string/months" />
-
-                                <EditText
-                                    android:id="@+id/ed_N2256m"
-                                    style="@style/EditText_number"
-                                    android:hint="@string/months"
-                                    android:maxLength="2"
-                                    android:text='@{rbN22531.checked || rbN22541.checked ? edN2256m.getText.toString : ""}' />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:id="@+id/ll_N2256y"
-                                style="@style/Q_Linerlayout_v">
-
-                                <TextView
-                                    android:id="@+id/txt_N2256y"
-                                    style="@style/TextView"
-                                    android:text="@string/years" />
-
-                                <EditText
-                                    android:id="@+id/ed_N2256y"
-                                    style="@style/EditText_number"
-                                    android:hint="@string/years"
-                                    android:maxLength="4"
-                                    android:text='@{rbN22531.checked || rbN22541.checked ? edN2256y.getText.toString : ""}' />
+                                <CheckBox
+                                    android:id="@+id/cb_N2256"
+                                    style="@style/CheckBox"
+                                    android:checked="@{!(rbN22531.checked || rbN22541.checked) ? false : false}"
+                                    android:text="@string/dnt" />
 
                             </LinearLayout>
 

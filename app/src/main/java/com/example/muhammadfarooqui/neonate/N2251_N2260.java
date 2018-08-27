@@ -9,13 +9,16 @@ import android.widget.Toast;
 
 import com.example.muhammadfarooqui.neonate.databinding.N2251N2260Binding;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 
 public class N2251_N2260 extends AppCompatActivity {
 
-
     N2251N2260Binding bi;
+    String dtToday = new SimpleDateFormat("dd/MM/yyyy HH:mm").format(new Date().getTime());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,25 @@ public class N2251_N2260 extends AppCompatActivity {
     }
 
     public void SetContentUI() {
+
+        //Initializing datepickers
+        bi.edN22551.setManager(getSupportFragmentManager());
+        bi.edN22551.setMaxDate(dtToday);
+
+        bi.edN22552.setManager(getSupportFragmentManager());
+        bi.edN22552.setMaxDate(dtToday);
+
+        bi.edN2256.setManager(getSupportFragmentManager());
+        bi.edN2256.setMaxDate(dtToday);
+
+        bi.rgN2251.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != bi.rbN22511.getId()) {
+                    ClearAllcontrol.ClearAll(bi.llN2252N2252); //ll_N2252_N2252
+                }
+            }
+        });
 
         bi.rgN2253.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -114,16 +136,8 @@ public class N2251_N2260 extends AppCompatActivity {
                 }
 
                 if (bi.rbN22551check1.isChecked()) {
-                    //ll_N2255_1d
-                    if (!Gothrough.IamHiden(bi.llN22551d)) {
-                        return false;
-                    }
-                    //ll_N2255_1m
-                    if (!Gothrough.IamHiden(bi.llN22551m)) {
-                        return false;
-                    }
-                    //ll_N2255_1y
-                    if (!Gothrough.IamHiden(bi.llN22551y)) {
+                    //ll_N2255_1
+                    if (!Gothrough.IamHiden(bi.llN22551)) {
                         return false;
                     }
                 }
@@ -134,30 +148,14 @@ public class N2251_N2260 extends AppCompatActivity {
                 }
 
                 if (bi.rbN22552check1.isChecked()) {
-                    //ll_N2255_2d
-                    if (!Gothrough.IamHiden(bi.llN22552d)) {
-                        return false;
-                    }
-                    //ll_N2255_2m
-                    if (!Gothrough.IamHiden(bi.llN22552m)) {
-                        return false;
-                    }
-                    //ll_N2255_2y
-                    if (!Gothrough.IamHiden(bi.llN22552y)) {
+                    //ll_N2255_2
+                    if (!Gothrough.IamHiden(bi.llN22552)) {
                         return false;
                     }
                 }
 
-                //ll_N2256d
-                if (!Gothrough.IamHiden(bi.llN2256d)) {
-                    return false;
-                }
-                //ll_N2256m
-                if (!Gothrough.IamHiden(bi.llN2256m)) {
-                    return false;
-                }
-                //ll_N2256y
-                if (!Gothrough.IamHiden(bi.llN2256y)) {
+                //ll_N2256
+                if (!Gothrough.IamHiden(bi.llN2256)) {
                     return false;
                 }
                 //ll_N2257

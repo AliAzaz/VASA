@@ -67,8 +67,8 @@
                             style="@style/TextView"
                             android:text="@string/txt_N2291" />
 
-
                         <EditText
+                            android:maxLength="2"
                             android:id="@+id/ed_N2291"
                             style="@style/EditText_number"
                             android:hint="@string/years" />

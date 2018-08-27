@@ -201,6 +201,11 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2275" />
 
+                                <EditText
+                                    android:id="@+id/ed_N2275"
+                                    style="@style/EditText_varchar"
+                                    android:hint="@string/txt_N2275" />
+
                             </LinearLayout>
 
                         </android.support.v7.widget.CardView>
@@ -239,6 +244,11 @@
                                     android:id="@+id/txt_N2277"
                                     style="@style/TextView"
                                     android:text="@string/txt_N2277" />
+
+                                <EditText
+                                    android:id="@+id/ed_N2277"
+                                    style="@style/EditText_varchar"
+                                    android:hint="@string/txt_N2276" />
 
                             </LinearLayout>
 
