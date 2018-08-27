@@ -27,11 +27,12 @@ public class Gothrough {
             for (int i = 0, count = lv.getChildCount(); i < count; ++i) {
                 View view = lv.getChildAt(i);
                 if (view instanceof CheckBox) {
+                    ((CheckBox) view).setError(null);
+
                     if (((CheckBox) view).isChecked()) {
                         return true;
                     }
 
-                    ((CheckBox) view).setError(null);
                     if (i == count - 1) {
                         ((CheckBox) view).setError("Select Atleast One");
                     }
@@ -41,13 +42,20 @@ public class Gothrough {
                     }
 
                 } else if (view instanceof EditText) {
-                    if (((EditText) view).getText().toString().trim().length() > 0) {
-                        return true;
-                    }
-
                     ((EditText) view).setError(null);
-                    if (i == count - 1) {
-                        ((EditText) view).setError("Enter Text");
+                    if (((EditText) view).getText().toString().trim().length() > 0) {
+                        if (i + 1 == lv.getChildCount()) {
+                            return true;
+                        }
+                    } else {
+                        if (view.isEnabled()) {
+                            ((EditText) view).setError("Enter Text");
+                            return false;
+                        } else {
+                            if (i + 1 == lv.getChildCount()) {
+                                return true;
+                            }
+                        }
                     }
                 }
             }
