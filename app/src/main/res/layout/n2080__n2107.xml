@@ -2806,7 +2806,9 @@
                             <!-- EditText N2103 Ends -->
 
                             <!-- Radio Buttons N2104 Starts -->
-                            <android.support.v7.widget.CardView style="@style/Q_CardView">
+                            <android.support.v7.widget.CardView
+                                style="@style/Q_CardView"
+                                android:visibility="@{rbN20983.checked || rbN20987.checked ? View.VISIBLE : View.GONE}">
 
                                 <LinearLayout
                                     android:id="@+id/ll_N2104"

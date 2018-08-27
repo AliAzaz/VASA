@@ -158,6 +158,9 @@ public class N2080_N2107 extends AppCompatActivity {
                 if (i == bi.rbN20981.getId() || i == bi.rbN20982.getId()) {
                     ClearAllcontrol.ClearAll(bi.llN2099N2101); //ll_N2099_N2101
                 }
+                if (i != bi.rbN20983.getId() || i != bi.rbN20987.getId()) {
+                    ClearAllcontrol.ClearAll(bi.llN2104); //ll_N2104
+                }
             }
         });
 

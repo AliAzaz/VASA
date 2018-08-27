@@ -52,7 +52,7 @@ public class N2192_N2202 extends AppCompatActivity {
 
     public void BtnContinue() {
         if (validateField()) {
-            startActivity(new Intent(this, N2211_N2248.class));
+            startActivity(new Intent(this, N2211_N2248_A.class));
         } else {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
         }

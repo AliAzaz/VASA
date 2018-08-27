@@ -44,7 +44,13 @@
             android:name=".N2192_N2202"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".N2211_N2248"
+            android:name=".N2211_N2248_A"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".N2211_N2248_B"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".N2211_N2248_C"
             android:screenOrientation="portrait" />
         <activity
             android:name=".N2251_N2260"
