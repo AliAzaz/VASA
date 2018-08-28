@@ -80,43 +80,43 @@
                         <RadioGroup style="@style/RadioGroup">
 
                             <RadioButton
-                                android:id="@+id/cb_N2213_2A"
+                                android:id="@+id/rb_N2213_2A"
                                 style="@style/RadioButton"
-                                android:text="@string/cb_N2213_2A" />
+                                android:text="@string/rb_N2213_2A" />
 
                             <RadioButton
-                                android:id="@+id/cb_N2213_2B"
+                                android:id="@+id/rb_N2213_2B"
                                 style="@style/RadioButton"
-                                android:text="@string/cb_N2213_2B" />
+                                android:text="@string/rb_N2213_2B" />
 
                             <RadioButton
-                                android:id="@+id/cb_N2213_2C"
+                                android:id="@+id/rb_N2213_2C"
                                 style="@style/RadioButton"
-                                android:text="@string/cb_N2213_2C" />
+                                android:text="@string/rb_N2213_2C" />
 
                             <TextView
                                 style="@style/TextViewHead"
                                 android:text="@string/txt_N2213_3" />
 
                             <RadioButton
-                                android:id="@+id/cb_N2213_3A"
+                                android:id="@+id/rb_N2213_3A"
                                 style="@style/RadioButton"
-                                android:text="@string/cb_N2213_3A" />
+                                android:text="@string/rb_N2213_3A" />
 
                             <RadioButton
-                                android:id="@+id/cb_N2213_3B"
+                                android:id="@+id/rb_N2213_3B"
                                 style="@style/RadioButton"
-                                android:text="@string/cb_N2213_3B" />
+                                android:text="@string/rb_N2213_3B" />
 
                             <RadioButton
-                                android:id="@+id/cb_N2213_3C"
+                                android:id="@+id/rb_N2213_3C"
                                 style="@style/RadioButton"
-                                android:text="@string/cb_N2213_3C" />
+                                android:text="@string/rb_N2213_3C" />
 
                             <RadioButton
-                                android:id="@+id/cb_N2213_3D"
+                                android:id="@+id/rb_N2213_3D"
                                 style="@style/RadioButton"
-                                android:text="@string/cb_N2213_3D" />
+                                android:text="@string/rb_N2213_3D" />
 
                         </RadioGroup>
 
