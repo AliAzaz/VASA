@@ -7,7 +7,6 @@ public class N2001_N2011 {
         String query;
         query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'pk_pk' INTEGER,   " +
 
-                Global.N.N2001_N2011.N2011 + " TEXT," +
                 Global.N.N2001_N2011.N2001 + " TEXT," +
                 Global.N.N2001_N2011.N2002 + " TEXT," +
                 Global.N.N2001_N2011.N2003 + " TEXT," +
@@ -22,7 +21,8 @@ public class N2001_N2011 {
                 Global.N.N2001_N2011.N2009_2 + " TEXT," +
                 Global.N.N2001_N2011.N2009_3 + " TEXT," +
                 Global.N.N2001_N2011.N2009_4 + " TEXT," +
-                Global.N.N2001_N2011.N2010 + " TEXT" +
+                Global.N.N2001_N2011.N2010 + " TEXT," +
+                Global.N.N2001_N2011.N2011 + " TEXT" +
                 ')';
 
 

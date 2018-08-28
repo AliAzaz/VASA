@@ -17,7 +17,7 @@ public class N2017_N2022_3 {
                 Global.N.N2017_N2022_3.N2022 + " TEXT," +
                 Global.N.N2017_N2022_3.N2022_1 + " TEXT," +
                 Global.N.N2017_N2022_3.N2022_2 + " TEXT," +
-                Global.N.N2017_N2022_3.N2022_3 + " TEXT," +
+                Global.N.N2017_N2022_3.N2022_3 + " TEXT" +
                 ')';
 
         return query;
