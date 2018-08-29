@@ -326,7 +326,7 @@
                                         android:id="@+id/ed_N2005d"
                                         style="@style/EditText_number"
                                         android:hint="Enter 0-6 days. Less than 1 day or 24 hours = 0 days"
-                                        android:maxLength="2"
+                                        android:maxLength="1"
                                         android:text='@{rbN2005u1.checked ? edN2005d.getText.toString : ""}' />
 
                                 </LinearLayout>

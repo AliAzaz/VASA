@@ -8,6 +8,9 @@ import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import Global.N.N2001_N2011;
+import Global.N.N2012_N2016;
+import Global.N.N2017_N2022_3;
 import Global.N.N2023_N2026;
 import Global.N.N2051_N2078;
 import Global.N.N2080_N2107;
@@ -21,15 +24,13 @@ import Global.N.N2271_N2284;
 import Global.N.N2291_N2304;
 import Global.N.N2311_N2317;
 import Global.N.N2321_N2322;
-import data.N.N2001_N2011;
-import data.N.N2012_N2016;
 
 /**
  * Created by Umeed-e-Nau on 12/21/2016.
  */
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static final String DB_NAME = "tran_DB.db";
+    private static final String DB_NAME = "vasa.db";
     private static final int VERSION = 1;
 
     Context mContext;
@@ -44,9 +45,22 @@ public class DBHelper extends SQLiteOpenHelper {
 
         db.beginTransaction();
 
-        db.execSQL(N2001_N2011.getCreateQuery()); // N2001_N2011 created here
-        db.execSQL(N2012_N2016.getCreateQuery()); // N2012_N2016 created here
+        db.execSQL(data.N.N2001_N2011.getCreateQuery()); // N2001_N2011 created here
+        db.execSQL(data.N.N2012_N2016.getCreateQuery()); // N2012_N2016 created here
         db.execSQL(data.N.N2017_N2022_3.getCreateQuery()); // N2017_N2022_3 created here
+        db.execSQL(data.N.N2023_N2026.getCreateQuery()); // N2023_N2026 created here
+        db.execSQL(data.N.N2051_N2078.getCreateQuery()); // N2051_N2078 created here
+        db.execSQL(data.N.N2080_N2107.getCreateQuery()); // N2080_N2107 created here
+        db.execSQL(data.N.N2110_N2189a.getCreateQuery()); // N2110_N2189a created here
+        db.execSQL(data.N.N2190_N2191.getCreateQuery()); // N2190_N2191 created here
+        db.execSQL(data.N.N2192_N2202.getCreateQuery()); // N2192_N2202 created here
+        db.execSQL(data.N.N2211_N2248_A_C.getCreateQuery()); // N2211_N2248_A_C created here
+        db.execSQL(data.N.N2211_N2248_B.getCreateQuery()); // N2211_N2248_B created here
+        db.execSQL(data.N.N2251_N2260.getCreateQuery()); // N2251_N2260 created here
+        db.execSQL(data.N.N2271_N2284.getCreateQuery()); // N2271_N2284 created here
+        db.execSQL(data.N.N2291_N2304.getCreateQuery()); // N2291_N2304 created here
+        db.execSQL(data.N.N2311_N2317.getCreateQuery()); // N2311_N2317 created here
+        db.execSQL(data.N.N2321_N2322.getCreateQuery()); // N2321_N2322 created here
 
         db.setTransactionSuccessful();
         db.endTransaction();
@@ -74,6 +88,98 @@ public class DBHelper extends SQLiteOpenHelper {
             Log.d(DBHelper.class.getName(), " Exception while executing Query");
         }
         return cursor;
+    }
+
+    //2001
+    public Long add_N2001(N2001_N2011 n2001) {
+
+        // Gets the data repository in write mode
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        // Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+
+        values.put(N2001_N2011.N2001, N2001_N2011.getN2001());
+        values.put(N2001_N2011.N2002, N2001_N2011.getN2002());
+        values.put(N2001_N2011.N2003, N2001_N2011.getN2003());
+        values.put(N2001_N2011.N2004, N2001_N2011.getN2004());
+        values.put(N2001_N2011.N2005u, N2001_N2011.getN2005u());
+        values.put(N2001_N2011.N2005d, N2001_N2011.getN2005d());
+        values.put(N2001_N2011.N2005w, N2001_N2011.getN2005w());
+        values.put(N2001_N2011.N2005m, N2001_N2011.getN2005m());
+        values.put(N2001_N2011.N2006, N2001_N2011.getN2006());
+        values.put(N2001_N2011.N2008, N2001_N2011.getN2008());
+        values.put(N2001_N2011.N2009_1, N2001_N2011.getN20091());
+        values.put(N2001_N2011.N2009_2, N2001_N2011.getN20092());
+        values.put(N2001_N2011.N2009_3, N2001_N2011.getN20093());
+        values.put(N2001_N2011.N2009_4, N2001_N2011.getN20094());
+        values.put(N2001_N2011.N2010, N2001_N2011.getN2010());
+        values.put(N2001_N2011.N2011, N2001_N2011.getN2011());
+
+        // Insert the new row, returning the primary key value of the new row
+        long newRowId;
+        newRowId = db.insert(
+                data.N.N2001_N2011.TABLE_NAME,
+                null,
+                values);
+
+        return newRowId;
+    }
+
+    //2012
+    public Long add_N2012(N2012_N2016 n2012) {
+
+        // Gets the data repository in write mode
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        // Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+
+        values.put(N2012_N2016.N2012, N2012_N2016.getN2012());
+        values.put(N2012_N2016.N2013, N2012_N2016.getN2013());
+        values.put(N2012_N2016.N2014, N2012_N2016.getN2014());
+        values.put(N2012_N2016.N2015, N2012_N2016.getN2015());
+        values.put(N2012_N2016.N2016, N2012_N2016.getN2016());
+
+        // Insert the new row, returning the primary key value of the new row
+        long newRowId;
+        newRowId = db.insert(
+                data.N.N2012_N2016.TABLE_NAME,
+                null,
+                values);
+
+        return newRowId;
+    }
+
+    //2017
+    public Long add_N2017(N2017_N2022_3 n2017) {
+
+        // Gets the data repository in write mode
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        // Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+
+        values.put(N2017_N2022_3.N2017, N2017_N2022_3.getN2017());
+        values.put(N2017_N2022_3.N2018, N2017_N2022_3.getN2018());
+        values.put(N2017_N2022_3.N2019u, N2017_N2022_3.getN2019u());
+        values.put(N2017_N2022_3.N2019h, N2017_N2022_3.getN2019h());
+        values.put(N2017_N2022_3.N2019d, N2017_N2022_3.getN2019d());
+        values.put(N2017_N2022_3.N2020, N2017_N2022_3.getN2020());
+        values.put(N2017_N2022_3.N2021, N2017_N2022_3.getN2021());
+        values.put(N2017_N2022_3.N2022, N2017_N2022_3.getN2022());
+        values.put(N2017_N2022_3.N2022_1, N2017_N2022_3.getN20221());
+        values.put(N2017_N2022_3.N2022_2, N2017_N2022_3.getN20222());
+        values.put(N2017_N2022_3.N2022_3, N2017_N2022_3.getN20223());
+
+        // Insert the new row, returning the primary key value of the new row
+        long newRowId;
+        newRowId = db.insert(
+                data.N.N2017_N2022_3.TABLE_NAME,
+                null,
+                values);
+
+        return newRowId;
     }
 
     //2023

@@ -6,7 +6,7 @@ public class N2211_N2248_A_C {
 
     public static String getCreateQuery() {
         String query;
-        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'pk_pk' INTEGER,   " +
+        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' INTEGER,   " +
 
                 Global.N.N2211_N2248_A_C.N2211_1 + " TEXT," +
                 Global.N.N2211_N2248_A_C.N2211_2 + " TEXT," +

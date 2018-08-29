@@ -6,7 +6,7 @@ public class N2051_N2078 {
 
     public static String getCreateQuery() {
         String query;
-        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'pk_pk' INTEGER,   " +
+        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' INTEGER,   " +
 
                 Global.N.N2051_N2078.N2051 + " TEXT," +
                 Global.N.N2051_N2078.N2052 + " TEXT," +
