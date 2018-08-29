@@ -435,10 +435,17 @@
                                 style="@style/RadioButton"
                                 android:text="@string/rb_N2006_5" />
 
+                            <RadioButton
+                                android:id="@+id/rb_N2006_6"
+                                style="@style/RadioButton"
+                                android:text="@string/rb_N2006_6" />
+
                             <EditText
                                 android:id="@+id/ed_N2006_6"
                                 style="@style/EditText_varchar"
-                                android:hint="Other" />
+                                android:hint="@string/rb_N2006_6"
+                                android:text='@{rbN20066.checked ? edN20066.getText.toString : ""}'
+                                android:visibility="@{rbN20066.checked ? View.VISIBLE : View.GONE}" />
 
                             <RadioButton
                                 android:id="@+id/rb_N2006_7"
@@ -455,10 +462,17 @@
                                 style="@style/RadioButton"
                                 android:text="@string/rb_N2006_9" />
 
+                            <RadioButton
+                                android:id="@+id/rb_N2006_10"
+                                style="@style/RadioButton"
+                                android:text="@string/rb_N2006_10" />
+
                             <EditText
                                 android:id="@+id/ed_N2006_10"
                                 style="@style/EditText_varchar"
-                                android:hint="Other" />
+                                android:hint="@string/rb_N2006_10"
+                                android:text='@{rbN200610.checked ? edN200610.getText.toString : ""}'
+                                android:visibility="@{rbN200610.checked ? View.VISIBLE : View.GONE}" />
 
                             <RadioButton
                                 android:id="@+id/rb_N2006_11"
@@ -475,10 +489,17 @@
                                 style="@style/RadioButton"
                                 android:text="@string/ra" />
 
+                            <RadioButton
+                                android:id="@+id/rb_N2006_12"
+                                style="@style/RadioButton"
+                                android:text="@string/ot_other" />
+
                             <EditText
                                 android:id="@+id/ed_N2006_OT"
                                 style="@style/EditText_varchar"
-                                android:hint="Other" />
+                                android:hint="@string/ot_other"
+                                android:text='@{rbN200612.checked ? edN2006OT.getText.toString : ""}'
+                                android:visibility="@{rbN200612.checked ? View.VISIBLE : View.GONE}" />
 
                         </RadioGroup>
 
@@ -544,10 +565,17 @@
                                 style="@style/RadioButton"
                                 android:text="@string/dnt" />
 
+                            <RadioButton
+                                android:id="@+id/rb_N2008_OT"
+                                style="@style/RadioButton"
+                                android:text="@string/ot_other" />
+
                             <EditText
+                                android:hint="@string/ot_other"
+                                android:text='@{rbN2008OT.checked ? edN2008OT.getText.toString : ""}'
                                 android:id="@+id/ed_N2008_OT"
                                 style="@style/EditText_varchar"
-                                android:hint="Other" />
+                                android:visibility="@{rbN2008OT.checked ? View.VISIBLE : View.GONE}" />
 
                         </RadioGroup>
 

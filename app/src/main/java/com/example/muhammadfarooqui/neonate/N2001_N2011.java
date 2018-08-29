@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.example.muhammadfarooqui.neonate.databinding.N2001N2011Binding;
 
+import data.DBHelper;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 import utils.validations;
@@ -100,6 +101,44 @@ public class N2001_N2011 extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public boolean SaveData() {
+
+        Global.N.N2001_N2011 n2001 = new Global.N.N2001_N2011();
+
+        Global.N.N2001_N2011.setN2001(bi.rbN20011.isChecked() ? "1" : bi.rbN20012.isChecked() ? "2" : bi.rbN2001DK.isChecked() ? "9"
+                : bi.rbN2001RA.isChecked() ? "8" : "");
+        Global.N.N2001_N2011.setN2002(bi.rbN20021.isChecked() ? "1" : bi.rbN20022.isChecked() ? "2" : bi.rbN2002DK.isChecked() ? "9"
+                : bi.rbN2002RA.isChecked() ? "8" : "");
+        Global.N.N2001_N2011.setN2003(bi.rbN20031.isChecked() ? "1" : bi.rbN20032.isChecked() ? "2" : bi.rbN2003DK.isChecked() ? "9"
+                : bi.rbN2003RA.isChecked() ? "8" : "");
+        Global.N.N2001_N2011.setN2004(bi.rbN20041.isChecked() ? "1" : bi.rbN20042.isChecked() ? "2" : bi.rbN20043.isChecked() ? "3" : bi.rbN2004DK.isChecked() ? "9"
+                : bi.rbN2004RA.isChecked() ? "8" : "");
+        Global.N.N2001_N2011.setN2005u(bi.rbN2005u1.isChecked() ? "1" : bi.rbN2005u2.isChecked() ? "2" : bi.rbN2005u3.isChecked() ? "3" : bi.rbN2005uDK.isChecked() ? "9"
+                : bi.rbN2005uRA.isChecked() ? "8" : "");
+        Global.N.N2001_N2011.setN2005d(bi.edN2005d.getText().toString());
+        Global.N.N2001_N2011.setN2005w(bi.edN2005w.getText().toString());
+        Global.N.N2001_N2011.setN2005m(bi.edN2005m.getText().toString());
+        Global.N.N2001_N2011.setN2006(
+                bi.rbN20061.isChecked() ? "1" : bi.rbN20062.isChecked() ? "2" : bi.rbN20063.isChecked() ? "3" :
+                        bi.rbN20064.isChecked() ? "4" : bi.rbN20065.isChecked() ? "5" : bi.rbN20066.isChecked() ? "6" :
+                                bi.rbN20067.isChecked() ? "7" : bi.rbN20068.isChecked() ? "8" : bi.rbN20069.isChecked() ? "9" :
+                                        bi.rbN200610.isChecked() ? "10" : bi.rbN200611.isChecked() ? "11" : bi.rbN200612.isChecked() ? "12"
+                                                : bi.rbN2005uDK.isChecked() ? "99" : bi.rbN2005uRA.isChecked() ? "88" : "");
+        /*n2001.setN2008();
+        n2001.setN20091();
+        n2001.setN20092();
+        n2001.setN20093();
+        n2001.setN20094();
+        n2001.setN2010();
+        n2001.setN2011();*/
+
+
+        DBHelper db = new DBHelper(this);
+        db.add_N2001(n2001);
+
+        return true;
     }
 
     public Boolean validateField() {
