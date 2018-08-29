@@ -1388,8 +1388,8 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="txt_N2219">	N2219	:	What was the name of the &lt;FIRST/LAST HEALTH PROVIDER> where you took &lt;NAME>?	</string>
     <string name="txt_N2219_2">	N2219_2	:	Name of Provider/Facility	</string>
     <string name="txt_N2220">	N2220	:	Did &lt;NAME> reach the &lt;FIRST/LAST HEALTH PROVIDER> before s/he died?	</string>
-    <string name="txt_N2221_1">	N2221_1	:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
-    <string name="txt_N2221_2">	N2221_2	:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
+    <string name="txt_N2220_1">	N2221_1	:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
+    <string name="txt_N2220_2">	N2221_2	:	After (deciding to seek care / being referred), how long did it take (to reach the &lt;FIRST/LAST HEALTH PROVIDER> / for the &lt;FIRST/LAST HEALTH PROVIDER> to reach &lt;NAME>)?	</string>
     <string name="txt_N2222">	N2222	:	Did the &lt;FIRST/LAST HEALTH PROVIDER> admit &lt;NAME> to the hospital for his/her problem?	</string>
     <string name="txt_N2223">	N2223	:	Did the &lt;FIRST/LAST HEALTH PROVIDER> refer &lt;NAME> to another health provider or facility?	</string>
     <string name="txt_N2224">	N2224	:	To where was &lt;NAME> referred?	</string>
