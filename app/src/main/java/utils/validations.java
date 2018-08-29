@@ -1,5 +1,9 @@
 package utils;
 
+import android.content.Context;
+import android.util.Log;
+import android.widget.EditText;
+
 import java.util.HashMap;
 
 /**
@@ -24,5 +28,18 @@ public class validations {
 
     public static int interivew_upto_stage = 0;
 
+    public static boolean RangeTextBox(Context context, EditText txt, int min, int max, String type) {
+
+        if (Integer.valueOf(txt.getText().toString().trim()) < min || Integer.valueOf(txt.getText().toString().trim()) > max) {
+            txt.setError("Range is " + min + " to " + max + " " + type + " ... ");
+            txt.requestFocus();
+            Log.i(context.getClass().getName(), context.getResources().getResourceEntryName(txt.getId()) + ": Range is " + min + " to " + max + " times...  ");
+            return false;
+        } else {
+            txt.setError(null);
+            txt.clearFocus();
+            return true;
+        }
+    }
 
 }
