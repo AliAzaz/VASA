@@ -11,6 +11,7 @@ import com.example.muhammadfarooqui.neonate.databinding.N2001N2011Binding;
 
 import utils.ClearAllcontrol;
 import utils.Gothrough;
+import utils.validations;
 
 public class N2001_N2011 extends AppCompatActivity {
 
@@ -137,14 +138,23 @@ public class N2001_N2011 extends AppCompatActivity {
                     if (!Gothrough.IamHiden(bi.llN2005d)) {
                         return false;
                     }
+                    if (validations.RangeTextBox(this, bi.edN2005d, 0, 6, "Days")) {
+                        return false;
+                    }
 
                     //ll_N2005w
                     if (!Gothrough.IamHiden(bi.llN2005w)) {
                         return false;
                     }
+                    if (validations.RangeTextBox(this, bi.edN2005w, 1, 7, "Week")) {
+                        return false;
+                    }
 
                     //ll_N2005m
                     if (!Gothrough.IamHiden(bi.llN2005m)) {
+                        return false;
+                    }
+                    if (validations.RangeTextBox(this, bi.edN2005m, 2, 60, "Months")) {
                         return false;
                     }
 

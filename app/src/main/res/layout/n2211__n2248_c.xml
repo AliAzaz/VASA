@@ -644,7 +644,9 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2224" />
 
-                            <RadioGroup style="@style/RadioGroup">
+                            <RadioGroup
+                                android:id="@+id/rg_N2224"
+                                style="@style/RadioGroup">
 
                                 <RadioButton
                                     android:id="@+id/rb_N2224_1_1"
@@ -1017,7 +1019,9 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2229" />
 
-                            <RadioGroup style="@style/RadioGroup">
+                            <RadioGroup
+                                android:id="@+id/rg_N2229"
+                                style="@style/RadioGroup">
 
                                 <RadioButton
                                     android:id="@+id/rb_N2229_1_1"
@@ -1194,7 +1198,7 @@
                         <!-- Radio Buttons N2232 Starts -->
                         <android.support.v7.widget.CardView
                             style="@style/Q_CardView"
-                            android:visibility="@{rbN221911.checked || rbN221917.checked ? View.VISIBLE : View.GONE }">
+                            android:visibility="@{rbN222911.checked || rbN222917.checked ? View.VISIBLE : View.GONE }">
 
 
                             <LinearLayout
@@ -1284,7 +1288,9 @@
                                     style="@style/TextView"
                                     android:text="@string/txt_N2224" />
 
-                                <RadioGroup style="@style/RadioGroup">
+                                <RadioGroup
+                                    android:id="@+id/rg_N2234"
+                                    style="@style/RadioGroup">
 
                                     <RadioButton
                                         android:id="@+id/rb_N2234_1_1"
