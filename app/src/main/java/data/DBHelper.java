@@ -91,7 +91,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     //2001
-    public Long add_N2001(N2001_N2011 n2001) {
+    public Long add_N2001(N2001_N2011 n2001, Context context) {
 
         // Gets the data repository in write mode
         SQLiteDatabase db = this.getWritableDatabase();
@@ -99,22 +99,22 @@ public class DBHelper extends SQLiteOpenHelper {
         // Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
 
-        values.put(N2001_N2011.N2001, N2001_N2011.getN2001());
-        values.put(N2001_N2011.N2002, N2001_N2011.getN2002());
-        values.put(N2001_N2011.N2003, N2001_N2011.getN2003());
-        values.put(N2001_N2011.N2004, N2001_N2011.getN2004());
-        values.put(N2001_N2011.N2005u, N2001_N2011.getN2005u());
-        values.put(N2001_N2011.N2005d, N2001_N2011.getN2005d());
-        values.put(N2001_N2011.N2005w, N2001_N2011.getN2005w());
-        values.put(N2001_N2011.N2005m, N2001_N2011.getN2005m());
-        values.put(N2001_N2011.N2006, N2001_N2011.getN2006());
-        values.put(N2001_N2011.N2008, N2001_N2011.getN2008());
-        values.put(N2001_N2011.N2009_1, N2001_N2011.getN20091());
-        values.put(N2001_N2011.N2009_2, N2001_N2011.getN20092());
-        values.put(N2001_N2011.N2009_3, N2001_N2011.getN20093());
-        values.put(N2001_N2011.N2009_4, N2001_N2011.getN20094());
-        values.put(N2001_N2011.N2010, N2001_N2011.getN2010());
-        values.put(N2001_N2011.N2011, N2001_N2011.getN2011());
+        values.put(N2001_N2011.sub_N2001_N2011.N2001, n2001.getN2001());
+        values.put(N2001_N2011.sub_N2001_N2011.N2002, n2001.getN2002());
+        values.put(N2001_N2011.sub_N2001_N2011.N2003, n2001.getN2003());
+        values.put(N2001_N2011.sub_N2001_N2011.N2004, n2001.getN2004());
+        values.put(N2001_N2011.sub_N2001_N2011.N2005u, n2001.getN2005u());
+        values.put(N2001_N2011.sub_N2001_N2011.N2005d, n2001.getN2005d());
+        values.put(N2001_N2011.sub_N2001_N2011.N2005w, n2001.getN2005w());
+        values.put(N2001_N2011.sub_N2001_N2011.N2005m, n2001.getN2005m());
+        values.put(N2001_N2011.sub_N2001_N2011.N2006, n2001.getN2006());
+        values.put(N2001_N2011.sub_N2001_N2011.N2008, n2001.getN2008());
+        values.put(N2001_N2011.sub_N2001_N2011.N2009_1, n2001.getN20091());
+        values.put(N2001_N2011.sub_N2001_N2011.N2009_2, n2001.getN20092());
+        values.put(N2001_N2011.sub_N2001_N2011.N2009_3, n2001.getN20093());
+        values.put(N2001_N2011.sub_N2001_N2011.N2009_4, n2001.getN20094());
+        values.put(N2001_N2011.sub_N2001_N2011.N2010, n2001.getN2010());
+        values.put(N2001_N2011.sub_N2001_N2011.N2011, n2001.getN2011());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
