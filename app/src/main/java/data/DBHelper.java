@@ -840,13 +840,48 @@ public class DBHelper extends SQLiteOpenHelper {
         // Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
 
-        values.put(N2311_N2317.N2311, N2311_N2317.getN2311());
-        values.put(N2311_N2317.N2312, N2311_N2317.getN2312());
-        values.put(N2311_N2317.N2313, N2311_N2317.getN2313());
-        values.put(N2311_N2317.N2314, N2311_N2317.getN2314());
-        values.put(N2311_N2317.N2315, N2311_N2317.getN2315());
-        values.put(N2311_N2317.N2316, N2311_N2317.getN2316());
-        values.put(N2311_N2317.N2317, N2311_N2317.getN2317());
+        values.put(N2311_N2317.sub_N2311_N2317.N2311, n2311.getN2311());
+        values.put(N2311_N2317.sub_N2311_N2317.N2311_1, n2311.getN23111());
+        values.put(N2311_N2317.sub_N2311_N2317.N2311_2, n2311.getN23112());
+        values.put(N2311_N2317.sub_N2311_N2317.N2311_3, n2311.getN23113());
+        values.put(N2311_N2317.sub_N2311_N2317.N2311_4, n2311.getN23114());
+        values.put(N2311_N2317.sub_N2311_N2317.N2311_5, n2311.getN23115());
+        values.put(N2311_N2317.sub_N2311_N2317.N2311_6, n2311.getN23116());
+        values.put(N2311_N2317.sub_N2311_N2317.N2311_7, n2311.getN23117());
+        values.put(N2311_N2317.sub_N2311_N2317.N2311_8, n2311.getN23118());
+        values.put(N2311_N2317.sub_N2311_N2317.N2311_9, n2311.getN23119());
+        values.put(N2311_N2317.sub_N2311_N2317.N2311_10, n2311.getN231110());
+        values.put(N2311_N2317.sub_N2311_N2317.N2311_11, n2311.getN231111());
+        values.put(N2311_N2317.sub_N2311_N2317.N2311_12, n2311.getN231112());
+        values.put(N2311_N2317.sub_N2311_N2317.N2311_13, n2311.getN231113());
+        values.put(N2311_N2317.sub_N2311_N2317.N2312, n2311.getN2312());
+        values.put(N2311_N2317.sub_N2311_N2317.N2312_1, n2311.getN23121());
+        values.put(N2311_N2317.sub_N2311_N2317.N2312_2, n2311.getN23122());
+        values.put(N2311_N2317.sub_N2311_N2317.N2312_3, n2311.getN23123());
+        values.put(N2311_N2317.sub_N2311_N2317.N2312_4, n2311.getN23124());
+        values.put(N2311_N2317.sub_N2311_N2317.N2312_5, n2311.getN23125());
+        values.put(N2311_N2317.sub_N2311_N2317.N2312_6, n2311.getN23126());
+        values.put(N2311_N2317.sub_N2311_N2317.N2312_7, n2311.getN23127());
+        values.put(N2311_N2317.sub_N2311_N2317.N2312_8, n2311.getN23128());
+        values.put(N2311_N2317.sub_N2311_N2317.N2312_9, n2311.getN23129());
+        values.put(N2311_N2317.sub_N2311_N2317.N2313, n2311.getN2313());
+        values.put(N2311_N2317.sub_N2311_N2317.N2313_1, n2311.getN23131());
+        values.put(N2311_N2317.sub_N2311_N2317.N2313_2, n2311.getN23132());
+        values.put(N2311_N2317.sub_N2311_N2317.N2313_3, n2311.getN23133());
+        values.put(N2311_N2317.sub_N2311_N2317.N2313_4, n2311.getN23134());
+        values.put(N2311_N2317.sub_N2311_N2317.N2313_5, n2311.getN23135());
+        values.put(N2311_N2317.sub_N2311_N2317.N2313_6, n2311.getN23136());
+        values.put(N2311_N2317.sub_N2311_N2317.N2313_7, n2311.getN23137());
+        values.put(N2311_N2317.sub_N2311_N2317.N2313_8, n2311.getN23138());
+        values.put(N2311_N2317.sub_N2311_N2317.N2313_9, n2311.getN23139());
+        values.put(N2311_N2317.sub_N2311_N2317.N2313_10, n2311.getN231310());
+        values.put(N2311_N2317.sub_N2311_N2317.N2313_11, n2311.getN231311());
+        values.put(N2311_N2317.sub_N2311_N2317.N2313_12, n2311.getN231312());
+        values.put(N2311_N2317.sub_N2311_N2317.N2314, n2311.getN2314());
+        values.put(N2311_N2317.sub_N2311_N2317.N2315, n2311.getN2315());
+        values.put(N2311_N2317.sub_N2311_N2317.N2316, n2311.getN2316());
+        values.put(N2311_N2317.sub_N2311_N2317.N2317, n2311.getN2317());
+        values.put(N2311_N2317.sub_N2311_N2317.STUDYID, n2311.getSTUDYID());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
