@@ -10308,7 +10308,7 @@
             </android.support.v7.widget.CardView>
             <!-- Radio Buttons N2193 Ends -->
 
-            <!-- EditText N2194 Starts -->
+            <!-- EditText N2194_1 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
@@ -10333,7 +10333,7 @@
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
-            <!-- EditText N2194 Ends -->
+            <!-- EditText N2194_1 Ends -->
 
             <!-- Radio Buttons N2195 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
@@ -10446,7 +10446,7 @@
             <!-- Radio Buttons N2198 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-                <LinearLayout
+                <!--<LinearLayout
                     android:id="@+id/ll_N2198"
                     style="@style/Q_Linerlayout_v">
 
@@ -10479,7 +10479,7 @@
 
                     </RadioGroup>
 
-                </LinearLayout>
+                </LinearLayout>-->
 
             </android.support.v7.widget.CardView>
             <!-- Radio Buttons N2198 Ends -->
@@ -10595,7 +10595,7 @@
             <!-- Radio Buttons N2202 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
-                <LinearLayout
+                <!--<LinearLayout
                     android:id="@+id/ll_N2202"
                     style="@style/Q_Linerlayout_v">
 
@@ -10628,7 +10628,7 @@
 
                     </RadioGroup>
 
-                </LinearLayout>
+                </LinearLayout>-->
 
             </android.support.v7.widget.CardView>
             <!-- Radio Buttons N2202 Ends -->
@@ -12774,7 +12774,7 @@
             </android.support.v7.widget.CardView>
             <!-- Radio Buttons N2301 Ends -->
 
-            <!-- EditText N2302 Starts -->
+            <!-- EditText N2302_1 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
@@ -12799,7 +12799,7 @@
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
-            <!-- EditText N2302 Ends -->
+            <!-- EditText N2302_1 Ends -->
 
             <!-- EditText N2303 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
@@ -12824,7 +12824,7 @@
             </android.support.v7.widget.CardView>
             <!-- EditText N2303 Ends -->
 
-            <!-- EditText N2304 Starts -->
+            <!-- EditText N2304_1 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                 <LinearLayout
@@ -12849,7 +12849,7 @@
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
-            <!-- EditText N2304 Ends -->
+            <!-- EditText N2304_1 Ends -->
 
             <!-- Radio Buttons N2311_1 Starts -->
             <android.support.v7.widget.CardView style="@style/Q_CardView">

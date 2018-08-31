@@ -68,10 +68,10 @@
                             android:text="@string/txt_N2291" />
 
                         <EditText
-                            android:maxLength="2"
                             android:id="@+id/ed_N2291"
                             style="@style/EditText_number"
-                            android:hint="@string/years" />
+                            android:hint="@string/years"
+                            android:maxLength="2" />
 
                     </LinearLayout>
 
@@ -475,6 +475,10 @@
                                         style="@style/RadioButton"
                                         android:text="@string/rb_N2301_4" />
 
+                                    <RadioButton
+                                        android:id="@+id/rb_N2301_OT"
+                                        style="@style/RadioButton"
+                                        android:text="@string/ot_other" />
 
                                     <RadioButton
                                         android:id="@+id/rb_N2301_DK"
@@ -484,7 +488,9 @@
                                     <EditText
                                         android:id="@+id/ed_N2301_OT"
                                         style="@style/EditText_varchar"
-                                        android:hint="Other" />
+                                        android:hint="Other"
+                                        android:text='@{rbN2301OT.checked ? edN2301OT.getText.toString : ""}'
+                                        android:visibility="@{rbN2301OT.checked ? View.VISIBLE : View.GONE}" />
 
                                 </RadioGroup>
 
@@ -493,7 +499,7 @@
                         </android.support.v7.widget.CardView>
                         <!-- Radio Buttons N2301 Ends -->
 
-                        <!-- EditText N2302 Starts -->
+                        <!-- EditText N2302_1 Starts -->
                         <android.support.v7.widget.CardView
                             style="@style/Q_CardView"
                             android:visibility="@{rbN2301DK.checked ? View.GONE : View.VISIBLE}">
@@ -508,13 +514,13 @@
                                     android:text="@string/txt_N2302" />
 
                                 <EditText
-                                    android:id="@+id/txt_N2302_L1"
+                                    android:id="@+id/ed_N2302_L1"
                                     style="@style/TextView"
                                     android:hint="Level 1 - State / Provice"
                                     android:text='@{rbN2301DK.checked ?  "" : txtN2302L1.getText.toString }' />
 
                                 <EditText
-                                    android:id="@+id/txt_N2302_L2"
+                                    android:id="@+id/ed_N2302_L2"
                                     style="@style/TextView"
                                     android:hint="Level 2 - District"
                                     android:text='@{rbN2301DK.checked ?  "" : txtN2302L2.getText.toString }' />
@@ -524,7 +530,7 @@
                         </android.support.v7.widget.CardView>
 
                     </LinearLayout>
-                    <!-- EditText N2302 Ends -->
+                    <!-- EditText N2302_1 Ends -->
 
                     <!-- EditText N2303 Starts -->
                     <LinearLayout
@@ -557,7 +563,7 @@
                         </android.support.v7.widget.CardView>
                         <!-- EditText N2303 Ends -->
 
-                        <!-- EditText N2304 Starts -->
+                        <!-- EditText N2304_1 Starts -->
                         <android.support.v7.widget.CardView style="@style/Q_CardView">
 
                             <LinearLayout
@@ -570,13 +576,13 @@
                                     android:text="@string/txt_N2304" />
 
                                 <EditText
-                                    android:id="@+id/ed_N2304"
+                                    android:id="@+id/ed_N2304_1"
                                     style="@style/EditText_number"
                                     android:hint="@string/hours"
                                     android:maxLength="2" />
 
                                 <EditText
-                                    android:id="@+id/ed_N2304_1"
+                                    android:id="@+id/ed_N2304_2"
                                     style="@style/EditText_number"
                                     android:hint="@string/minutes"
                                     android:maxLength="2" />
@@ -588,7 +594,7 @@
                     </LinearLayout>
 
                 </LinearLayout>
-                <!-- EditText N2304 Ends -->
+                <!-- EditText N2304_1 Ends -->
 
                 <!--  = = = = =  END OF FORM FIELDS  = = = = = -->
                 <LinearLayout

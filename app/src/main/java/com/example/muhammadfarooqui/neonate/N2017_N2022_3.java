@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.example.muhammadfarooqui.neonate.databinding.N2017N20223Binding;
 
+import data.DBHelper;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 
@@ -60,10 +61,45 @@ public class N2017_N2022_3 extends AppCompatActivity {
 
     public void BtnContinue() {
         if (validateField()) {
-            startActivity(new Intent(this, N2051_N2078.class));
+            if (SaveData()) {
+                startActivity(new Intent(this, N2051_N2078.class));
+            } else {
+                Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
+            }
         } else {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public boolean SaveData() {
+
+        Global.N.N2017_N2022_3 n2017 = new Global.N.N2017_N2022_3();
+
+        n2017.setN2017(bi.rbN20171.isChecked() ? "1" : bi.rbN20172.isChecked() ? "2" : bi.rbN2017DK.isChecked() ? "9"
+                : bi.rbN2017RA.isChecked() ? "8" : "");
+        n2017.setN2018(bi.rbN20181.isChecked() ? "1" : bi.rbN20182.isChecked() ? "2" : bi.rbN2018DK.isChecked() ? "9"
+                : bi.rbN2018RA.isChecked() ? "8" : "");
+        n2017.setN2019u(bi.rbN2019u1.isChecked() ? "1" : bi.rbN2019u2.isChecked() ? "2" : bi.rbN2019uDK.isChecked() ? "9"
+                : bi.rbN2019uRA.isChecked() ? "8" : "");
+        n2017.setN2019h(bi.edN2019h.getText().toString());
+        n2017.setN2019d(bi.edN2019d.getText().toString());
+        n2017.setN2020(bi.rbN20201.isChecked() ? "1" : bi.rbN20202.isChecked() ? "2" : bi.rbN2020DK.isChecked() ? "9"
+                : bi.rbN2020RA.isChecked() ? "8" : "");
+        n2017.setN2021(bi.rbN20211.isChecked() ? "1" : bi.rbN20212.isChecked() ? "2" : bi.rbN2021DK.isChecked() ? "9"
+                : bi.rbN2021RA.isChecked() ? "8" : "");
+        n2017.setN2022(bi.rbN20221.isChecked() ? "1" : bi.rbN20222.isChecked() ? "2" : bi.rbN2022DK.isChecked() ? "9"
+                : bi.rbN2022RA.isChecked() ? "8" : "");
+        n2017.setN20221(bi.rbN202211.isChecked() ? "1" : bi.rbN202212.isChecked() ? "2" : bi.rbN20221DK.isChecked() ? "9"
+                : bi.rbN20221RA.isChecked() ? "8" : "");
+        n2017.setN20222(bi.rbN202221.isChecked() ? "1" : bi.rbN202222.isChecked() ? "2" : bi.rbN20222DK.isChecked() ? "9"
+                : bi.rbN20222RA.isChecked() ? "8" : "");
+        n2017.setN20223(bi.rbN202231.isChecked() ? "1" : bi.rbN202232.isChecked() ? "2" : bi.rbN20223DK.isChecked() ? "9"
+                : bi.rbN20223RA.isChecked() ? "8" : "");
+
+        DBHelper db = new DBHelper(this);
+        Long row = db.add_N2017(n2017);
+
+        return row > 0;
     }
 
     public Boolean validateField() {
