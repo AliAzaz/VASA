@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.example.muhammadfarooqui.neonate.databinding.N2271N2284Binding;
 
+import data.DBHelper;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
 
@@ -51,10 +52,37 @@ public class N2271_N2284 extends AppCompatActivity {
 
     public void BtnContinue() {
         if (validateField()) {
-            startActivity(new Intent(this, N2291_N2304.class));
+            if (SaveData()) {
+                startActivity(new Intent(this, N2291_N2304.class));
+            } else {
+                Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
+            }
         } else {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public boolean SaveData() {
+
+        Global.N.N2271_N2284 n2271 = new Global.N.N2271_N2284();
+
+        n2271.setN2271(bi.rbN22711.isChecked() ? "1" : bi.rbN22712.isChecked() ? "2" : bi.rbN2271DK.isChecked() ? "9"
+                : bi.rbN2271RA.isChecked() ? "8" : "");
+        n2271.setN2272(bi.rbN22721.isChecked() ? "1" : bi.rbN22722.isChecked() ? "2" : "");
+        n2271.setN2273(bi.edN2273.getText().toString());
+        n2271.setN2274(bi.edN2274.getText().toString());
+        n2271.setN2275(bi.edN2275.getText().toString());
+        n2271.setN2276(bi.edN2276.getText().toString());
+        n2271.setN2277(bi.edN2277.getText().toString());
+        n2271.setN2278(bi.edN2278.getText().toString());
+        n2271.setN2283(bi.rbN22831.isChecked() ? "1" : bi.rbN22832.isChecked() ? "2" : bi.rbN22833.isChecked() ? "3"
+                : bi.rbN2283DK.isChecked() ? "9" : bi.rbN2283RA.isChecked() ? "8" : "");
+        n2271.setN2284(bi.edN2284.getText().toString());
+
+        DBHelper db = new DBHelper(this);
+        Long row = db.add_N2271(n2271);
+
+        return row > 0;
     }
 
     public Boolean validateField() {

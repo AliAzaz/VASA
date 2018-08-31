@@ -1328,10 +1328,10 @@
     <string name="rb_N2197_1">Yes</string>
     <string name="rb_N2197_2">No</string>
     <string name="rb_N2197_DK">Don’t know</string>
-    <string name="rb_N2198_1">Trained CHW or nurse at home/in the community </string>
-    <string name="rb_N2198_2">Doctor or nurse at a health facility </string>
-    <string name="rb_N2198_3">Never seen </string>
-    <string name="rb_N2198_DK">Don’t know </string>
+    <string name="cb_N2198_1">Trained CHW or nurse at home/in the community </string>
+    <string name="cb_N2198_2">Doctor or nurse at a health facility </string>
+    <string name="cb_N2198_3">Never seen </string>
+    <string name="cb_N2198_DK">Don’t know </string>
     <string name="rb_N2199_1">Yes</string>
     <string name="rb_N2199_2">No</string>
     <string name="rb_N2199_DK">Don’t know</string>
@@ -1341,10 +1341,10 @@
     <string name="rb_N2201_1">Yes</string>
     <string name="rb_N2201_2">No</string>
     <string name="rb_N2201_DK">Don’t know</string>
-    <string name="rb_N2202_1">Trained CHW or nurse at home/in the community </string>
-    <string name="rb_N2202_2">Doctor or nurse at a health facility </string>
-    <string name="rb_N2202_3">Never seen </string>
-    <string name="rb_N2202_DK">Don’t know </string>
+    <string name="cb_N2202_1">Trained CHW or nurse at home/in the community </string>
+    <string name="cb_N2202_2">Doctor or nurse at a health facility </string>
+    <string name="cb_N2202_3">Never seen </string>
+    <string name="cb_N2202_DK">Don’t know </string>
 
 
     <string name="rb_N2322_1">Asphyxia</string>
@@ -3145,6 +3145,8 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="days_hint">Enter days &amp; if you don\'t know enter \'99\'</string>
     <string name="grade_year">Grade/Year</string>
     <string name="kg">Kilograms</string>
+    <string name="time">Times</string>
+    <string name="fv">First visit</string>
 
 
     <string name="A4001">A4001: What was the first or given name(s) of the deceased?</string>

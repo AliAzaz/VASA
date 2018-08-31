@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import com.example.muhammadfarooqui.neonate.databinding.N2023N2026Binding;
 
+import data.DBHelper;
 import utils.Gothrough;
 
 public class N2023_N2026 extends AppCompatActivity {
@@ -25,10 +26,34 @@ public class N2023_N2026 extends AppCompatActivity {
 
     public void BtnContinue() {
         if (validateField()) {
-            startActivity(new Intent(this, N2051_N2078.class));
+            if (SaveData()) {
+                startActivity(new Intent(this, N2051_N2078.class));
+            } else {
+                Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
+            }
         } else {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
         }
+    }
+
+
+    public boolean SaveData() {
+
+        Global.N.N2023_N2026 n2023 = new Global.N.N2023_N2026();
+
+        n2023.setN2023(bi.edN2023.getText().toString());
+        n2023.setN2024(bi.edN2024.getText().toString());
+        n2023.setN20241(bi.rbN202411.isChecked() ? "1" : bi.rbN202412.isChecked() ? "2" : bi.rbN20241DK.isChecked() ? "9"
+                : bi.rbN20241RA.isChecked() ? "8" : "");
+        n2023.setN2025U(bi.rbN2025u1.isChecked() ? "1" : bi.rbN2025uDK.isChecked() ? "9" : bi.rbN2025uRA.isChecked() ? "8" : "");
+        n2023.setN2025D(bi.edN2025d.getText().toString());
+        n2023.setN2026(bi.rbN20261.isChecked() ? "1" : bi.rbN20262.isChecked() ? "2" : bi.rbN2026DK.isChecked() ? "9"
+                : bi.rbN2026RA.isChecked() ? "8" : "");
+
+        DBHelper db = new DBHelper(this);
+        Long row = db.add_N2023(n2023);
+
+        return row > 0;
     }
 
     public Boolean validateField() {
