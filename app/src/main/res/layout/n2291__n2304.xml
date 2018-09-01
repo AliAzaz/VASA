@@ -517,13 +517,13 @@
                                     android:id="@+id/ed_N2302_L1"
                                     style="@style/TextView"
                                     android:hint="Level 1 - State / Provice"
-                                    android:text='@{rbN2301DK.checked ?  "" : txtN2302L1.getText.toString }' />
+                                    android:text='@{rbN2301DK.checked ?  "" : edN2302L1.getText.toString }' />
 
                                 <EditText
                                     android:id="@+id/ed_N2302_L2"
                                     style="@style/TextView"
                                     android:hint="Level 2 - District"
-                                    android:text='@{rbN2301DK.checked ?  "" : txtN2302L2.getText.toString }' />
+                                    android:text='@{rbN2301DK.checked ?  "" : edN2302L2.getText.toString }' />
 
                             </LinearLayout>
 

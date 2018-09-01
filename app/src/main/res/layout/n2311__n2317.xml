@@ -546,11 +546,33 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2311_OT" />
 
+                            <RadioGroup
+                                android:id="@+id/rg_N2311_OT"
+                                style="@style/RadioGroup">
+
+                                <RadioButton
+                                    android:id="@+id/rb_N2311_OT_1"
+                                    style="@style/RadioButton"
+                                    android:text="@string/yes" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_N2311_OT_2"
+                                    style="@style/RadioButton"
+                                    android:text="@string/no" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_N2311_OT_DK"
+                                    style="@style/RadioButton"
+                                    android:text="@string/dnt" />
+
+                            </RadioGroup>
 
                             <EditText
                                 android:id="@+id/ed_N2311_OT"
                                 style="@style/EditText_varchar"
-                                android:hint="Other" />
+                                android:hint="@string/ot_other"
+                                android:text='@{rbN2311OT1.checked ? edN2311OT.getText.toString : ""}'
+                                android:visibility="@{rbN2311OT1.checked ? View.VISIBLE : View.GONE}" />
 
                         </LinearLayout>
 
@@ -888,11 +910,33 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2312_OT" />
 
+                            <RadioGroup
+                                android:id="@+id/rg_N2312_OT"
+                                style="@style/RadioGroup">
+
+                                <RadioButton
+                                    android:id="@+id/rb_N2312_OT_1"
+                                    style="@style/RadioButton"
+                                    android:text="@string/yes" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_N2312_OT_2"
+                                    style="@style/RadioButton"
+                                    android:text="@string/no" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_N2312_OT_DK"
+                                    style="@style/RadioButton"
+                                    android:text="@string/dnt" />
+
+                            </RadioGroup>
 
                             <EditText
                                 android:id="@+id/ed_N2312_OT"
                                 style="@style/EditText_varchar"
-                                android:hint="Other" />
+                                android:hint="@string/ot_other"
+                                android:text='@{rbN2312OT1.checked ? edN2312OT.getText.toString : ""}'
+                                android:visibility="@{rbN2312OT1.checked ? View.VISIBLE : View.GONE}" />
 
                         </LinearLayout>
 
@@ -1346,11 +1390,33 @@
                                 style="@style/TextView"
                                 android:text="@string/txt_N2313_OT" />
 
+                            <RadioGroup
+                                android:id="@+id/rg_N2313_OT"
+                                style="@style/RadioGroup">
+
+                                <RadioButton
+                                    android:id="@+id/rb_N2313_OT_1"
+                                    style="@style/RadioButton"
+                                    android:text="@string/yes" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_N2313_OT_2"
+                                    style="@style/RadioButton"
+                                    android:text="@string/no" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_N2313_OT_DK"
+                                    style="@style/RadioButton"
+                                    android:text="@string/dnt" />
+
+                            </RadioGroup>
 
                             <EditText
                                 android:id="@+id/ed_N2313_OT"
                                 style="@style/EditText_varchar"
-                                android:hint="Other" />
+                                android:hint="@string/ot_other"
+                                android:text='@{rbN2313OT1.checked ? edN2313OT.getText.toString : ""}'
+                                android:visibility="@{rbN2313OT1.checked ? View.VISIBLE : View.GONE}" />
 
                         </LinearLayout>
 
