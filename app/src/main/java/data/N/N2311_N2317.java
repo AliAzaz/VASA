@@ -22,7 +22,7 @@ public class N2311_N2317 {
                 Global.N.N2311_N2317.sub_N2311_N2317.N2311_11 + " TEXT," +
                 Global.N.N2311_N2317.sub_N2311_N2317.N2311_12 + " TEXT," +
                 Global.N.N2311_N2317.sub_N2311_N2317.N2311_13 + " TEXT," +
-                Global.N.N2311_N2317.sub_N2311_N2317.N2312 + " TEXT," +
+                Global.N.N2311_N2317.sub_N2311_N2317.N2311_13x + " TEXT," +
                 Global.N.N2311_N2317.sub_N2311_N2317.N2312_1 + " TEXT," +
                 Global.N.N2311_N2317.sub_N2311_N2317.N2312_2 + " TEXT," +
                 Global.N.N2311_N2317.sub_N2311_N2317.N2312_3 + " TEXT," +
@@ -32,7 +32,7 @@ public class N2311_N2317 {
                 Global.N.N2311_N2317.sub_N2311_N2317.N2312_7 + " TEXT," +
                 Global.N.N2311_N2317.sub_N2311_N2317.N2312_8 + " TEXT," +
                 Global.N.N2311_N2317.sub_N2311_N2317.N2312_9 + " TEXT," +
-                Global.N.N2311_N2317.sub_N2311_N2317.N2313 + " TEXT," +
+                Global.N.N2311_N2317.sub_N2311_N2317.N2312_9x + " TEXT," +
                 Global.N.N2311_N2317.sub_N2311_N2317.N2313_1 + " TEXT," +
                 Global.N.N2311_N2317.sub_N2311_N2317.N2313_2 + " TEXT," +
                 Global.N.N2311_N2317.sub_N2311_N2317.N2313_3 + " TEXT," +
@@ -45,6 +45,7 @@ public class N2311_N2317 {
                 Global.N.N2311_N2317.sub_N2311_N2317.N2313_10 + " TEXT," +
                 Global.N.N2311_N2317.sub_N2311_N2317.N2313_11 + " TEXT," +
                 Global.N.N2311_N2317.sub_N2311_N2317.N2313_12 + " TEXT," +
+                Global.N.N2311_N2317.sub_N2311_N2317.N2313_12x + " TEXT," +
                 Global.N.N2311_N2317.sub_N2311_N2317.N2314 + " TEXT," +
                 Global.N.N2311_N2317.sub_N2311_N2317.N2315 + " TEXT," +
                 Global.N.N2311_N2317.sub_N2311_N2317.N2316 + " TEXT," +

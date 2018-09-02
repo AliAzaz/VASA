@@ -13,6 +13,7 @@ public class N2291_N2304 {
     public String N2299 = "N2299";
     public String N2300 = "N2300";
     public String N2301 = "N2301";
+    public String N2301x = "N2301x";
     public String N2302_1 = "N2302_1";
     public String N2302_2 = "N2302_2";
     public String N2303 = "N2303";
@@ -147,6 +148,14 @@ public class N2291_N2304 {
         N2304_2 = n2304_2;
     }
 
+    public String getN2301x() {
+        return N2301x;
+    }
+
+    public void setN2301x(String n2301x) {
+        N2301x = n2301x;
+    }
+
     public interface sub_N2291_N2304 {
         String N2291 = "N2291";
         String N2292 = "N2292";
@@ -159,6 +168,7 @@ public class N2291_N2304 {
         String N2299 = "N2299";
         String N2300 = "N2300";
         String N2301 = "N2301";
+        String N2301x = "N2301x";
         String N2302_1 = "N2302_1";
         String N2302_2 = "N2302_2";
         String N2303 = "N2303";

@@ -17,6 +17,7 @@ public class N2051_N2078 {
                 Global.N.N2051_N2078.sub_N2051_N2078.N2053_5 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2053_DK + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2053_OT + " TEXT," +
+                Global.N.N2051_N2078.sub_N2051_N2078.N2053_OTx + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2054 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2055 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2056 + " TEXT," +
@@ -55,13 +56,16 @@ public class N2051_N2078 {
                 Global.N.N2051_N2078.sub_N2051_N2078.N2072 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2073 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2074 + " TEXT," +
+                Global.N.N2051_N2078.sub_N2051_N2078.N2074x + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2075 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2076 + " TEXT," +
+                Global.N.N2051_N2078.sub_N2051_N2078.N2076x + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2077 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2078_1 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2078_2 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2078_3 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2078_4 + " TEXT," +
+                Global.N.N2051_N2078.sub_N2051_N2078.N2078_4x + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2078_5 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2078_6 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2078_7 + " TEXT," +
@@ -72,7 +76,8 @@ public class N2051_N2078 {
                 Global.N.N2051_N2078.sub_N2051_N2078.N2078_12 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2078_13 + " TEXT," +
                 Global.N.N2051_N2078.sub_N2051_N2078.N2078_DK + " TEXT," +
-                Global.N.N2051_N2078.sub_N2051_N2078.N2078_OT + " TEXT" +
+                Global.N.N2051_N2078.sub_N2051_N2078.N2078_OT + " TEXT," +
+                Global.N.N2051_N2078.sub_N2051_N2078.N2078_OTx + " TEXT" +
 
 
                 ')';

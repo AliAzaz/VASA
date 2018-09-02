@@ -93,6 +93,8 @@ public class N2051_N2078 extends AppCompatActivity {
         n2051.setN20535(bi.cbN20535.isChecked() ? "5" : "");
         n2051.setN2053DK(bi.cbN2053DK.isChecked() ? "9" : "");
         n2051.setN2053OT(bi.cbN2053OT.isChecked() ? "6" : "");
+        n2051.setN2053OTx(bi.edN2053OT.getText().toString());
+
         n2051.setN2054(bi.edN2054.getText().toString());
         n2051.setN2055(bi.edN2055.getText().toString());
         n2051.setN2056(bi.edN2056.getText().toString());
@@ -140,16 +142,19 @@ public class N2051_N2078 extends AppCompatActivity {
                 : bi.rbN2073RA.isChecked() ? "8" : "");
         n2051.setN2074(bi.rbN20741.isChecked() ? "1" : bi.rbN20742.isChecked() ? "2" : bi.rbN2074OT.isChecked() ? "3"
                 : bi.rbN2074DK.isChecked() ? "9" : bi.rbN2074RA.isChecked() ? "8" : "");
+        n2051.setN2074x(bi.edN2074OT.getText().toString());
         n2051.setN2075(bi.rbN20751.isChecked() ? "1" : bi.rbN20752.isChecked() ? "2" : bi.rbN2075DK.isChecked() ? "9"
                 : bi.rbN2075RA.isChecked() ? "8" : "");
         n2051.setN2076(bi.rbN20761.isChecked() ? "1" : bi.rbN20762.isChecked() ? "2" : bi.rbN20763.isChecked() ? "3"
                 : bi.rbN20764.isChecked() ? "4" : bi.rbN20765.isChecked() ? "5" : bi.rbN20766.isChecked() ? "6"
                 : bi.rbN2076DK.isChecked() ? "9" : "");
+        n2051.setN2076x(bi.edN20766.getText().toString());
         n2051.setN2077(bi.rbN20771.isChecked() ? "1" : bi.rbN20772.isChecked() ? "2" : bi.rbN2077DK.isChecked() ? "9" : "");
         n2051.setN20781(bi.cbN20781.isChecked() ? "1" : "");
         n2051.setN20782(bi.cbN20782.isChecked() ? "2" : "");
         n2051.setN20783(bi.cbN20783.isChecked() ? "3" : "");
         n2051.setN20784(bi.cbN20784.isChecked() ? "4" : "");
+        n2051.setN20784x(bi.edN20784.getText().toString());
         n2051.setN20785(bi.cbN20785.isChecked() ? "5" : "");
         n2051.setN20786(bi.cbN20786.isChecked() ? "6" : "");
         n2051.setN20787(bi.cbN20787.isChecked() ? "7" : "");
@@ -159,8 +164,9 @@ public class N2051_N2078 extends AppCompatActivity {
         n2051.setN207811(bi.cbN207811.isChecked() ? "11" : "");
         n2051.setN207812(bi.cbN207812.isChecked() ? "12" : "");
         n2051.setN207813(bi.cbN207813.isChecked() ? "13" : "");
-        n2051.setN207813(bi.cbN2078OT.isChecked() ? "14" : "");
-        n2051.setN207813(bi.cbN2078DK.isChecked() ? "99" : "");
+        n2051.setN2078OT(bi.cbN2078OT.isChecked() ? "14" : "");
+        n2051.setN2078OTx(bi.edN2078OT.getText().toString());
+        n2051.setN2078DK(bi.cbN2078DK.isChecked() ? "99" : "");
 
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2051(n2051);

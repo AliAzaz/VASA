@@ -16,7 +16,7 @@ public class N2311_N2317 {
     public String N2311_11 = "N2311_11";
     public String N2311_12 = "N2311_12";
     public String N2311_13 = "N2311_13";
-    public String N2312 = "N2312";
+    public String N2311_13x = "N2311_13x";
     public String N2312_1 = "N2312_1";
     public String N2312_2 = "N2312_2";
     public String N2312_3 = "N2312_3";
@@ -26,7 +26,7 @@ public class N2311_N2317 {
     public String N2312_7 = "N2312_7";
     public String N2312_8 = "N2312_8";
     public String N2312_9 = "N2312_9";
-    public String N2313 = "N2313";
+    public String N2312_9x = "N2312_9x";
     public String N2313_1 = "N2313_1";
     public String N2313_2 = "N2313_2";
     public String N2313_3 = "N2313_3";
@@ -39,6 +39,7 @@ public class N2311_N2317 {
     public String N2313_10 = "N2313_10";
     public String N2313_11 = "N2313_11";
     public String N2313_12 = "N2313_12";
+    public String N2313_12x = "N2313_12x";
     public String N2314 = "N2314";
     public String N2315 = "N2315";
     public String N2316 = "N2316";
@@ -158,12 +159,12 @@ public class N2311_N2317 {
         N2311_13 = n231113;
     }
 
-    public String getN2312() {
-        return N2312;
+    public String getN231113x() {
+        return N2311_13x;
     }
 
-    public void setN2312(String n2312) {
-        N2312 = n2312;
+    public void setN231113x(String n2311_13x) {
+        N2311_13x = n2311_13x;
     }
 
     public String getN23121() {
@@ -238,12 +239,12 @@ public class N2311_N2317 {
         N2312_9 = n23129;
     }
 
-    public String getN2313() {
-        return N2313;
+    public String getN23129x() {
+        return N2312_9x;
     }
 
-    public void setN2313(String n2313) {
-        N2313 = n2313;
+    public void setN23129x(String n2312_9x) {
+        N2312_9x = n2312_9x;
     }
 
     public String getN23131() {
@@ -342,6 +343,14 @@ public class N2311_N2317 {
         N2313_12 = n231312;
     }
 
+    public String getN231312x() {
+        return N2313_12x;
+    }
+
+    public void setN231312x(String n2313_12x) {
+        N2313_12x = n2313_12x;
+    }
+
     public String getN2314() {
         return N2314;
     }
@@ -397,7 +406,7 @@ public class N2311_N2317 {
         String N2311_11 = "N2311_11";
         String N2311_12 = "N2311_12";
         String N2311_13 = "N2311_13";
-        String N2312 = "N2312";
+        String N2311_13x = "N2311_13x";
         String N2312_1 = "N2312_1";
         String N2312_2 = "N2312_2";
         String N2312_3 = "N2312_3";
@@ -407,7 +416,7 @@ public class N2311_N2317 {
         String N2312_7 = "N2312_7";
         String N2312_8 = "N2312_8";
         String N2312_9 = "N2312_9";
-        String N2313 = "N2313";
+        String N2312_9x = "N2312_9x";
         String N2313_1 = "N2313_1";
         String N2313_2 = "N2313_2";
         String N2313_3 = "N2313_3";
@@ -420,6 +429,7 @@ public class N2311_N2317 {
         String N2313_10 = "N2313_10";
         String N2313_11 = "N2313_11";
         String N2313_12 = "N2313_12";
+        String N2313_12x = "N2313_12x";
         String N2314 = "N2314";
         String N2315 = "N2315";
         String N2316 = "N2316";

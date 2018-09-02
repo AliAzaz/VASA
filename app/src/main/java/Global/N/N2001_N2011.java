@@ -11,7 +11,9 @@ public class N2001_N2011 {
     public String N2005w = "N2005w";
     public String N2005m = "N2005m";
     public String N2006 = "N2006";
+    public String N2006x = "N2006x";
     public String N2008 = "N2008";
+    public String N2008x = "N2008x";
     public String N2009_1 = "N2009_1";
     public String N2009_2 = "N2009_2";
     public String N2009_3 = "N2009_3";
@@ -147,6 +149,22 @@ public class N2001_N2011 {
         N2011 = n2011;
     }
 
+    public String getN2006x() {
+        return N2006x;
+    }
+
+    public void setN2006x(String n2006x) {
+        N2006x = n2006x;
+    }
+
+    public String getN2008x() {
+        return N2008x;
+    }
+
+    public void setN2008x(String n2008x) {
+        N2008x = n2008x;
+    }
+
     public interface sub_N2001_N2011 {
         String N2001 = "N2001";
         String N2002 = "N2002";
@@ -157,7 +175,9 @@ public class N2001_N2011 {
         String N2005w = "N2005w";
         String N2005m = "N2005m";
         String N2006 = "N2006";
+        String N2006x = "N2006x";
         String N2008 = "N2008";
+        String N2008x = "N2008x";
         String N2009_1 = "N2009_1";
         String N2009_2 = "N2009_2";
         String N2009_3 = "N2009_3";

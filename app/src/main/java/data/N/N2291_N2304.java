@@ -19,6 +19,7 @@ public class N2291_N2304 {
                 Global.N.N2291_N2304.sub_N2291_N2304.N2299 + " TEXT," +
                 Global.N.N2291_N2304.sub_N2291_N2304.N2300 + " TEXT," +
                 Global.N.N2291_N2304.sub_N2291_N2304.N2301 + " TEXT," +
+                Global.N.N2291_N2304.sub_N2291_N2304.N2301x + " TEXT," +
                 Global.N.N2291_N2304.sub_N2291_N2304.N2302_1 + " TEXT," +
                 Global.N.N2291_N2304.sub_N2291_N2304.N2302_2 + " TEXT," +
                 Global.N.N2291_N2304.sub_N2291_N2304.N2303 + " TEXT," +
