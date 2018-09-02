@@ -187,7 +187,11 @@ public class N2080_N2107 extends AppCompatActivity {
 
     public void BtnContinue() {
         if (validateField()) {
-            startActivity(new Intent(this, N2110_N2189a.class));
+            if (SaveData()) {
+                startActivity(new Intent(this, N2110_N2189a.class));
+            } else {
+                Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
+            }
         } else {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
         }
