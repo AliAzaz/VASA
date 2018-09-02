@@ -3,13 +3,16 @@ package Global.N;
 public class N2110_N2189a {
 
     public String N2110 = "N2110";
+    public String N2110x = "N2110x";
     public String N2111 = "N2111";
+    public String N2111x = "N2111x";
     public String N2112 = "N2112";
     public String N2113_1 = "N2113_1";
     public String N2113_2 = "N2113_2";
     public String N2113_3 = "N2113_3";
     public String N2113_4 = "N2113_4";
     public String N2113_OT = "N2113_OT";
+    public String N2113_OTx = "N2113_OTx";
     public String N2113_DK = "N2113_DK";
     public String N2114 = "N2114";
     public String N2115 = "N2115";
@@ -27,12 +30,15 @@ public class N2110_N2189a {
     public String N2125 = "N2125";
     public String N2126 = "N2126";
     public String N2127 = "N2127";
+    public String N2127h = "N2127h";
     public String N2128 = "N2128";
     public String N2129 = "N2129";
     public String N2130 = "N2130";
     public String N2131 = "N2131";
     public String N2132 = "N2132";
     public String N2133 = "N2133";
+    public String N2133h = "N2133";
+    public String N2133d = "N2133";
     public String N2134 = "N2134";
     public String N2135_1 = "N2135_1";
     public String N2135_2 = "N2135_2";
@@ -45,6 +51,7 @@ public class N2110_N2189a {
     public String N2135_9 = "N2135_9";
     public String N2135_10 = "N2135_10";
     public String N2135_11 = "N2135_11";
+    public String N2135_11x = "N2135_11x";
     public String N2136 = "N2136";
     public String N2137 = "N2137";
     public String N2138 = "N2138";
@@ -903,15 +910,74 @@ public class N2110_N2189a {
         N2189A = n2189A;
     }
 
+    public String getN2110x() {
+        return N2110x;
+    }
+
+    public void setN2110x(String n2110x) {
+        N2110x = n2110x;
+    }
+
+    public String getN2111x() {
+        return N2111x;
+    }
+
+    public void setN2111x(String n2111x) {
+        N2111x = n2111x;
+    }
+
+    public String getN2113OTx() {
+        return N2113_OTx;
+    }
+
+    public void setN2113OTx(String n2113_OTx) {
+        N2113_OTx = n2113_OTx;
+    }
+
+    public String getN2127h() {
+        return N2127h;
+    }
+
+    public void setN2127h(String n2127h) {
+        N2127h = n2127h;
+    }
+
+    public String getN2133h() {
+        return N2133h;
+    }
+
+    public void setN2133h(String n2133h) {
+        N2133h = n2133h;
+    }
+
+    public String getN2133d() {
+        return N2133d;
+    }
+
+    public void setN2133d(String n2133d) {
+        N2133d = n2133d;
+    }
+
+    public String getN213511x() {
+        return N2135_11x;
+    }
+
+    public void setN213511x(String n2135_11x) {
+        N2135_11x = n2135_11x;
+    }
+
     public interface sub_N2110_N2189a {
         String N2110 = "N2110";
+        String N2110x = "N2110x";
         String N2111 = "N2111";
+        String N2111x = "N2111x";
         String N2112 = "N2112";
         String N2113_1 = "N2113_1";
         String N2113_2 = "N2113_2";
         String N2113_3 = "N2113_3";
         String N2113_4 = "N2113_4";
         String N2113_OT = "N2113_OT";
+        String N2113_OTx = "N2113_OTx";
         String N2113_DK = "N2113_DK";
         String N2114 = "N2114";
         String N2115 = "N2115";
@@ -929,12 +995,15 @@ public class N2110_N2189a {
         String N2125 = "N2125";
         String N2126 = "N2126";
         String N2127 = "N2127";
+        String N2127h = "N2127h";
         String N2128 = "N2128";
         String N2129 = "N2129";
         String N2130 = "N2130";
         String N2131 = "N2131";
         String N2132 = "N2132";
         String N2133 = "N2133";
+        String N2133d = "N2133d";
+        String N2133h = "N2133h";
         String N2134 = "N2134";
         String N2135_1 = "N2135_1";
         String N2135_2 = "N2135_2";
@@ -947,6 +1016,7 @@ public class N2110_N2189a {
         String N2135_9 = "N2135_9";
         String N2135_10 = "N2135_10";
         String N2135_11 = "N2135_11";
+        String N2135_11x = "N2135_11x";
         String N2136 = "N2136";
         String N2137 = "N2137";
         String N2138 = "N2138";
@@ -990,7 +1060,7 @@ public class N2110_N2189a {
         String N2175 = "N2175";
         String N2176 = "N2176";
         String N2177 = "N2177";
-        String N2177A = "N2177A ";
+        String N2177A = "N2177A";
         String N2178 = "N2178";
         String N2179 = "N2179";
         String N2180 = "N2180";

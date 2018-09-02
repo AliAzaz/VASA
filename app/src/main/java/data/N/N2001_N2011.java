@@ -16,7 +16,9 @@ public class N2001_N2011 {
                 Global.N.N2001_N2011.sub_N2001_N2011.N2005w + " TEXT," +
                 Global.N.N2001_N2011.sub_N2001_N2011.N2005m + " TEXT," +
                 Global.N.N2001_N2011.sub_N2001_N2011.N2006 + " TEXT," +
+                Global.N.N2001_N2011.sub_N2001_N2011.N2006x + " TEXT," +
                 Global.N.N2001_N2011.sub_N2001_N2011.N2008 + " TEXT," +
+                Global.N.N2001_N2011.sub_N2001_N2011.N2008x + " TEXT," +
                 Global.N.N2001_N2011.sub_N2001_N2011.N2009_1 + " TEXT," +
                 Global.N.N2001_N2011.sub_N2001_N2011.N2009_2 + " TEXT," +
                 Global.N.N2001_N2011.sub_N2001_N2011.N2009_3 + " TEXT," +

@@ -11,6 +11,7 @@ public class N2051_N2078 {
     public String N2053_5 = "N2053_5";
     public String N2053_DK = "N2053_DK";
     public String N2053_OT = "N2053_OT";
+    public String N2053_OTx = "N2053_OTx";
     public String N2054 = "N2054";
     public String N2055 = "N2055";
     public String N2056 = "N2056";
@@ -49,14 +50,17 @@ public class N2051_N2078 {
     public String N2072 = "N2072";
     public String N2073 = "N2073 ";
     public String N2074 = "N2074";
+    public String N2074x = "N2074x";
     public String N2075 = "N2075 ";
     public String N2076 = "N2076";
+    public String N2076x = "N2076x";
     public String N2077 = "N2077";
     public String N2078 = "N2078";
     public String N2078_1 = "N2078_1";
     public String N2078_2 = "N2078_2";
     public String N2078_3 = "N2078_3";
     public String N2078_4 = "N2078_4";
+    public String N2078_4x = "N2078_4x";
     public String N2078_5 = "N2078_5";
     public String N2078_6 = "N2078_6";
     public String N2078_7 = "N2078_7";
@@ -68,6 +72,7 @@ public class N2051_N2078 {
     public String N2078_13 = "N2078_13";
     public String N2078_DK = "N2078_DK";
     public String N2078_OT = "N2078_OT";
+    public String N2078_OTx = "N2078_OTx";
 
     public String getN2051() {
         return N2051;
@@ -597,6 +602,46 @@ public class N2051_N2078 {
         N2078_OT = n2078_OT;
     }
 
+    public String getN2053OTx() {
+        return N2053_OTx;
+    }
+
+    public void setN2053OTx(String n2053OTx) {
+        N2053_OTx = n2053OTx;
+    }
+
+    public String getN2074x() {
+        return N2074x;
+    }
+
+    public void setN2074x(String n2074x) {
+        N2074x = n2074x;
+    }
+
+    public String getN2076x() {
+        return N2076x;
+    }
+
+    public void setN2076x(String n2076x) {
+        N2076x = n2076x;
+    }
+
+    public String getN20784x() {
+        return N2078_4x;
+    }
+
+    public void setN20784x(String n2078_4x) {
+        N2078_4x = n2078_4x;
+    }
+
+    public String getN2078OTx() {
+        return N2078_OTx;
+    }
+
+    public void setN2078OTx(String n2078_OTx) {
+        N2078_OTx = n2078_OTx;
+    }
+
     public interface sub_N2051_N2078 {
         String N2051 = "N2051";
         String N2052 = "N2052";
@@ -607,6 +652,7 @@ public class N2051_N2078 {
         String N2053_5 = "N2053_5";
         String N2053_DK = "N2053_DK";
         String N2053_OT = "N2053_OT";
+        String N2053_OTx = "N2053_OTx";
         String N2054 = "N2054";
         String N2055 = "N2055";
         String N2056 = "N2056";
@@ -645,13 +691,16 @@ public class N2051_N2078 {
         String N2072 = "N2072";
         String N2073 = "N2073 ";
         String N2074 = "N2074";
+        String N2074x = "N2074x";
         String N2075 = "N2075 ";
         String N2076 = "N2076";
+        String N2076x = "N2076x";
         String N2077 = "N2077";
         String N2078_1 = "N2078_1";
         String N2078_2 = "N2078_2";
         String N2078_3 = "N2078_3";
         String N2078_4 = "N2078_4";
+        String N2078_4x = "N2078_4x";
         String N2078_5 = "N2078_5";
         String N2078_6 = "N2078_6";
         String N2078_7 = "N2078_7";
@@ -663,6 +712,7 @@ public class N2051_N2078 {
         String N2078_13 = "N2078_13";
         String N2078_DK = "N2078_DK";
         String N2078_OT = "N2078_OT";
+        String N2078_OTx = "N2078_OTx";
 
     }
 

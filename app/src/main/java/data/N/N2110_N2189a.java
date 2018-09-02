@@ -9,13 +9,16 @@ public class N2110_N2189a {
         query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' INTEGER,   " +
 
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2110 + " TEXT," +
+                Global.N.N2110_N2189a.sub_N2110_N2189a.N2110x + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2111 + " TEXT," +
+                Global.N.N2110_N2189a.sub_N2110_N2189a.N2111x + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2112 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2113_1 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2113_2 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2113_3 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2113_4 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2113_OT + " TEXT," +
+                Global.N.N2110_N2189a.sub_N2110_N2189a.N2113_OTx + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2113_DK + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2114 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2115 + " TEXT," +
@@ -33,12 +36,15 @@ public class N2110_N2189a {
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2125 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2126 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2127 + " TEXT," +
+                Global.N.N2110_N2189a.sub_N2110_N2189a.N2127h + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2128 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2129 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2130 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2131 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2132 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2133 + " TEXT," +
+                Global.N.N2110_N2189a.sub_N2110_N2189a.N2133d + " TEXT," +
+                Global.N.N2110_N2189a.sub_N2110_N2189a.N2133h + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2134 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2135_1 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2135_2 + " TEXT," +
@@ -51,6 +57,7 @@ public class N2110_N2189a {
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2135_9 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2135_10 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2135_11 + " TEXT," +
+                Global.N.N2110_N2189a.sub_N2110_N2189a.N2135_11x + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2136 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2137 + " TEXT," +
                 Global.N.N2110_N2189a.sub_N2110_N2189a.N2138 + " TEXT," +

@@ -131,9 +131,17 @@ public class N2001_N2011 extends AppCompatActivity {
                                 bi.rbN20067.isChecked() ? "7" : bi.rbN20068.isChecked() ? "8" : bi.rbN20069.isChecked() ? "9" :
                                         bi.rbN200610.isChecked() ? "10" : bi.rbN200611.isChecked() ? "11" : bi.rbN200612.isChecked() ? "12"
                                                 : bi.rbN2006DK.isChecked() ? "99" : bi.rbN2006RA.isChecked() ? "88" : "");
+        n2001.setN2006x(
+                bi.rbN20066.isChecked() ? bi.edN20066.getText().toString() :
+                        bi.rbN200610.isChecked() ? bi.edN200610.getText().toString() :
+                                bi.rbN200612.isChecked() ? bi.edN2006OT.getText().toString() : ""
+        );
+
+
         n2001.setN2008(bi.rbN20081.isChecked() ? "1" : bi.rbN20082.isChecked() ? "2" : bi.rbN20083.isChecked() ? "3" :
                 bi.rbN20084.isChecked() ? "4" : bi.rbN20085.isChecked() ? "5" : bi.rbN20086.isChecked() ? "6"
                         : bi.rbN2008OT.isChecked() ? "7" : bi.rbN20088.isChecked() ? "8" : bi.rbN2008DK.isChecked() ? "9" : "");
+        n2001.setN2008x(bi.edN2008OT.getText().toString());
         n2001.setN20091(bi.rbN200911.isChecked() ? "1" : bi.rbN200912.isChecked() ? "2" : bi.rbN20091DK.isChecked() ? "9"
                 : bi.rbN20091RA.isChecked() ? "8" : "");
         n2001.setN20092(bi.rbN200921.isChecked() ? "1" : bi.rbN200922.isChecked() ? "2" : bi.rbN20092DK.isChecked() ? "9"

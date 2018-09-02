@@ -2613,10 +2613,15 @@
                                         style="@style/RadioButton"
                                         android:text="@string/rb_N2098_9" />
 
+                                    <RadioButton
+                                        android:id="@+id/rb_N2098_10"
+                                        style="@style/RadioButton"
+                                        android:text="@string/rb_N2098_10" />
+
                                     <EditText
                                         android:id="@+id/ed_N2098_10"
                                         style="@style/EditText_varchar"
-                                        android:hint="Other" />
+                                        android:hint="@string/rb_N2098_10" />
 
                                     <RadioButton
                                         android:id="@+id/rb_N2098_11"
@@ -2627,6 +2632,11 @@
                                         android:id="@+id/rb_N2098_DK"
                                         style="@style/RadioButton"
                                         android:text="@string/dnt" />
+
+                                    <RadioButton
+                                        android:id="@+id/rb_N2098_OT"
+                                        style="@style/RadioButton"
+                                        android:text="@string/ot_other" />
 
                                     <EditText
                                         android:id="@+id/ed_N2098_OT"

@@ -108,7 +108,9 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2001_N2011.sub_N2001_N2011.N2005w, n2001.getN2005w());
         values.put(N2001_N2011.sub_N2001_N2011.N2005m, n2001.getN2005m());
         values.put(N2001_N2011.sub_N2001_N2011.N2006, n2001.getN2006());
+        values.put(N2001_N2011.sub_N2001_N2011.N2006x, n2001.getN2006x());
         values.put(N2001_N2011.sub_N2001_N2011.N2008, n2001.getN2008());
+        values.put(N2001_N2011.sub_N2001_N2011.N2008x, n2001.getN2008x());
         values.put(N2001_N2011.sub_N2001_N2011.N2009_1, n2001.getN20091());
         values.put(N2001_N2011.sub_N2001_N2011.N2009_2, n2001.getN20092());
         values.put(N2001_N2011.sub_N2001_N2011.N2009_3, n2001.getN20093());
@@ -226,6 +228,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2051_N2078.sub_N2051_N2078.N2053_5, n2051.getN20535());
         values.put(N2051_N2078.sub_N2051_N2078.N2053_DK, n2051.getN2053DK());
         values.put(N2051_N2078.sub_N2051_N2078.N2053_OT, n2051.getN2053OT());
+        values.put(N2051_N2078.sub_N2051_N2078.N2053_OTx, n2051.getN2053OTx());
         values.put(N2051_N2078.sub_N2051_N2078.N2054, n2051.getN2054());
         values.put(N2051_N2078.sub_N2051_N2078.N2055, n2051.getN2055());
         values.put(N2051_N2078.sub_N2051_N2078.N2056, n2051.getN2056());
@@ -263,13 +266,16 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2051_N2078.sub_N2051_N2078.N2072, n2051.getN2072());
         values.put(N2051_N2078.sub_N2051_N2078.N2073, n2051.getN2073());
         values.put(N2051_N2078.sub_N2051_N2078.N2074, n2051.getN2074());
+        values.put(N2051_N2078.sub_N2051_N2078.N2074x, n2051.getN2074x());
         values.put(N2051_N2078.sub_N2051_N2078.N2075, n2051.getN2075());
         values.put(N2051_N2078.sub_N2051_N2078.N2076, n2051.getN2076());
+        values.put(N2051_N2078.sub_N2051_N2078.N2076x, n2051.getN2076x());
         values.put(N2051_N2078.sub_N2051_N2078.N2077, n2051.getN2077());
         values.put(N2051_N2078.sub_N2051_N2078.N2078_1, n2051.getN20781());
         values.put(N2051_N2078.sub_N2051_N2078.N2078_2, n2051.getN20782());
         values.put(N2051_N2078.sub_N2051_N2078.N2078_3, n2051.getN20783());
         values.put(N2051_N2078.sub_N2051_N2078.N2078_4, n2051.getN20784());
+        values.put(N2051_N2078.sub_N2051_N2078.N2078_4x, n2051.getN20784x());
         values.put(N2051_N2078.sub_N2051_N2078.N2078_5, n2051.getN20785());
         values.put(N2051_N2078.sub_N2051_N2078.N2078_6, n2051.getN20786());
         values.put(N2051_N2078.sub_N2051_N2078.N2078_7, n2051.getN20787());
@@ -281,6 +287,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2051_N2078.sub_N2051_N2078.N2078_13, n2051.getN207813());
         values.put(N2051_N2078.sub_N2051_N2078.N2078_DK, n2051.getN2078DK());
         values.put(N2051_N2078.sub_N2051_N2078.N2078_OT, n2051.getN2078OT());
+        values.put(N2051_N2078.sub_N2051_N2078.N2078_OTx, n2051.getN2078OTx());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -316,6 +323,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2080_N2107.sub_N2080_N2107.N2080_13, n2080.getN208013());
         values.put(N2080_N2107.sub_N2080_N2107.N2080_14, n2080.getN208014());
         values.put(N2080_N2107.sub_N2080_N2107.N2080_15, n2080.getN208015());
+        values.put(N2080_N2107.sub_N2080_N2107.N2080_15x, n2080.getN208015x());
         values.put(N2080_N2107.sub_N2080_N2107.N2080_16, n2080.getN208016());
         values.put(N2080_N2107.sub_N2080_N2107.N2081, n2080.getN2081());
         values.put(N2080_N2107.sub_N2080_N2107.N2082_1, n2080.getN20821());
@@ -326,6 +334,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2080_N2107.sub_N2080_N2107.N2082_6, n2080.getN20826());
         values.put(N2080_N2107.sub_N2080_N2107.N2082_DK, n2080.getN20827());
         values.put(N2080_N2107.sub_N2080_N2107.N2082_OT, n2080.getN2082Ot());
+        values.put(N2080_N2107.sub_N2080_N2107.N2082_OTx, n2080.getN2082OTx());
         values.put(N2080_N2107.sub_N2080_N2107.N2083, n2080.getN2083());
         values.put(N2080_N2107.sub_N2080_N2107.N2084, n2080.getN2084());
         values.put(N2080_N2107.sub_N2080_N2107.N2085, n2080.getN2085());
@@ -333,6 +342,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2080_N2107.sub_N2080_N2107.N2086_2, n2080.getN20862());
         values.put(N2080_N2107.sub_N2080_N2107.N2086_3, n2080.getN20863());
         values.put(N2080_N2107.sub_N2080_N2107.N2086_4, n2080.getN20864());
+        values.put(N2080_N2107.sub_N2080_N2107.N2086_4x, n2080.getN20864x());
         values.put(N2080_N2107.sub_N2080_N2107.N2086_5, n2080.getN20865());
         values.put(N2080_N2107.sub_N2080_N2107.N2086_6, n2080.getN20866());
         values.put(N2080_N2107.sub_N2080_N2107.N2086_7, n2080.getN20867());
@@ -342,6 +352,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2080_N2107.sub_N2080_N2107.N2086_11, n2080.getN208611());
         values.put(N2080_N2107.sub_N2080_N2107.N2086_12, n2080.getN208612());
         values.put(N2080_N2107.sub_N2080_N2107.N2086_OT, n2080.getN2086Ot());
+        values.put(N2080_N2107.sub_N2080_N2107.N2086_OTx, n2080.getN2086OTx());
         values.put(N2080_N2107.sub_N2080_N2107.N2086_DK, n2080.getN2086Dk());
         values.put(N2080_N2107.sub_N2080_N2107.N2087, n2080.getN2087());
         values.put(N2080_N2107.sub_N2080_N2107.N2088_1, n2080.getN20881());
@@ -362,8 +373,10 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2080_N2107.sub_N2080_N2107.N2088_16, n2080.getN208816());
         values.put(N2080_N2107.sub_N2080_N2107.N2088_17, n2080.getN208817());
         values.put(N2080_N2107.sub_N2080_N2107.N2088_18, n2080.getN208818());
+        values.put(N2080_N2107.sub_N2080_N2107.N2088_18x, n2080.getN208818x());
         values.put(N2080_N2107.sub_N2080_N2107.N2088_19, n2080.getN208819());
         values.put(N2080_N2107.sub_N2080_N2107.N2089, n2080.getN2089());
+        values.put(N2080_N2107.sub_N2080_N2107.N2089x, n2080.getN2089x());
         values.put(N2080_N2107.sub_N2080_N2107.N2090, n2080.getN2090());
         values.put(N2080_N2107.sub_N2080_N2107.N2091_1, n2080.getN20911());
         values.put(N2080_N2107.sub_N2080_N2107.N2091_2, n2080.getN20912());
@@ -372,9 +385,12 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2080_N2107.sub_N2080_N2107.N2091_5, n2080.getN20915());
         values.put(N2080_N2107.sub_N2080_N2107.N2091_6, n2080.getN20916());
         values.put(N2080_N2107.sub_N2080_N2107.N2091_OT, n2080.getN2091Ot());
+        values.put(N2080_N2107.sub_N2080_N2107.N2091_OTx, n2080.getN2091OTx());
         values.put(N2080_N2107.sub_N2080_N2107.N2091_DK, n2080.getN2091Dk());
         values.put(N2080_N2107.sub_N2080_N2107.N2092, n2080.getN2092());
+        values.put(N2080_N2107.sub_N2080_N2107.N2092x, n2080.getN2092x());
         values.put(N2080_N2107.sub_N2080_N2107.N2093, n2080.getN2093());
+        values.put(N2080_N2107.sub_N2080_N2107.N2093x, n2080.getN2093x());
         values.put(N2080_N2107.sub_N2080_N2107.N2094, n2080.getN2094());
         values.put(N2080_N2107.sub_N2080_N2107.N2095, n2080.getN2095());
         values.put(N2080_N2107.sub_N2080_N2107.N2096, n2080.getN2096());
@@ -382,6 +398,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2080_N2107.sub_N2080_N2107.N2097_2, n2080.getN20972());
         values.put(N2080_N2107.sub_N2080_N2107.N2097_3, n2080.getN20973());
         values.put(N2080_N2107.sub_N2080_N2107.N2098, n2080.getN2098());
+        values.put(N2080_N2107.sub_N2080_N2107.N2098x, n2080.getN2098x());
         values.put(N2080_N2107.sub_N2080_N2107.N2099, n2080.getN2099());
         values.put(N2080_N2107.sub_N2080_N2107.N2100_1, n2080.getN21001());
         values.put(N2080_N2107.sub_N2080_N2107.N2100_2, n2080.getN21002());
@@ -429,13 +446,16 @@ public class DBHelper extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
 
         values.put(N2110_N2189a.sub_N2110_N2189a.N2110, n2110.getN2110());
+        values.put(N2110_N2189a.sub_N2110_N2189a.N2110x, n2110.getN2110x());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2111, n2110.getN2111());
+        values.put(N2110_N2189a.sub_N2110_N2189a.N2111x, n2110.getN2111x());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2112, n2110.getN2112());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2113_1, n2110.getN21131());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2113_2, n2110.getN21132());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2113_3, n2110.getN21133());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2113_4, n2110.getN21134());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2113_OT, n2110.getN2113Ot());
+        values.put(N2110_N2189a.sub_N2110_N2189a.N2113_OTx, n2110.getN2113OTx());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2113_DK, n2110.getN2113Dk());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2114, n2110.getN2114());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2115, n2110.getN2115());
@@ -453,12 +473,15 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2110_N2189a.sub_N2110_N2189a.N2125, n2110.getN2125());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2126, n2110.getN2126());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2127, n2110.getN2127());
+        values.put(N2110_N2189a.sub_N2110_N2189a.N2127h, n2110.getN2127h());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2128, n2110.getN2128());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2129, n2110.getN2129());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2130, n2110.getN2130());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2131, n2110.getN2131());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2132, n2110.getN2132());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2133, n2110.getN2133());
+        values.put(N2110_N2189a.sub_N2110_N2189a.N2133h, n2110.getN2133h());
+        values.put(N2110_N2189a.sub_N2110_N2189a.N2133d, n2110.getN2133d());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2134, n2110.getN2134());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2135_1, n2110.getN21351());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2135_2, n2110.getN21352());
@@ -471,6 +494,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2110_N2189a.sub_N2110_N2189a.N2135_9, n2110.getN21359());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2135_10, n2110.getN213510());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2135_11, n2110.getN213511());
+        values.put(N2110_N2189a.sub_N2110_N2189a.N2135_11x, n2110.getN213511x());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2136, n2110.getN2136());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2137, n2110.getN2137());
         values.put(N2110_N2189a.sub_N2110_N2189a.N2138, n2110.getN2138());
@@ -879,6 +903,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2291_N2304.sub_N2291_N2304.N2299, n2291.getN2299());
         values.put(N2291_N2304.sub_N2291_N2304.N2300, n2291.getN2300());
         values.put(N2291_N2304.sub_N2291_N2304.N2301, n2291.getN2301());
+        values.put(N2291_N2304.sub_N2291_N2304.N2301x, n2291.getN2301x());
         values.put(N2291_N2304.sub_N2291_N2304.N2302_1, n2291.getN2302_1());
         values.put(N2291_N2304.sub_N2291_N2304.N2302_2, n2291.getN2302_2());
         values.put(N2291_N2304.sub_N2291_N2304.N2303, n2291.getN2303());
@@ -918,7 +943,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2311_N2317.sub_N2311_N2317.N2311_11, n2311.getN231111());
         values.put(N2311_N2317.sub_N2311_N2317.N2311_12, n2311.getN231112());
         values.put(N2311_N2317.sub_N2311_N2317.N2311_13, n2311.getN231113());
-        values.put(N2311_N2317.sub_N2311_N2317.N2312, n2311.getN2312());
+        values.put(N2311_N2317.sub_N2311_N2317.N2311_13x, n2311.getN231113x());
         values.put(N2311_N2317.sub_N2311_N2317.N2312_1, n2311.getN23121());
         values.put(N2311_N2317.sub_N2311_N2317.N2312_2, n2311.getN23122());
         values.put(N2311_N2317.sub_N2311_N2317.N2312_3, n2311.getN23123());
@@ -928,7 +953,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2311_N2317.sub_N2311_N2317.N2312_7, n2311.getN23127());
         values.put(N2311_N2317.sub_N2311_N2317.N2312_8, n2311.getN23128());
         values.put(N2311_N2317.sub_N2311_N2317.N2312_9, n2311.getN23129());
-        values.put(N2311_N2317.sub_N2311_N2317.N2313, n2311.getN2313());
+        values.put(N2311_N2317.sub_N2311_N2317.N2312_9x, n2311.getN23129x());
         values.put(N2311_N2317.sub_N2311_N2317.N2313_1, n2311.getN23131());
         values.put(N2311_N2317.sub_N2311_N2317.N2313_2, n2311.getN23132());
         values.put(N2311_N2317.sub_N2311_N2317.N2313_3, n2311.getN23133());
@@ -941,6 +966,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2311_N2317.sub_N2311_N2317.N2313_10, n2311.getN231310());
         values.put(N2311_N2317.sub_N2311_N2317.N2313_11, n2311.getN231311());
         values.put(N2311_N2317.sub_N2311_N2317.N2313_12, n2311.getN231312());
+        values.put(N2311_N2317.sub_N2311_N2317.N2313_12x, n2311.getN231312x());
         values.put(N2311_N2317.sub_N2311_N2317.N2314, n2311.getN2314());
         values.put(N2311_N2317.sub_N2311_N2317.N2315, n2311.getN2315());
         values.put(N2311_N2317.sub_N2311_N2317.N2316, n2311.getN2316());

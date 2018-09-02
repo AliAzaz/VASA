@@ -108,6 +108,7 @@ public class N2291_N2304 extends AppCompatActivity {
         n2291.setN2300(bi.rbN23001.isChecked() ? "1" : bi.rbN23002.isChecked() ? "2" : bi.rbN2300DK.isChecked() ? "9" : "");
         n2291.setN2301(bi.rbN23011.isChecked() ? "1" : bi.rbN23012.isChecked() ? "2" : bi.rbN23013.isChecked() ? "3" : bi.rbN23014.isChecked() ? "4"
                 : bi.rbN2301OT.isChecked() ? "5" : bi.rbN2301DK.isChecked() ? "9" : "");
+        n2291.setN2301x(bi.edN2301OT.getText().toString());
         n2291.setN2302_1(bi.edN2302L1.getText().toString());
         n2291.setN2302_2(bi.edN2302L2.getText().toString());
         n2291.setN2303(bi.edN2303.getText().toString());
