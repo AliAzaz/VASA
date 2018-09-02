@@ -89,10 +89,17 @@
                                 style="@style/RadioButton"
                                 android:text="@string/dnt" />
 
+                            <RadioButton
+                                android:id="@+id/rb_N2110_OT"
+                                style="@style/RadioButton"
+                                android:text="@string/ot_other" />
+
                             <EditText
                                 android:id="@+id/ed_N2110_OT"
                                 style="@style/EditText_varchar"
-                                android:hint="Other" />
+                                android:hint="Other"
+                                android:text='@{rbN2110OT.checked ? edN2110OT.getText.toString : ""}'
+                                android:visibility="@{rbN2110OT.checked ? View.VISIBLE : View.GONE}" />
 
                         </RadioGroup>
 
@@ -135,10 +142,17 @@
                                 style="@style/RadioButton"
                                 android:text="@string/dnt" />
 
+                            <RadioButton
+                                android:id="@+id/rb_N2111_OT"
+                                style="@style/RadioButton"
+                                android:text="@string/ot_other" />
+
                             <EditText
                                 android:id="@+id/ed_N2111_OT"
                                 style="@style/EditText_varchar"
-                                android:hint="Other" />
+                                android:hint="Other"
+                                android:text='@{rbN2111OT.checked ? edN2111OT.getText.toString : ""}'
+                                android:visibility="@{rbN2111OT.checked ? View.VISIBLE : View.GONE}" />
 
                         </RadioGroup>
 
@@ -224,10 +238,17 @@
                             style="@style/CheckBox"
                             android:text="@string/dnt" />
 
+                        <CheckBox
+                            android:id="@+id/cb_N2113_OT"
+                            style="@style/CheckBox"
+                            android:text="@string/ot_other" />
+
                         <EditText
                             android:id="@+id/ed_N2113_OT"
                             style="@style/EditText_varchar"
-                            android:hint="Other" />
+                            android:hint="Other"
+                            android:text='@{rbN2113OT.checked ? edN2113OT.getText.toString : ""}'
+                            android:visibility="@{rbN2113OT.checked ? View.VISIBLE : View.GONE}" />
 
                     </LinearLayout>
 
@@ -878,10 +899,17 @@
                                     style="@style/RadioButton"
                                     android:text="@string/rb_N2127_2" />
 
+                                <RadioButton
+                                    android:id="@+id/rb_N2127_3"
+                                    style="@style/RadioButton"
+                                    android:text="@string/rb_N2127_3" />
+
                                 <EditText
                                     android:id="@+id/ed_N2127_3"
                                     style="@style/EditText_number"
-                                    android:hint="Hours" />
+                                    android:hint="Hours"
+                                    android:text='@{rbN21273.checked ? edN21273.getText.toString : ""}'
+                                    android:visibility="@{rbN21273.checked ? View.VISIBLE : View.GONE}" />
 
                                 <RadioButton
                                     android:id="@+id/rb_N2127_DK"
@@ -1092,15 +1120,29 @@
                                     style="@style/RadioButton"
                                     android:text="@string/rb_N2133_2" />
 
+                                <RadioButton
+                                    android:id="@+id/rb_N2133_3"
+                                    style="@style/RadioButton"
+                                    android:text="@string/rb_N2133_3" />
+
                                 <EditText
                                     android:id="@+id/ed_N2133_3"
                                     style="@style/EditText_number"
-                                    android:hint="Hours" />
+                                    android:hint="Hours"
+                                    android:text='@{rbN21333.checked ? edN21333.getText.toString : ""}'
+                                    android:visibility="@{rbN21333.checked ? View.VISIBLE : View.GONE}" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_N2133_4"
+                                    style="@style/RadioButton"
+                                    android:text="@string/rb_N2133_4" />
 
                                 <EditText
                                     android:id="@+id/ed_N2133_4"
                                     style="@style/EditText_number"
-                                    android:hint="Days" />
+                                    android:hint="Days"
+                                    android:text='@{rbN21334.checked ? edN21334.getText.toString : ""}'
+                                    android:visibility="@{rbN21334.checked ? View.VISIBLE : View.GONE}" />
 
                                 <RadioButton
                                     android:id="@+id/rb_N2133_DK"
@@ -1548,8 +1590,10 @@
                 </android.support.v7.widget.CardView>
                 <!-- Radio Buttons N2135_11 Ends -->
 
-                <!-- Radio Buttons N2135_12_OT Starts -->
-                <android.support.v7.widget.CardView style="@style/Q_CardView">
+                <!-- Radio Buttons N2135_OT Starts -->
+                <android.support.v7.widget.CardView
+                    style="@style/Q_CardView"
+                    android:visibility="@{rbN2135111.checked ? View.VISIBLE : View.GONE}">
 
                     <LinearLayout
                         android:id="@+id/ll_N2135_12_OT"
@@ -1563,12 +1607,13 @@
                         <EditText
                             android:id="@+id/ed_N2135_12_OT"
                             style="@style/EditText_varchar"
-                            android:hint="Other" />
+                            android:hint="Other"
+                            android:text='@{rbN2135111.checked ? edN213512OT.getText.toString : ""}' />
 
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
-                <!-- Radio Buttons N2135_12_OT Ends -->
+                <!-- Radio Buttons N2135_OT Ends -->
 
                 <!-- Radio Buttons N2136 Starts -->
                 <android.support.v7.widget.CardView style="@style/Q_CardView">
@@ -2716,7 +2761,7 @@
                                     android:text="@string/dnt" />
 
                                 <RadioButton
-                                    android:id="@+id/rb_N21639_RA"
+                                    android:id="@+id/rb_N2163_RA"
                                     style="@style/RadioButton"
                                     android:text="@string/ra" />
 
