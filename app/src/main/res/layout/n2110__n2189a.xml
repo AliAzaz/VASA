@@ -247,8 +247,8 @@
                             android:id="@+id/ed_N2113_OT"
                             style="@style/EditText_varchar"
                             android:hint="Other"
-                            android:text='@{rbN2113OT.checked ? edN2113OT.getText.toString : ""}'
-                            android:visibility="@{rbN2113OT.checked ? View.VISIBLE : View.GONE}" />
+                            android:text='@{cbN2113OT.checked ? edN2113OT.getText.toString : ""}'
+                            android:visibility="@{cbN2113OT.checked ? View.VISIBLE : View.GONE}" />
 
                     </LinearLayout>
 

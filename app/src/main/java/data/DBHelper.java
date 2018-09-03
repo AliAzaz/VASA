@@ -656,7 +656,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     //2211A
-    public Long add_N2211A(N2211_N2248_A_C n2211A) {
+    public Long add_N2211_A_C(N2211_N2248_A_C n2211A) {
 
         // Gets the data repository in write mode
         SQLiteDatabase db = this.getWritableDatabase();
@@ -679,7 +679,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     //2211B
-    public Long add_N2211B(N2211_N2248_B n2211B) {
+    public Long add_N2211_B(N2211_N2248_B n2211B) {
 
         // Gets the data repository in write mode
         SQLiteDatabase db = this.getWritableDatabase();
