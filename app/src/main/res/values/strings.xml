@@ -1556,6 +1556,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="rb_N2214_3">Child’s mother and father, jointly</string>
     <string name="rb_N2214_4">Child’s maternal grandmother</string>
     <string name="rb_N2214_5">Child’s paternal grandmother</string>
+    <string name="rb_N2214_OT">Someone else (specify)</string>
 
 
     <string name="cb_N2216_1">Did not think child/adult was sick enough to need health care</string>
@@ -1603,6 +1604,7 @@ You mentioned that you took (NAME) to the (first) health provider, I mean the (F
     <string name="cb_N2243_3">Bus</string>
     <string name="cb_N2243_4">Taxi/auto/trecker/motorcycle</string>
     <string name="cb_N2243_5">Ambulance</string>
+    <string name="cb_N2243_7">Could not arrange transport</string>
     <string name="cb_N2243_OT">Other (specify)</string>
 
 
