@@ -110,8 +110,8 @@
                                 android:id="@+id/ed_N2214_OT"
                                 style="@style/EditText_varchar"
                                 android:hint="Other"
-                                android:text='@{rbN22146.checked ? edN2214OT.getText.toString : ""}'
-                                android:visibility="@{rbN22146.checked ? View.VISIBLE : View.GONE}" />
+                                android:text='@{rbN2214OT.checked ? edN2214OT.getText.toString : ""}'
+                                android:visibility="@{rbN2214OT.checked ? View.VISIBLE : View.GONE}" />
 
                         </RadioGroup>
 

@@ -454,7 +454,7 @@ public class N2080_N2107 extends AppCompatActivity {
                 return false;
             }
 
-            if (!bi.rbN20812.isChecked() || !bi.rbN2081DK.isChecked()) {
+            if (bi.rbN20811.isChecked()) {
                 //ll_N2082
                 if (!Gothrough.IamHiden(bi.llN2082)) {
                     return false;
