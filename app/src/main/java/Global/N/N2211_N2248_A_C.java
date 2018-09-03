@@ -83,14 +83,14 @@ public class N2211_N2248_A_C {
     public String N2242_4 = "N2242_4";
     public String N2242_5 = "N2242_5";
     public String N2242_6 = "N2242_6";
-    public String N2242_OT = "N2242_OT";
+    public String N2242_7 = "N2242_7";
     public String N2242_DK = "N2242_DK";
     public String N2243_1 = "N2243_1";
     public String N2243_2 = "N2243_2";
     public String N2243_3 = "N2243_3";
     public String N2243_4 = "N2243_4";
     public String N2243_5 = "N2243_5";
-    public String N2243_OT = "N2243_OT";
+    public String N2243_6 = "N2243_6";
     public String N2243_7 = "N2243_7";
     public String N2243_DK = "N2243_DK";
     public String N2244 = "N2244";
@@ -739,12 +739,12 @@ public class N2211_N2248_A_C {
         N2242_6 = n22426;
     }
 
-    public String getN2242Ot() {
-        return N2242_OT;
+    public String getN22427() {
+        return N2242_7;
     }
 
-    public void setN2242Ot(String n2242Ot) {
-        N2242_OT = n2242Ot;
+    public void setN22427(String n2242Ot) {
+        N2242_7 = n2242Ot;
     }
 
     public String getN2242Dk() {
@@ -795,12 +795,12 @@ public class N2211_N2248_A_C {
         N2243_5 = n22435;
     }
 
-    public String getN2243Ot() {
-        return N2243_OT;
+    public String getN22436() {
+        return N2243_6;
     }
 
-    public void setN2243Ot(String n2243Ot) {
-        N2243_OT = n2243Ot;
+    public void setN22436(String n2243Ot) {
+        N2243_6 = n2243Ot;
     }
 
     public String getN22437() {
@@ -941,14 +941,14 @@ public class N2211_N2248_A_C {
         String N2242_4 = "N2242_4";
         String N2242_5 = "N2242_5";
         String N2242_6 = "N2242_6";
-        String N2242_OT = "N2242_OT";
+        String N2242_7 = "N2242_7";
         String N2242_DK = "N2242_DK";
         String N2243_1 = "N2243_1";
         String N2243_2 = "N2243_2";
         String N2243_3 = "N2243_3";
         String N2243_4 = "N2243_4";
         String N2243_5 = "N2243_5";
-        String N2243_OT = "N2243_OT";
+        String N2243_6 = "N2243_6";
         String N2243_7 = "N2243_7";
         String N2243_DK = "N2243_DK";
         String N2244 = "N2244";

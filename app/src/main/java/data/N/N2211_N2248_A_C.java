@@ -89,14 +89,14 @@ public class N2211_N2248_A_C {
                 Global.N.N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_4 + " TEXT," +
                 Global.N.N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_5 + " TEXT," +
                 Global.N.N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_6 + " TEXT," +
-                Global.N.N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_OT + " TEXT," +
+                Global.N.N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_7 + " TEXT," +
                 Global.N.N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_DK + " TEXT," +
                 Global.N.N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_1 + " TEXT," +
                 Global.N.N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_2 + " TEXT," +
                 Global.N.N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_3 + " TEXT," +
                 Global.N.N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_4 + " TEXT," +
                 Global.N.N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_5 + " TEXT," +
-                Global.N.N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_OT + " TEXT," +
+                Global.N.N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_6 + " TEXT," +
                 Global.N.N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_7 + " TEXT," +
                 Global.N.N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_DK + " TEXT," +
                 Global.N.N2211_N2248_A_C.sub_N2211_N2248_A_C.N2244 + " TEXT," +

@@ -788,14 +788,14 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_4, n2211C.getN22424());
         values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_5, n2211C.getN22425());
         values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_6, n2211C.getN22426());
-        values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_OT, n2211C.getN2242Ot());
+        values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_7, n2211C.getN22427());
         values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2242_DK, n2211C.getN2242Dk());
         values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_1, n2211C.getN22431());
         values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_2, n2211C.getN22432());
         values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_3, n2211C.getN22433());
         values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_4, n2211C.getN22434());
         values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_5, n2211C.getN22435());
-        values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_OT, n2211C.getN2243Ot());
+        values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_6, n2211C.getN22436());
         values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_7, n2211C.getN22437());
         values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2243_DK, n2211C.getN2243Dk());
         values.put(N2211_N2248_A_C.sub_N2211_N2248_A_C.N2244, n2211C.getN2244());

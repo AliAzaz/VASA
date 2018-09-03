@@ -97,14 +97,21 @@
                                 android:text="@string/rb_N2214_5" />
 
                             <RadioButton
+                                android:id="@+id/rb_N2214_OT"
+                                style="@style/RadioButton"
+                                android:text="@string/rb_N2214_OT" />
+
+                            <RadioButton
                                 android:id="@+id/rb_N2214_DK"
                                 style="@style/RadioButton"
                                 android:text="@string/dnt" />
 
                             <EditText
-                                android:id="@+id/ed_N2214_ot"
+                                android:id="@+id/ed_N2214_OT"
                                 style="@style/EditText_varchar"
-                                android:hint="Other" />
+                                android:hint="Other"
+                                android:text='@{rbN22146.checked ? edN2214OT.getText.toString : ""}'
+                                android:visibility="@{rbN22146.checked ? View.VISIBLE : View.GONE}" />
 
                         </RadioGroup>
 
@@ -226,6 +233,11 @@
                             android:text="@string/cb_N2216_12" />
 
                         <CheckBox
+                            android:id="@+id/cb_N2216_OT"
+                            style="@style/CheckBox"
+                            android:text="@string/ot_other" />
+
+                        <CheckBox
                             android:id="@+id/cb_N2216_DK"
                             style="@style/CheckBox"
                             android:text="@string/dnt" />
@@ -233,7 +245,9 @@
                         <EditText
                             android:id="@+id/ed_N2216_OT"
                             style="@style/EditText_varchar"
-                            android:hint="other" />
+                            android:hint="other"
+                            android:text='@{rbN2216OT.checked ? edN2214OT.getText.toString : ""}'
+                            android:visibility="@{rbN2216OT.checked ? View.VISIBLE : View.GONE}" />
 
                     </LinearLayout>
 
@@ -442,7 +456,9 @@
                         <EditText
                             android:id="@+id/ed_N2219_2"
                             style="@style/EditText_Name"
-                            android:hint="Name of Provider/Facility" />
+                            android:hint="Name of Provider/Facility"
+                            android:text='@{rbN22191DK.checked ? "" : edN22192.getText.toString}'
+                            android:visibility="@{rbN22191DK.checked ? View.GONE : View.VISIBLE}" />
 
 
                     </LinearLayout>
@@ -1180,13 +1196,13 @@
                                 style="@style/Q_Linerlayout_v">
 
                                 <TextView
-                                    android:id="@+id/txt_N2232_2"
+                                    android:id="@+id/txt_N2231_2"
                                     style="@style/TextView"
                                     android:text="@string/txt_N2231_2" />
 
 
                                 <EditText
-                                    android:id="@+id/ed_N2232_2"
+                                    android:id="@+id/ed_N2231_2"
                                     style="@style/EditText_number"
                                     android:hint="Minutes" />
 
@@ -1865,15 +1881,19 @@
                                     android:text="@string/cb_N2242_5" />
 
                                 <CheckBox
+                                    android:id="@+id/cb_N2242_6"
+                                    style="@style/CheckBox"
+                                    android:text="@string/cb_N2242_6" />
+
+                                <CheckBox
+                                    android:id="@+id/cb_N2242_7"
+                                    style="@style/CheckBox"
+                                    android:text="@string/cb_N2242_7" />
+
+                                <CheckBox
                                     android:id="@+id/cb_N2242_dk"
                                     style="@style/CheckBox"
                                     android:text="@string/dnt" />
-
-
-                                <EditText
-                                    android:id="@+id/ed_N2242_OT"
-                                    style="@style/EditText_varchar"
-                                    android:hint="Other" />
 
 
                             </LinearLayout>
@@ -1923,19 +1943,19 @@
                                     android:text="@string/cb_N2243_5" />
 
                                 <CheckBox
-                                    android:id="@+id/cb_N2243_"
+                                    android:id="@+id/cb_N2243_6"
                                     style="@style/CheckBox"
-                                    android:text="Could not arrange transport" />
+                                    android:text="@string/other" />
+
+                                <CheckBox
+                                    android:id="@+id/cb_N2243_7"
+                                    style="@style/CheckBox"
+                                    android:text="@string/cb_N2243_7" />
 
                                 <CheckBox
                                     android:id="@+id/cb_N2243_DK"
                                     style="@style/CheckBox"
                                     android:text="@string/dnt" />
-
-                                <CheckBox
-                                    android:id="@+id/cb_N2243_OT"
-                                    style="@style/CheckBox"
-                                    android:text="@string/cb_N2243_OT" />
 
 
                             </LinearLayout>
