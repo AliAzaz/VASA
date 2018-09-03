@@ -53,7 +53,7 @@ public class N2023_N2026 extends AppCompatActivity {
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2023(n2023);
 
-        return row > 0;
+        return row != 0;
     }
 
     public Boolean validateField() {

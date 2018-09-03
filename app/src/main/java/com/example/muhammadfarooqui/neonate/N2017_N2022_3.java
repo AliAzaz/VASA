@@ -99,7 +99,7 @@ public class N2017_N2022_3 extends AppCompatActivity {
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2017(n2017);
 
-        return row > 0;
+        return row != 0;
     }
 
     public Boolean validateField() {
