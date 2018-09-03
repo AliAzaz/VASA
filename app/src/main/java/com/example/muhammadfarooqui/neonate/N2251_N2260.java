@@ -122,7 +122,7 @@ public class N2251_N2260 extends AppCompatActivity {
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2251(n2251);
 
-        return row > 0;
+        return row != 0;
     }
 
     public Boolean validateField() {

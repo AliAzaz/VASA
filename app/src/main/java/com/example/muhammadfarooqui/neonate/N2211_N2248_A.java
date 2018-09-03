@@ -47,7 +47,7 @@ public class N2211_N2248_A extends AppCompatActivity {
 
         n2211A_ID = row.intValue();
 
-        return row > 0;
+        return row != 0;
     }
 
     public Boolean validateField() {

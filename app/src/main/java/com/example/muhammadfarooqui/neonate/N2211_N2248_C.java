@@ -216,7 +216,7 @@ public class N2211_N2248_C extends AppCompatActivity {
         DBHelper db = new DBHelper(this);
         Long row = db.update_N2211C(n2211C, n2211A_ID);
 
-        return row != 0;
+        return row == 1;
     }
 
     public Boolean validateField() {

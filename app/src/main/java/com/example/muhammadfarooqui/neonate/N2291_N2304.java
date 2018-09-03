@@ -118,7 +118,7 @@ public class N2291_N2304 extends AppCompatActivity {
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2291(n2291);
 
-        return row > 0;
+        return row != 0;
     }
 
     public Boolean validateField() {

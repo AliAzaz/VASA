@@ -165,7 +165,7 @@ public class N2190_N2191 extends AppCompatActivity {
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2190(n2190);
 
-        return row > 0;
+        return row != 0;
 
     }
 

@@ -362,7 +362,7 @@ public class N2080_N2107 extends AppCompatActivity {
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2080(n2080);
 
-        return row > 0;
+        return row != 0;
 
     }
 
