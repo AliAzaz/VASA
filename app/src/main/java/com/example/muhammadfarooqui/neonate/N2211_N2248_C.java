@@ -10,8 +10,11 @@ import android.widget.Toast;
 
 import com.example.muhammadfarooqui.neonate.databinding.N2211N2248CBinding;
 
+import data.DBHelper;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
+
+import static com.example.muhammadfarooqui.neonate.N2211_N2248_A.n2211A_ID;
 
 public class N2211_N2248_C extends AppCompatActivity {
 
@@ -204,6 +207,16 @@ public class N2211_N2248_C extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public boolean SaveData() {
+
+        Global.N.N2211_N2248_A_C n2211C = new Global.N.N2211_N2248_A_C();
+
+        DBHelper db = new DBHelper(this);
+        Long row = db.update_N2211C(n2211C, n2211A_ID);
+
+        return row != 0;
     }
 
     public Boolean validateField() {
