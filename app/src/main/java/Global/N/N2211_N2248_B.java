@@ -5,6 +5,15 @@ public class N2211_N2248_B {
     public String N2213 = "N2213";
     public String N2213_2A = "N2213_2A";
     public String N2213_4 = "N2213_4";
+    public String ACT_COUNT = "ACT_COUNT";
+
+    public String getACT_COUNT() {
+        return ACT_COUNT;
+    }
+
+    public void setACT_COUNT(String ACT_COUNT) {
+        this.ACT_COUNT = ACT_COUNT;
+    }
 
     public String getN2213() {
         return N2213;
@@ -34,5 +43,6 @@ public class N2211_N2248_B {
         String N2213 = "N2213";
         String N2213_2A = "N2213_2A";
         String N2213_4 = "N2213_4";
+        String ACT_COUNT = "ACT_COUNT";
     }
 }
