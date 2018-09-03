@@ -163,7 +163,7 @@ public class N2017_N2022_3 extends AppCompatActivity {
             }
         }
 
-        if (!bi.rbN20221.isChecked() || !bi.rbN202221.isChecked()) {
+        if (bi.rbN20221.isChecked() && !bi.rbN202221.isChecked()) {
             //ll_N2022_3
             return Gothrough.IamHiden(bi.llN20223);
         }
