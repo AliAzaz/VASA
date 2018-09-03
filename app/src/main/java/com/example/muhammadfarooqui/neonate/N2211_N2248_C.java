@@ -5,6 +5,7 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -199,6 +200,170 @@ public class N2211_N2248_C extends AppCompatActivity {
             }
         });
 
+
+        CompoundButton.OnCheckedChangeListener cbx_2242 = new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+
+                if (bi.cbN2242Dk.isChecked()) {
+                    bi.cbN22421.setChecked(false);
+                    bi.cbN22421.setEnabled(false);
+                    bi.cbN22422.setChecked(false);
+                    bi.cbN22422.setEnabled(false);
+                    bi.cbN22423.setChecked(false);
+                    bi.cbN22423.setEnabled(false);
+                    bi.cbN22424.setChecked(false);
+                    bi.cbN22424.setEnabled(false);
+                    bi.cbN22425.setChecked(false);
+                    bi.cbN22425.setEnabled(false);
+                    bi.cbN22426.setChecked(false);
+                    bi.cbN22426.setEnabled(false);
+                    bi.cbN22427.setChecked(false);
+                    bi.cbN22427.setEnabled(false);
+                } else {
+                    bi.cbN22421.setEnabled(true);
+                    bi.cbN22422.setEnabled(true);
+                    bi.cbN22423.setEnabled(true);
+                    bi.cbN22424.setEnabled(true);
+                    bi.cbN22425.setEnabled(true);
+                    bi.cbN22426.setEnabled(true);
+                    bi.cbN22427.setEnabled(true);
+
+                }
+
+            }
+        };
+
+        bi.cbN22421.setOnCheckedChangeListener(cbx_2242);
+        bi.cbN22422.setOnCheckedChangeListener(cbx_2242);
+        bi.cbN22423.setOnCheckedChangeListener(cbx_2242);
+        bi.cbN22424.setOnCheckedChangeListener(cbx_2242);
+        bi.cbN22425.setOnCheckedChangeListener(cbx_2242);
+        bi.cbN22426.setOnCheckedChangeListener(cbx_2242);
+        bi.cbN22427.setOnCheckedChangeListener(cbx_2242);
+        bi.cbN2242Dk.setOnCheckedChangeListener(cbx_2242);
+
+
+        CompoundButton.OnCheckedChangeListener cbx_2243 = new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+
+                if (bi.cbN2243DK.isChecked()) {
+                    bi.cbN22431.setChecked(false);
+                    bi.cbN22431.setEnabled(false);
+                    bi.cbN22432.setChecked(false);
+                    bi.cbN22432.setEnabled(false);
+                    bi.cbN22433.setChecked(false);
+                    bi.cbN22433.setEnabled(false);
+                    bi.cbN22434.setChecked(false);
+                    bi.cbN22434.setEnabled(false);
+                    bi.cbN22435.setChecked(false);
+                    bi.cbN22435.setEnabled(false);
+                    bi.cbN22436.setChecked(false);
+                    bi.cbN22436.setEnabled(false);
+                    bi.cbN22437.setChecked(false);
+                    bi.cbN22437.setEnabled(false);
+                } else {
+                    bi.cbN22431.setEnabled(true);
+                    bi.cbN22432.setEnabled(true);
+                    bi.cbN22433.setEnabled(true);
+                    bi.cbN22434.setEnabled(true);
+                    bi.cbN22435.setEnabled(true);
+                    bi.cbN22436.setEnabled(true);
+                    bi.cbN22437.setEnabled(true);
+
+                }
+
+            }
+        };
+
+        bi.cbN22431.setOnCheckedChangeListener(cbx_2243);
+        bi.cbN22432.setOnCheckedChangeListener(cbx_2243);
+        bi.cbN22433.setOnCheckedChangeListener(cbx_2243);
+        bi.cbN22434.setOnCheckedChangeListener(cbx_2243);
+        bi.cbN22435.setOnCheckedChangeListener(cbx_2243);
+        bi.cbN22436.setOnCheckedChangeListener(cbx_2243);
+        bi.cbN22437.setOnCheckedChangeListener(cbx_2243);
+        bi.cbN2243DK.setOnCheckedChangeListener(cbx_2243);
+
+        CompoundButton.OnCheckedChangeListener cbx_2240 = new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+
+                if (bi.cbN2240DK.isChecked()) {
+                    bi.cbN22401.setChecked(false);
+                    bi.cbN22401.setEnabled(false);
+                    bi.cbN22402.setChecked(false);
+                    bi.cbN22402.setEnabled(false);
+                    bi.cbN22403.setChecked(false);
+                    bi.cbN22403.setEnabled(false);
+                    bi.cbN22404.setChecked(false);
+                    bi.cbN22404.setEnabled(false);
+                    bi.cbN22405.setChecked(false);
+                    bi.cbN22405.setEnabled(false);
+                    bi.cbN22406.setChecked(false);
+                    bi.cbN22406.setEnabled(false);
+                    bi.cbN22407.setChecked(false);
+                    bi.cbN22407.setEnabled(false);
+                    bi.cbN22408.setChecked(false);
+                    bi.cbN22408.setEnabled(false);
+                    bi.cbN22409.setChecked(false);
+                    bi.cbN22409.setEnabled(false);
+                    bi.cbN224010.setChecked(false);
+                    bi.cbN224010.setEnabled(false);
+                    bi.cbN224011.setChecked(false);
+                    bi.cbN224011.setEnabled(false);
+                    bi.cbN224012.setChecked(false);
+                    bi.cbN224012.setEnabled(false);
+                    bi.cbN224013.setChecked(false);
+                    bi.cbN224013.setEnabled(false);
+                    bi.cbN224014.setChecked(false);
+                    bi.cbN224014.setEnabled(false);
+                    bi.cbN224015.setChecked(false);
+                    bi.cbN224015.setEnabled(false);
+                    bi.cbN2240OT.setChecked(false);
+                    bi.cbN2240OT.setEnabled(false);
+                } else {
+                    bi.cbN22401.setEnabled(true);
+                    bi.cbN22402.setEnabled(true);
+                    bi.cbN22403.setEnabled(true);
+                    bi.cbN22404.setEnabled(true);
+                    bi.cbN22405.setEnabled(true);
+                    bi.cbN22406.setEnabled(true);
+                    bi.cbN22407.setEnabled(true);
+                    bi.cbN22408.setEnabled(true);
+                    bi.cbN22409.setEnabled(true);
+                    bi.cbN224010.setEnabled(true);
+                    bi.cbN224011.setEnabled(true);
+                    bi.cbN224012.setEnabled(true);
+                    bi.cbN224013.setEnabled(true);
+                    bi.cbN224014.setEnabled(true);
+                    bi.cbN224015.setEnabled(true);
+                    bi.cbN2240OT.setEnabled(true);
+
+                }
+
+            }
+        };
+
+        bi.cbN22401.setOnCheckedChangeListener(cbx_2240);
+        bi.cbN22402.setOnCheckedChangeListener(cbx_2240);
+        bi.cbN22403.setOnCheckedChangeListener(cbx_2240);
+        bi.cbN22404.setOnCheckedChangeListener(cbx_2240);
+        bi.cbN22405.setOnCheckedChangeListener(cbx_2240);
+        bi.cbN22406.setOnCheckedChangeListener(cbx_2240);
+        bi.cbN22407.setOnCheckedChangeListener(cbx_2240);
+        bi.cbN22408.setOnCheckedChangeListener(cbx_2240);
+        bi.cbN22409.setOnCheckedChangeListener(cbx_2240);
+        bi.cbN224010.setOnCheckedChangeListener(cbx_2240);
+        bi.cbN224011.setOnCheckedChangeListener(cbx_2240);
+        bi.cbN224012.setOnCheckedChangeListener(cbx_2240);
+        bi.cbN224013.setOnCheckedChangeListener(cbx_2240);
+        bi.cbN224014.setOnCheckedChangeListener(cbx_2240);
+        bi.cbN224015.setOnCheckedChangeListener(cbx_2240);
+        bi.cbN2240OT.setOnCheckedChangeListener(cbx_2240);
+        bi.cbN2240DK.setOnCheckedChangeListener(cbx_2240);
+
     }
 
     public void BtnContinue() {
@@ -215,6 +380,7 @@ public class N2211_N2248_C extends AppCompatActivity {
 
         n2211C.setN2214(bi.rbN22141.isChecked() ? "1" : bi.rbN22142.isChecked() ? "2" : bi.rbN22143.isChecked() ? "3" : bi.rbN22144.isChecked() ? "4"
                 : bi.rbN22145.isChecked() ? "5" : bi.rbN2214OT.isChecked() ? "6" : bi.rbN2214DK.isChecked() ? "9" : "");
+        n2211C.setN2214x(bi.edN2214OT.getText().toString());
 
         n2211C.setN2215(bi.rbN22151.isChecked() ? "1" : bi.rbN22152.isChecked() ? "2" : bi.rbN2215DK.isChecked() ? "9" : "");
 
@@ -222,7 +388,7 @@ public class N2211_N2248_C extends AppCompatActivity {
         n2211C.setN22162(bi.cbN22162.isChecked() ? "2" : "");
         n2211C.setN22163(bi.cbN22163.isChecked() ? "3" : "");
         n2211C.setN22164(bi.cbN22164.isChecked() ? "4" : "");
-//        n2211C.setN22164x(bi.edN22164.getText().toString());
+        n2211C.setN22164x(bi.edN22164.getText().toString());
         n2211C.setN22165(bi.cbN22165.isChecked() ? "5" : "");
         n2211C.setN22166(bi.cbN22166.isChecked() ? "6" : "");
         n2211C.setN22167(bi.cbN22167.isChecked() ? "7" : "");
@@ -232,7 +398,7 @@ public class N2211_N2248_C extends AppCompatActivity {
         n2211C.setN221611(bi.cbN221611.isChecked() ? "11" : "");
         n2211C.setN221612(bi.cbN221612.isChecked() ? "12" : "");
         n2211C.setN2216Ot(bi.cbN2216OT.isChecked() ? "13" : "");
-//        n2211C.setN2216OTx(bi.edN2216OT.getText().toString());
+        n2211C.setN2216OTx(bi.edN2216OT.getText().toString());
         n2211C.setN2216Dk(bi.cbN2216DK.isChecked() ? "99" : "");
 
         n2211C.setN22171(bi.edN22171.getText().toString());
@@ -245,6 +411,7 @@ public class N2211_N2248_C extends AppCompatActivity {
         n2211C.setN2219(bi.rbN221911.isChecked() ? "1" : bi.rbN221912.isChecked() ? "2" : bi.rbN221913.isChecked() ? "3"
                 : bi.rbN221914.isChecked() ? "4" : bi.rbN221915.isChecked() ? "5" : bi.rbN221916.isChecked() ? "6" : bi.rbN221917.isChecked() ? "7"
                 : bi.rbN221918.isChecked() ? "8" : bi.rbN221919.isChecked() ? "9" : bi.rbN2219110.isChecked() ? "10" : bi.rbN2219111.isChecked() ? "11" : bi.rbN22191DK.isChecked() ? "99" : "");
+        n2211C.setN22192(bi.edN22192.getText().toString());
 
         n2211C.setN2220(bi.rbN22201.isChecked() ? "1" : bi.rbN22202.isChecked() ? "2" : bi.rbN22203.isChecked() ? "3" : bi.rbN2220DK.isChecked() ? "9" : "");
 
@@ -257,6 +424,7 @@ public class N2211_N2248_C extends AppCompatActivity {
         n2211C.setN2224(bi.rbN222411.isChecked() ? "1" : bi.rbN222412.isChecked() ? "2" : bi.rbN222413.isChecked() ? "3"
                 : bi.rbN222414.isChecked() ? "4" : bi.rbN222415.isChecked() ? "5" : bi.rbN222416.isChecked() ? "6" : bi.rbN222417.isChecked() ? "7"
                 : bi.rbN222418.isChecked() ? "8" : bi.rbN222419.isChecked() ? "9" : bi.rbN2224110.isChecked() ? "10" : bi.rbN2224111.isChecked() ? "11" : bi.rbN22241DK.isChecked() ? "99" : "");
+        n2211C.setN22242(bi.edN22242.getText().toString());
 
         n2211C.setN22251(bi.rbN222511.isChecked() ? "1" : bi.rbN222512.isChecked() ? "2" : bi.rbN22251DK.isChecked() ? "9" : "");
         n2211C.setN22252(bi.rbN222521.isChecked() ? "1" : bi.rbN222522.isChecked() ? "2" : bi.rbN22252DK.isChecked() ? "9" : "");
@@ -274,6 +442,7 @@ public class N2211_N2248_C extends AppCompatActivity {
         n2211C.setN2229(bi.rbN222911.isChecked() ? "1" : bi.rbN222912.isChecked() ? "2" : bi.rbN222913.isChecked() ? "3"
                 : bi.rbN222914.isChecked() ? "4" : bi.rbN222915.isChecked() ? "5" : bi.rbN222916.isChecked() ? "6" : bi.rbN222917.isChecked() ? "7"
                 : bi.rbN222918.isChecked() ? "8" : bi.rbN222919.isChecked() ? "9" : bi.rbN2229110.isChecked() ? "10" : bi.rbN2229111.isChecked() ? "11" : bi.rbN22291DK.isChecked() ? "99" : "");
+        n2211C.setN22292(bi.edN22292.getText().toString());
 
         n2211C.setN2230(bi.rbN22301.isChecked() ? "1" : bi.rbN22302.isChecked() ? "2" : bi.rbN22303.isChecked() ? "3" : bi.rbN2230DK.isChecked() ? "9" : "");
 
@@ -286,6 +455,7 @@ public class N2211_N2248_C extends AppCompatActivity {
         n2211C.setN2234(bi.rbN223411.isChecked() ? "1" : bi.rbN223412.isChecked() ? "2" : bi.rbN223413.isChecked() ? "3"
                 : bi.rbN223414.isChecked() ? "4" : bi.rbN223415.isChecked() ? "5" : bi.rbN223416.isChecked() ? "6" : bi.rbN223417.isChecked() ? "7"
                 : bi.rbN223418.isChecked() ? "8" : bi.rbN223419.isChecked() ? "9" : bi.rbN2234110.isChecked() ? "10" : bi.rbN2234111.isChecked() ? "11" : bi.rbN22341DK.isChecked() ? "99" : "");
+        n2211C.setN22342(bi.edN22342.getText().toString());
 
         n2211C.setN22351(bi.rbN223511.isChecked() ? "1" : bi.rbN223512.isChecked() ? "2" : bi.rbN22351DK.isChecked() ? "9" : "");
         n2211C.setN22352(bi.rbN223521.isChecked() ? "1" : bi.rbN223522.isChecked() ? "2" : bi.rbN22352DK.isChecked() ? "9" : "");
@@ -302,8 +472,8 @@ public class N2211_N2248_C extends AppCompatActivity {
         n2211C.setN22402(bi.cbN22402.isChecked() ? "2" : "");
         n2211C.setN22403(bi.cbN22403.isChecked() ? "3" : "");
         n2211C.setN22404(bi.cbN22404.isChecked() ? "4" : "");
-//        n2211C.setN22404x(bi.edN22404.getText().toString());
         n2211C.setN22405(bi.cbN22405.isChecked() ? "5" : "");
+        n2211C.setN22405x(bi.edN22405.getText().toString());
         n2211C.setN22406(bi.cbN22406.isChecked() ? "6" : "");
         n2211C.setN22407(bi.cbN22407.isChecked() ? "7" : "");
         n2211C.setN22408(bi.cbN22408.isChecked() ? "8" : "");
@@ -315,7 +485,7 @@ public class N2211_N2248_C extends AppCompatActivity {
         n2211C.setN224014(bi.cbN224014.isChecked() ? "14" : "");
         n2211C.setN224015(bi.cbN224015.isChecked() ? "15" : "");
         n2211C.setN2240Ot(bi.cbN2240OT.isChecked() ? "16" : "");
-//        n2211C.setN2240OTx(bi.edN2240OT.getText().toString());
+        n2211C.setN2240OTx(bi.edN2240OT.getText().toString());
         n2211C.setN2240Dk(bi.cbN2240DK.isChecked() ? "99" : "");
 
         n2211C.setN2241(bi.rbN22411.isChecked() ? "1" : bi.rbN22412.isChecked() ? "2" : bi.rbN2241DK.isChecked() ? "9" : "");
