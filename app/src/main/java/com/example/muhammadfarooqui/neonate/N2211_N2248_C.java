@@ -213,6 +213,7 @@ public class N2211_N2248_C extends AppCompatActivity {
 
         Global.N.N2211_N2248_A_C n2211C = new Global.N.N2211_N2248_A_C();
 
+
         DBHelper db = new DBHelper(this);
         Long row = db.update_N2211C(n2211C, n2211A_ID);
 

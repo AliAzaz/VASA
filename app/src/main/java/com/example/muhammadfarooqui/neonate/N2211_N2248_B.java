@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Toast;
 
 import com.example.muhammadfarooqui.neonate.databinding.N2211N2248BBinding;
@@ -14,6 +15,7 @@ import utils.Gothrough;
 public class N2211_N2248_B extends AppCompatActivity {
 
     N2211N2248BBinding bi;
+    static int count = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +30,24 @@ public class N2211_N2248_B extends AppCompatActivity {
 
     public void SetContentUI() {
 
+        if (count == 1) {
+            bi.llN22134.setVisibility(View.VISIBLE); //ll_N2213_4
+        } else {
+            bi.llN22134.setVisibility(View.GONE); //ll_N2213_4
+        }
+
     }
 
     public void BtnContinue() {
         if (validateField()) {
-            startActivity(new Intent(this, N2211_N2248_C.class));
+            if (SaveData()) {
+
+                count = 1;
+
+                startActivity(new Intent(this, N2211_N2248_C.class));
+            } else {
+                Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
+            }
         } else {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
         }
@@ -46,6 +61,7 @@ public class N2211_N2248_B extends AppCompatActivity {
                 : bi.rbN2213A5.isChecked() ? "5" : bi.rbN2213A6.isChecked() ? "6" : bi.rbN2213A7.isChecked() ? "7" : "");
         n2211B.setN22132a(bi.cbN22133E2A.isChecked() ? "1" : "");
         n2211B.setN22134(bi.edN22134.getText().toString());
+        n2211B.setACT_COUNT(String.valueOf(count));
 
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2211_B(n2211B);
@@ -55,6 +71,9 @@ public class N2211_N2248_B extends AppCompatActivity {
 
     public void BtnAddMore() {
         if (validateField()) {
+
+            count++;
+
             finish();
             startActivity(new Intent(this, N2211_N2248_B.class));
         } else {

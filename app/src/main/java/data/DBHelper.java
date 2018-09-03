@@ -687,6 +687,7 @@ public class DBHelper extends SQLiteOpenHelper {
         // Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
 
+        values.put(N2211_N2248_B.sub_N2211_N2248_B.ACT_COUNT, n2211B.getACT_COUNT());
         values.put(N2211_N2248_B.sub_N2211_N2248_B.N2213, n2211B.getN2213());
         values.put(N2211_N2248_B.sub_N2211_N2248_B.N2213_2A, n2211B.getN22132A());
         values.put(N2211_N2248_B.sub_N2211_N2248_B.N2213_4, n2211B.getN22134());
