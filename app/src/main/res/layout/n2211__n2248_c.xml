@@ -192,6 +192,13 @@
                             style="@style/CheckBox"
                             android:text="@string/cb_N2216_4" />
 
+                        <EditText
+                            android:id="@+id/ed_N2216_4"
+                            style="@style/EditText_varchar"
+                            android:hint="other"
+                            android:text='@{cbN22164.checked ? edN22164.getText.toString : ""}'
+                            android:visibility="@{cbN22164.checked ? View.VISIBLE : View.GONE}" />
+
                         <CheckBox
                             android:id="@+id/cb_N2216_5"
                             style="@style/CheckBox"
@@ -246,8 +253,8 @@
                             android:id="@+id/ed_N2216_OT"
                             style="@style/EditText_varchar"
                             android:hint="other"
-                            android:text='@{rbN2216OT.checked ? edN2214OT.getText.toString : ""}'
-                            android:visibility="@{rbN2216OT.checked ? View.VISIBLE : View.GONE}" />
+                            android:text='@{cbN2216OT.checked ? edN2216OT.getText.toString : ""}'
+                            android:visibility="@{cbN2216OT.checked ? View.VISIBLE : View.GONE}" />
 
                     </LinearLayout>
 
@@ -1717,6 +1724,13 @@
                                     style="@style/CheckBox"
                                     android:text="@string/cb_N2240_5" />
 
+                                <EditText
+                                    android:id="@+id/ed_N2240_5"
+                                    style="@style/EditText_varchar"
+                                    android:hint="other"
+                                    android:text='@{cbN22405.checked ? edN22405.getText.toString : ""}'
+                                    android:visibility="@{cbN22405.checked ? View.VISIBLE : View.GONE}" />
+
                                 <CheckBox
 
                                     android:id="@+id/cb_N2240_6"
@@ -1788,6 +1802,13 @@
                                     android:id="@+id/cb_N2240_OT"
                                     style="@style/CheckBox"
                                     android:text="@string/cb_N2240_OT" />
+
+                                <EditText
+                                    android:id="@+id/ed_N2240_OT"
+                                    style="@style/EditText_varchar"
+                                    android:hint="other"
+                                    android:text='@{cbN2240OT.checked ? edN2240OT.getText.toString : ""}'
+                                    android:visibility="@{cbN2240OT.checked ? View.VISIBLE : View.GONE}" />
 
                             </LinearLayout>
 
@@ -1888,7 +1909,7 @@
                                 <CheckBox
                                     android:id="@+id/cb_N2242_7"
                                     style="@style/CheckBox"
-                                    android:text="@string/cb_N2242_7" />
+                                    android:text="@string/other" />
 
                                 <CheckBox
                                     android:id="@+id/cb_N2242_dk"

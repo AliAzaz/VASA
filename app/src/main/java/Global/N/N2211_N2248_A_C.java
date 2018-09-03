@@ -7,11 +7,13 @@ public class N2211_N2248_A_C {
     public String N2212 = "N2212";
 
     public String N2214 = "N2214";
+    public String N2214x = "N2214x";
     public String N2215 = "N2215";
     public String N2216_1 = "N2216_1";
     public String N2216_2 = "N2216_2";
     public String N2216_3 = "N2216_3";
     public String N2216_4 = "N2216_4";
+    public String N2216_4x = "N2216_4x";
     public String N2216_5 = "N2216_5";
     public String N2216_6 = "N2216_6";
     public String N2216_7 = "N2216_7";
@@ -21,6 +23,7 @@ public class N2211_N2248_A_C {
     public String N2216_11 = "N2216_11";
     public String N2216_12 = "N2216_12";
     public String N2216_OT = "N2216_OT";
+    public String N2216_OTx = "N2216_OTx";
     public String N2216_DK = "N2216_DK";
     public String N2217_1 = "N2217_1";
     public String N2217_2 = "N2217_2";
@@ -63,6 +66,7 @@ public class N2211_N2248_A_C {
     public String N2240_2 = "N2240_2";
     public String N2240_3 = "N2240_3";
     public String N2240_4 = "N2240_4";
+    public String N2240_5x = "N2240_5x";
     public String N2240_5 = "N2240_5";
     public String N2240_6 = "N2240_6";
     public String N2240_7 = "N2240_7";
@@ -75,6 +79,7 @@ public class N2211_N2248_A_C {
     public String N2240_14 = "N2240_14";
     public String N2240_15 = "N2240_15";
     public String N2240_OT = "N2240_OT";
+    public String N2240_OTx = "N2240_OTx";
     public String N2240_DK = "N2240_DK";
     public String N2241 = "N2241";
     public String N2242_1 = "N2242_1";
@@ -859,17 +864,59 @@ public class N2211_N2248_A_C {
         N2248 = n2248;
     }
 
+    public String getN2214x() {
+        return N2214x;
+    }
+
+    public void setN2214x(String n2214x) {
+        N2214x = n2214x;
+    }
+
+    public String getN22164x() {
+        return N2216_4x;
+    }
+
+    public void setN22164x(String n2216_4x) {
+        N2216_4x = n2216_4x;
+    }
+
+    public String getN2216OTx() {
+        return N2216_OTx;
+    }
+
+    public void setN2216OTx(String n2216_OTx) {
+        N2216_OTx = n2216_OTx;
+    }
+
+    public String getN22405x() {
+        return N2240_5x;
+    }
+
+    public void setN22405x(String n2240_4x) {
+        N2240_5x = n2240_4x;
+    }
+
+    public String getN2240OTx() {
+        return N2240_OTx;
+    }
+
+    public void setN2240OTx(String n2240_OTx) {
+        N2240_OTx = n2240_OTx;
+    }
+
     public interface sub_N2211_N2248_A_C {
         String N2211_1 = "N2211_1";
         String N2211_2 = "N2211_2";
         String N2212 = "N2212";
 
         String N2214 = "N2214";
+        String N2214x = "N2214x";
         String N2215 = "N2215";
         String N2216_1 = "N2216_1";
         String N2216_2 = "N2216_2";
         String N2216_3 = "N2216_3";
         String N2216_4 = "N2216_4";
+        String N2216_4x = "N2216_4x";
         String N2216_5 = "N2216_5";
         String N2216_6 = "N2216_6";
         String N2216_7 = "N2216_7";
@@ -879,6 +926,7 @@ public class N2211_N2248_A_C {
         String N2216_11 = "N2216_11";
         String N2216_12 = "N2216_12";
         String N2216_OT = "N2216_OT";
+        String N2216_OTx = "N2216_OTx";
         String N2216_DK = "N2216_DK";
         String N2217_1 = "N2217_1";
         String N2217_2 = "N2217_2";
@@ -921,6 +969,7 @@ public class N2211_N2248_A_C {
         String N2240_2 = "N2240_2";
         String N2240_3 = "N2240_3";
         String N2240_4 = "N2240_4";
+        String N2240_5x = "N2240_5x";
         String N2240_5 = "N2240_5";
         String N2240_6 = "N2240_6";
         String N2240_7 = "N2240_7";
@@ -933,6 +982,7 @@ public class N2211_N2248_A_C {
         String N2240_14 = "N2240_14";
         String N2240_15 = "N2240_15";
         String N2240_OT = "N2240_OT";
+        String N2240_OTx = "N2240_OTx";
         String N2240_DK = "N2240_DK";
         String N2241 = "N2241";
         String N2242_1 = "N2242_1";
