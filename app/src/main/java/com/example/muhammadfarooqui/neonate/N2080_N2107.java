@@ -59,25 +59,61 @@ public class N2080_N2107 extends AppCompatActivity {
         CompoundButton.OnCheckedChangeListener cbx2082 = new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (b) {
+
+                if (bi.cbN20826.isChecked() || bi.cbN20825.isChecked()) {
                     ClearAllcontrol.ClearAll(bi.llN2083N2084); //ll_N2083_N2084
                     bi.llN2083N2084.setVisibility(View.GONE);
-                    if (bi.cbN2082DK.isChecked()) {
-                        ClearAllcontrol.ClearAll(bi.llN2085N2086); //ll_N2085_N2086
-                        bi.rgN2087.clearCheck();
-                        bi.llN2085N2086.setVisibility(View.GONE);
-                    }
                 } else {
-                    bi.llN2083N2084.setVisibility(View.VISIBLE);
-                    bi.llN2085N2086.setVisibility(View.VISIBLE);
+                    if (!bi.cbN2082DK.isChecked() && !bi.cbN2082OT.isChecked()) {
+                        bi.llN2083N2084.setVisibility(View.VISIBLE);
+                    }
                 }
             }
         };
 
         bi.cbN20825.setOnCheckedChangeListener(cbx2082);
         bi.cbN20826.setOnCheckedChangeListener(cbx2082);
-        bi.cbN2082OT.setOnCheckedChangeListener(cbx2082);
-        bi.cbN2082DK.setOnCheckedChangeListener(cbx2082);
+        bi.cbN2082OT.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    bi.edN2082OT.setVisibility(View.VISIBLE);
+
+                    ClearAllcontrol.ClearAll(bi.llN2083N2084); //ll_N2083_N2084
+                    bi.llN2083N2084.setVisibility(View.GONE);
+                } else {
+                    bi.edN2082OT.setVisibility(View.GONE);
+                    bi.edN2082OT.setText(null);
+
+                    if (!bi.cbN20826.isChecked() && !bi.cbN20825.isChecked() && !bi.cbN2082DK.isChecked()) {
+                        bi.llN2083N2084.setVisibility(View.VISIBLE);
+                    }
+                }
+            }
+        });
+        bi.cbN2082DK.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearAllcontrol.ClearAll(bi.llN2085N2086); //ll_N2085_N2086
+                    bi.llN2085N2086.setVisibility(View.GONE);
+
+                    bi.rgN2087.clearCheck();
+                    bi.llN2087.setVisibility(View.GONE); //ll_N2087
+
+                    ClearAllcontrol.ClearAll(bi.llN2083N2084); //ll_N2083_N2084
+                    bi.llN2083N2084.setVisibility(View.GONE);
+                } else {
+                    bi.llN2085N2086.setVisibility(View.VISIBLE);
+
+                    bi.llN2087.setVisibility(View.VISIBLE);
+
+                    if (!bi.cbN20826.isChecked() && !bi.cbN20825.isChecked() && !bi.cbN2082OT.isChecked()) {
+                        bi.llN2083N2084.setVisibility(View.VISIBLE);
+                    }
+                }
+            }
+        });
 
         bi.rgN2083.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -134,7 +170,16 @@ public class N2080_N2107 extends AppCompatActivity {
                     bi.rgN2092.clearCheck();
                     bi.llN2092.setVisibility(View.GONE); //ll_N2092
                 } else {
-                    bi.llN2092.setVisibility(View.VISIBLE);
+                    if (!bi.cbN2091OT.isChecked() && !bi.cbN20916.isChecked() && !bi.cbN20915.isChecked() && !bi.cbN2091DK.isChecked()) {
+                        bi.llN2092.setVisibility(View.VISIBLE);
+                    }
+                }
+
+                if (bi.cbN2091OT.isChecked()) {
+                    bi.edN2091OT.setVisibility(View.VISIBLE);
+                } else {
+                    bi.edN2091OT.setVisibility(View.GONE);
+                    bi.edN2091OT.setText(null);
                 }
             }
         };
@@ -460,8 +505,8 @@ public class N2080_N2107 extends AppCompatActivity {
                     return false;
                 }
 
-                if (!bi.cbN20825.isChecked() || !bi.cbN20826.isChecked() || !bi.cbN2082OT.isChecked()
-                        || !bi.cbN2082DK.isChecked()) {
+                if (!bi.cbN20825.isChecked() && !bi.cbN20826.isChecked() && !bi.cbN2082OT.isChecked()
+                        && !bi.cbN2082DK.isChecked()) {
                     //ll_N2083
                     if (!Gothrough.IamHiden(bi.llN2083)) {
                         return false;
@@ -476,7 +521,7 @@ public class N2080_N2107 extends AppCompatActivity {
                 }
             }
 
-            if (!bi.rbN2081DK.isChecked() || !bi.cbN2082DK.isChecked()) {
+            if (!bi.rbN2081DK.isChecked() && !bi.cbN2082DK.isChecked()) {
                 //ll_N2085
                 if (!Gothrough.IamHiden(bi.llN2085)) {
                     return false;
@@ -588,10 +633,10 @@ public class N2080_N2107 extends AppCompatActivity {
             return false;
         }
 
-        //ll_N2088_19
+        /*//ll_N2088_19
         if (!Gothrough.IamHiden(bi.llN208819)) {
             return false;
-        }
+        }*/
 
         if (!bi.cbN208819.isChecked()) {
             //ll_N2089
@@ -611,8 +656,8 @@ public class N2080_N2107 extends AppCompatActivity {
                         return false;
                     }
 
-                    if (!bi.cbN20915.isChecked() || !bi.cbN20916.isChecked() || !bi.cbN2091OT.isChecked()
-                            || !bi.cbN2091DK.isChecked()) {
+                    if (!bi.cbN20915.isChecked() && !bi.cbN20916.isChecked() && !bi.cbN2091OT.isChecked()
+                            && !bi.cbN2091DK.isChecked()) {
                         //ll_N2092
                         if (!Gothrough.IamHiden(bi.llN2092)) {
                             return false;
