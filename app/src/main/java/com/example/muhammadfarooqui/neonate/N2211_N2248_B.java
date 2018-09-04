@@ -36,6 +36,10 @@ public class N2211_N2248_B extends AppCompatActivity {
             bi.llN22133E2A.setVisibility(View.GONE); //ll_N2213_3E_2A
         }
 
+        if (count == 9) {
+            bi.btnAddMore.setVisibility(View.GONE);
+        }
+
     }
 
     public void BtnContinue() {
@@ -72,10 +76,13 @@ public class N2211_N2248_B extends AppCompatActivity {
     public void BtnAddMore() {
         if (validateField()) {
 
-            count++;
-
-            finish();
-            startActivity(new Intent(this, N2211_N2248_B.class));
+            if (SaveData()) {
+                count++;
+                finish();
+                startActivity(new Intent(this, N2211_N2248_B.class));
+            } else {
+                Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
+            }
         } else {
             Toast.makeText(this, "Required fields are missing", Toast.LENGTH_SHORT).show();
         }
