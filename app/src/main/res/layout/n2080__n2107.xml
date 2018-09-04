@@ -415,7 +415,7 @@
                         <TextView
                             android:id="@+id/txt_N2080_9"
                             style="@style/TextView"
-                            android:text="@string/txt_N2080" />
+                            android:text="@string/txt_N2080_9" />
 
                         <RadioGroup style="@style/RadioGroup">
 
@@ -830,17 +830,16 @@
                                     style="@style/CheckBox"
                                     android:text="@string/ot_other" />
 
-                                <EditText
-                                    android:id="@+id/ed_N2082_OT"
-                                    style="@style/EditText_varchar"
-                                    android:hint="Other"
-                                    android:text='@{cbN2082OT.checked ? edN2082OT.getText.toString : ""}'
-                                    android:visibility="@{cbN2082OT.checked ? View.VISIBLE : View.GONE}" />
-
                                 <CheckBox
                                     android:id="@+id/cb_N2082_DK"
                                     style="@style/CheckBox"
                                     android:text="@string/dnt" />
+
+                                <EditText
+                                    android:id="@+id/ed_N2082_OT"
+                                    style="@style/EditText_varchar"
+                                    android:hint="Other"
+                                    android:visibility="gone" />
 
                             </LinearLayout>
 
@@ -1156,9 +1155,7 @@
                     <!-- Check Box N2086 Ends -->
 
                     <!-- Radio Buttons N2087 Starts -->
-                    <android.support.v7.widget.CardView
-                        style="@style/Q_CardView"
-                        android:visibility="@{cbN2082DK.checked ? View.GONE : View.VISIBLE}">
+                    <android.support.v7.widget.CardView style="@style/Q_CardView">
 
 
                         <LinearLayout
@@ -2046,6 +2043,8 @@
                                     android:text="@string/rb_N2089_OT" />
 
                                 <EditText
+                                    android:text='@{rbN2089OT.checked ? edN2089OT.getText.toString : ""}'
+                                    android:visibility="@{rbN2089OT.checked ? View.VISIBLE : View.GONE}"
                                     android:id="@+id/ed_N2089_OT"
                                     style="@style/EditText_varchar"
                                     android:hint="Other" />
@@ -2156,15 +2155,16 @@
                                         style="@style/CheckBox"
                                         android:text="@string/ot_other" />
 
-                                    <EditText
-                                        android:id="@+id/ed_N2091_OT"
-                                        style="@style/EditText_varchar"
-                                        android:hint="Other" />
-
                                     <CheckBox
                                         android:id="@+id/cb_N2091_DK"
                                         style="@style/CheckBox"
                                         android:text="@string/dnt" />
+
+                                    <EditText
+                                        android:id="@+id/ed_N2091_OT"
+                                        style="@style/EditText_varchar"
+                                        android:hint="Other"
+                                        android:visibility="gone" />
 
                                 </LinearLayout>
 
@@ -3171,24 +3171,20 @@
                 <!-- Radio Buttons N2107_3 Ends -->
 
                 <!--  = = = = =  END OF FORM FIELDS  = = = = = -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:layout_marginTop="80dp"
-                    android:orientation="horizontal">
+                <!-- Next Buttons Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
+
 
                     <Button
                         android:id="@+id/btn_Continue"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#1ed61e"
+                        style="@style/Button_collder"
+                        android:layout_margin="10dp"
                         android:onClick="@{() -> callback.BtnContinue()}"
-                        android:text="NEXT SECTION"
-                        android:textColor="@color/white" />
+                        android:text="NEXT SECTION" />
 
-                </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <!-- Next Buttons Ends -->
 
             </LinearLayout>
 

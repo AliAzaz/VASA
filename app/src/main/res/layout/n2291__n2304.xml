@@ -597,24 +597,20 @@
                 <!-- EditText N2304_1 Ends -->
 
                 <!--  = = = = =  END OF FORM FIELDS  = = = = = -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:layout_marginTop="80dp"
-                    android:orientation="horizontal">
+                <!-- Next Buttons Starts -->
+                <android.support.v7.widget.CardView style="@style/Q_CardView">
+
 
                     <Button
                         android:id="@+id/btn_Continue"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#1ed61e"
+                        style="@style/Button_collder"
+                        android:layout_margin="10dp"
                         android:onClick="@{() -> callback.BtnContinue()}"
-                        android:text="NEXT SECTION"
-                        android:textColor="@color/white" />
+                        android:text="NEXT SECTION" />
 
-                </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <!-- Next Buttons Ends -->
 
             </LinearLayout>
 
