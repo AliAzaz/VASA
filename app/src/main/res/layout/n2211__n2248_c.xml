@@ -736,7 +736,9 @@
                             <EditText
                                 android:id="@+id/ed_N2224_2"
                                 style="@style/EditText_Name"
-                                android:hint="Name of Provider/Facility" />
+                                android:hint="Name of Provider/Facility"
+                                android:text='@{rbN22241DK.checked ?  "" : edN22242.getText.toString}'
+                                android:visibility="@{rbN22241DK.checked ? View.GONE : View.VISIBLE}" />
 
 
                         </LinearLayout>
@@ -1514,7 +1516,7 @@
                                     <TextView
                                         android:id="@+id/txt_N2237_1"
                                         style="@style/TextView"
-                                        android:text="@string/txt_N2227_1" />
+                                        android:text="@string/txt_N2237_1" />
 
                                     <RadioGroup style="@style/RadioGroup">
 
@@ -1556,7 +1558,7 @@
                                     <TextView
                                         android:id="@+id/txt_N2237_2"
                                         style="@style/TextView"
-                                        android:text="@string/txt_N2237_1" />
+                                        android:text="@string/txt_N2237_2" />
 
                                     <RadioGroup style="@style/RadioGroup">
 

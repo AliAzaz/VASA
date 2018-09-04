@@ -176,6 +176,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:layout_marginRight="5dp"
                         android:background="#1ed61e"
                         android:onClick="@{() -> callback.BtnAddMore()}"
                         android:text="ADD MORE ACTIONS"
@@ -186,7 +187,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="#1ed61e"
+                        android:background="@color/black_overlay"
                         android:onClick="@{() -> callback.BtnContinue()}"
                         android:text="NEXT SECTION"
                         android:textColor="@color/white" />

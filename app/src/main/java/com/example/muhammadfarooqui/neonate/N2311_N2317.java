@@ -167,6 +167,10 @@ public class N2311_N2317 extends AppCompatActivity {
             if (!Gothrough.IamHiden(bi.llN2311OT)) {
                 return false;
             }
+            if (!Gothrough.TextHidden(
+                    bi.rbN2311OT1.isChecked() ? bi.edN2311OT : null)) {
+                return false;
+            }
             //ll_N2312_1
             if (!Gothrough.IamHiden(bi.llN23121)) {
                 return false;
@@ -201,6 +205,10 @@ public class N2311_N2317 extends AppCompatActivity {
             }
             //ll_N2312_OT
             if (!Gothrough.IamHiden(bi.llN2312OT)) {
+                return false;
+            }
+            if (!Gothrough.TextHidden(
+                    bi.rbN2312OT1.isChecked() ? bi.edN2312OT : null)) {
                 return false;
             }
             //ll_N2313_1
@@ -249,6 +257,10 @@ public class N2311_N2317 extends AppCompatActivity {
             }
             //ll_N2313_OT
             if (!Gothrough.IamHiden(bi.llN2313OT)) {
+                return false;
+            }
+            if (!Gothrough.TextHidden(
+                    bi.rbN2313OT1.isChecked() ? bi.edN2313OT : null)) {
                 return false;
             }
 

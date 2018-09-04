@@ -31,9 +31,9 @@ public class N2211_N2248_B extends AppCompatActivity {
     public void SetContentUI() {
 
         if (count == 1) {
-            bi.llN22134.setVisibility(View.VISIBLE); //ll_N2213_4
+            bi.llN22133E2A.setVisibility(View.VISIBLE); //ll_N2213_3E_2A
         } else {
-            bi.llN22134.setVisibility(View.GONE); //ll_N2213_4
+            bi.llN22133E2A.setVisibility(View.GONE); //ll_N2213_3E_2A
         }
 
     }

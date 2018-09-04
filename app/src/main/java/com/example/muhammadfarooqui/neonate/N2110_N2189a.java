@@ -344,10 +344,20 @@ public class N2110_N2189a extends AppCompatActivity {
         if (!Gothrough.IamHiden(bi.llN2110)) {
             return false;
         }
+        if (!Gothrough.TextHidden(
+                bi.rbN2110OT.isChecked() ? bi.edN2110OT : null)) {
+            return false;
+        }
+
         //ll_N2111
         if (!Gothrough.IamHiden(bi.llN2111)) {
             return false;
         }
+        if (!Gothrough.TextHidden(
+                bi.rbN2111OT.isChecked() ? bi.edN2111OT : null)) {
+            return false;
+        }
+
         //ll_N2112
         if (!Gothrough.IamHiden(bi.llN2112)) {
             return false;
@@ -356,6 +366,10 @@ public class N2110_N2189a extends AppCompatActivity {
         if (bi.rbN21121.isChecked()) {
             //ll_N2113
             if (!Gothrough.IamHiden(bi.llN2113)) {
+                return false;
+            }
+            if (!Gothrough.TextHidden(
+                    bi.cbN2113OT.isChecked() ? bi.edN2113OT : null)) {
                 return false;
             }
         }
@@ -447,6 +461,11 @@ public class N2110_N2189a extends AppCompatActivity {
             if (!Gothrough.IamHiden(bi.llN2127)) {
                 return false;
             }
+            if (!Gothrough.TextHidden(
+                    bi.rbN21273.isChecked() ? bi.edN21273 : null)) {
+                return false;
+            }
+
             //ll_N2128
             if (!Gothrough.IamHiden(bi.llN2128)) {
                 return false;
@@ -475,6 +494,12 @@ public class N2110_N2189a extends AppCompatActivity {
             if (!Gothrough.IamHiden(bi.llN2133)) {
                 return false;
             }
+            if (!Gothrough.TextHidden(
+                    bi.rbN21333.isChecked() ? bi.edN21333 : bi.rbN21334.isChecked() ? bi.edN21334 : null)) {
+                return false;
+            }
+
+
             //ll_N2134
             if (!Gothrough.IamHiden(bi.llN2134)) {
                 return false;
@@ -525,6 +550,11 @@ public class N2110_N2189a extends AppCompatActivity {
         if (!Gothrough.IamHiden(bi.llN213511)) {
             return false;
         }
+        if (!Gothrough.TextHidden(
+                bi.rbN2135111.isChecked() ? bi.edN213512OT : null)) {
+            return false;
+        }
+
         //ll_N2136
         if (!Gothrough.IamHiden(bi.llN2136)) {
             return false;

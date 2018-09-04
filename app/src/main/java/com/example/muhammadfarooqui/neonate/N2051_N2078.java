@@ -191,6 +191,10 @@ public class N2051_N2078 extends AppCompatActivity {
             if (!Gothrough.IamHiden(bi.llN2053)) {
                 return false;
             }
+            if (!Gothrough.TextHidden(
+                    bi.cbN2053OT.isChecked() ? bi.edN2053OT : null)) {
+                return false;
+            }
 
             //ll_N2054
             if (!Gothrough.IamHiden(bi.llN2054)) {
@@ -342,6 +346,10 @@ public class N2051_N2078 extends AppCompatActivity {
         if (!Gothrough.IamHiden(bi.llN2074)) {
             return false;
         }
+        if (!Gothrough.TextHidden(
+                bi.rbN2074OT.isChecked() ? bi.edN2074OT : null)) {
+            return false;
+        }
 
         //ll_N2075
         if (!Gothrough.IamHiden(bi.llN2075)) {
@@ -352,6 +360,10 @@ public class N2051_N2078 extends AppCompatActivity {
         if (!Gothrough.IamHiden(bi.llN2076)) {
             return false;
         }
+        if (!Gothrough.TextHidden(
+                bi.rbN20766.isChecked() ? bi.edN20766 : null)) {
+            return false;
+        }
 
         //ll_N2077
         if (!Gothrough.IamHiden(bi.llN2077)) {
@@ -360,7 +372,14 @@ public class N2051_N2078 extends AppCompatActivity {
 
         if (bi.rbN20771.isChecked()) {
             //ll_N2078
-            return Gothrough.IamHiden(bi.llN2078);
+            if (!Gothrough.IamHiden(bi.llN2078)) {
+                return false;
+            }
+            if (!Gothrough.TextHidden(
+                    bi.cbN20784.isChecked() ? bi.edN20784 : null)) {
+                return false;
+            }
+            return Gothrough.TextHidden(bi.cbN2078OT.isChecked() ? bi.edN2078OT : null);
         }
 
         return true;
