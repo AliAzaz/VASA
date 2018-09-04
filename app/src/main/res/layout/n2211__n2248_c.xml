@@ -2137,7 +2137,7 @@
                                 android:text="@string/no" />
 
                             <RadioButton
-                                android:id="@+id/rb_C3059_dk"
+                                android:id="@+id/rb_N2247_DK"
                                 style="@style/RadioButton"
                                 android:text="@string/dnt" />
 

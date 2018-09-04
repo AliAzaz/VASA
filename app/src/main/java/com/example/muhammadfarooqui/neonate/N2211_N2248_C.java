@@ -517,6 +517,8 @@ public class N2211_N2248_C extends AppCompatActivity {
         n2211C.setN2245(bi.rbN22451.isChecked() ? "1" : bi.rbN22452.isChecked() ? "2" : bi.rbN2245DK.isChecked() ? "9" : bi.rbN2245RA.isChecked() ? "8" : "");
         n2211C.setN2246(bi.rbN22461.isChecked() ? "1" : bi.rbN22462.isChecked() ? "2" : bi.rbN2246DK.isChecked() ? "9" : bi.rbN2246RA.isChecked() ? "8" : "");
 
+        n2211C.setN2247(bi.rbN22471.isChecked() ? "1" : bi.rbN22472.isChecked() ? "2" : bi.rbN2247DK.isChecked() ? "9" : bi.rbN2247RA.isChecked() ? "8" : "");
+
         n2211C.setN2248(bi.edN2248.getText().toString());
 
 

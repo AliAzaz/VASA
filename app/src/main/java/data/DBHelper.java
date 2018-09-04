@@ -30,7 +30,7 @@ import Global.N.N2321_N2322;
  */
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static final String DB_NAME = "vasa.db";
+    public static final String DB_NAME = "vasa.db";
     private static final int VERSION = 1;
 
     Context mContext;
