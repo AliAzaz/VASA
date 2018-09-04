@@ -182,6 +182,10 @@ public class N2291_N2304 extends AppCompatActivity {
                 if (!Gothrough.IamHiden(bi.llN2301)) {
                     return false;
                 }
+                if (!Gothrough.TextHidden(
+                        bi.rbN2301OT.isChecked() ? bi.edN2301OT : null)) {
+                    return false;
+                }
 
                 if (!bi.rbN2301DK.isChecked()) {
                     //ll_N2302

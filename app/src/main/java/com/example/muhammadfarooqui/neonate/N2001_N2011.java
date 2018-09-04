@@ -229,9 +229,18 @@ public class N2001_N2011 extends AppCompatActivity {
         if (!Gothrough.IamHiden(bi.llN2006)) {
             return false;
         }
+        if (!Gothrough.TextHidden(
+                bi.rbN20066.isChecked() ? bi.edN20066 : bi.rbN200610.isChecked() ? bi.edN200610
+                        : bi.rbN200612.isChecked() ? bi.edN2006OT : null)) {
+            return false;
+        }
 
         //ll_N2008
         if (!Gothrough.IamHiden(bi.llN2008)) {
+            return false;
+        }
+        if (!Gothrough.TextHidden(
+                bi.rbN2008OT.isChecked() ? bi.edN2008OT : null)) {
             return false;
         }
 

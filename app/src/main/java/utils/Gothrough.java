@@ -42,20 +42,26 @@ public class Gothrough {
                     }
 
                 } else if (view instanceof EditText) {
-                    ((EditText) view).setError(null);
-                    if (((EditText) view).getText().toString().trim().length() > 0) {
-                        if (i + 1 == lv.getChildCount()) {
-                            return true;
-                        }
-                    } else {
-                        if (view.isEnabled()) {
-                            ((EditText) view).setError("Enter Text");
-                            return false;
-                        } else {
+                    if (view.isEnabled()) {
+
+                        ((EditText) view).setError(null);
+
+                        if (((EditText) view).getText().toString().trim().length() > 0) {
                             if (i + 1 == lv.getChildCount()) {
                                 return true;
                             }
+                        } else {
+                            if (view.isEnabled()) {
+                                ((EditText) view).setError("Enter Text");
+                                return false;
+                            } else {
+                                if (i + 1 == lv.getChildCount()) {
+                                    return true;
+                                }
+                            }
                         }
+                    } else {
+                        return true;
                     }
                 }
             }
@@ -67,5 +73,22 @@ public class Gothrough {
         lv.requestFocus();
 
         return false;
+    }
+
+
+    public static boolean TextHidden(EditText txt) {
+
+        if (txt != null) {
+            txt.setError(null);
+            txt.clearFocus();
+            if (txt.getText().toString().trim().length() > 0)
+                return true;
+            else {
+                txt.setError("Enter Text");
+                return false;
+            }
+        } else {
+            return true;
+        }
     }
 }

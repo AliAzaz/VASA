@@ -13,17 +13,15 @@
         <activity
             android:name=".N2001_N2011"
             android:screenOrientation="portrait">
-
-        </activity>
-        <activity
-            android:name=".N2012_N2016"
-            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".N2012_N2016"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".N2017_N2022_3"
             android:screenOrientation="portrait" />

@@ -532,6 +532,11 @@ public class N2211_N2248_C extends AppCompatActivity {
         if (!Gothrough.IamHiden(bi.llN2214)) {
             return false;
         }
+        if (!Gothrough.TextHidden(
+                bi.rbN2214OT.isChecked() ? bi.edN2214OT : null)) {
+            return false;
+        }
+
         //ll_N2215
         if (!Gothrough.IamHiden(bi.llN2215)) {
             return false;
@@ -542,11 +547,16 @@ public class N2211_N2248_C extends AppCompatActivity {
             if (!Gothrough.IamHiden(bi.llN2216)) {
                 return false;
             }
+            if (!Gothrough.TextHidden(
+                    bi.cbN22164.isChecked() ? bi.edN22164 : bi.cbN2216OT.isChecked() ? bi.edN2216OT : null)) {
+                return false;
+            }
         }
         //ll_N2217
         if (!Gothrough.IamHiden(bi.llN2217)) {
             return false;
         }
+
         //ll_N2218_1
         if (!Gothrough.IamHiden(bi.llN22181)) {
             return false;
@@ -559,6 +569,11 @@ public class N2211_N2248_C extends AppCompatActivity {
         if (!Gothrough.IamHiden(bi.llN2219)) {
             return false;
         }
+        if (!Gothrough.TextHidden(
+                !bi.rbN22191DK.isChecked() ? bi.edN22192 : null)) {
+            return false;
+        }
+
         //ll_N2220
         if (!Gothrough.IamHiden(bi.llN2220)) {
             return false;
@@ -589,6 +604,10 @@ public class N2211_N2248_C extends AppCompatActivity {
             if (bi.rbN22231.isChecked()) {
                 //ll_N2224
                 if (!Gothrough.IamHiden(bi.llN2224)) {
+                    return false;
+                }
+                if (!Gothrough.TextHidden(
+                        !bi.rbN22241DK.isChecked() ? bi.edN22242 : null)) {
                     return false;
                 }
             }
@@ -628,6 +647,11 @@ public class N2211_N2248_C extends AppCompatActivity {
             if (!Gothrough.IamHiden(bi.llN2229)) {
                 return false;
             }
+            if (!Gothrough.TextHidden(
+                    !bi.rbN22291DK.isChecked() ? bi.edN22292 : null)) {
+                return false;
+            }
+
             //ll_N2230
             if (!Gothrough.IamHiden(bi.llN2230)) {
                 return false;
@@ -657,6 +681,10 @@ public class N2211_N2248_C extends AppCompatActivity {
                 if (bi.rbN22331.isChecked()) {
                     //ll_N2234
                     if (!Gothrough.IamHiden(bi.llN2234)) {
+                        return false;
+                    }
+                    if (!Gothrough.TextHidden(
+                            !bi.rbN22341DK.isChecked() ? bi.edN22342 : null)) {
                         return false;
                     }
                 }
@@ -700,6 +728,14 @@ public class N2211_N2248_C extends AppCompatActivity {
                 }
                 //ll_N2240
                 if (!Gothrough.IamHiden(bi.llN2240)) {
+                    return false;
+                }
+                if (!Gothrough.TextHidden(
+                        bi.cbN22405.isChecked() ? bi.edN22405 : null)) {
+                    return false;
+                }
+                if (!Gothrough.TextHidden(
+                        bi.cbN2240OT.isChecked() ? bi.edN2240OT : null)) {
                     return false;
                 }
 

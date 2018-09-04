@@ -487,6 +487,10 @@ public class N2080_N2107 extends AppCompatActivity {
         if (!Gothrough.IamHiden(bi.llN208015)) {
             return false;
         }
+        if (!Gothrough.TextHidden(
+                bi.rbN2080151.isChecked() ? bi.edN208015 : null)) {
+            return false;
+        }
 
 /*        //ll_N2080_16
         if (!Gothrough.IamHiden(bi.llN208016)) {
@@ -502,6 +506,10 @@ public class N2080_N2107 extends AppCompatActivity {
             if (bi.rbN20811.isChecked()) {
                 //ll_N2082
                 if (!Gothrough.IamHiden(bi.llN2082)) {
+                    return false;
+                }
+                if (!Gothrough.TextHidden(
+                        bi.cbN2082OT.isChecked() ? bi.edN2082OT : null)) {
                     return false;
                 }
 
@@ -530,6 +538,14 @@ public class N2080_N2107 extends AppCompatActivity {
                 if (bi.rbN20851.isChecked()) {
                     //ll_N2086
                     if (!Gothrough.IamHiden(bi.llN2086)) {
+                        return false;
+                    }
+                    if (!Gothrough.TextHidden(
+                            bi.cbN20864.isChecked() ? bi.edN20864 : null)) {
+                        return false;
+                    }
+                    if (!Gothrough.TextHidden(
+                            bi.cbN2086OT.isChecked() ? bi.edN2086OT : null)) {
                         return false;
                     }
                 }
@@ -632,6 +648,10 @@ public class N2080_N2107 extends AppCompatActivity {
         if (!Gothrough.IamHiden(bi.llN208818)) {
             return false;
         }
+        if (!Gothrough.TextHidden(
+                bi.rbN2088181.isChecked() ? bi.edN208818 : null)) {
+            return false;
+        }
 
         /*//ll_N2088_19
         if (!Gothrough.IamHiden(bi.llN208819)) {
@@ -641,6 +661,10 @@ public class N2080_N2107 extends AppCompatActivity {
         if (!bi.cbN208819.isChecked()) {
             //ll_N2089
             if (!Gothrough.IamHiden(bi.llN2089)) {
+                return false;
+            }
+            if (!Gothrough.TextHidden(
+                    bi.rbN2089OT.isChecked() ? bi.edN2089OT : null)) {
                 return false;
             }
 
@@ -655,11 +679,19 @@ public class N2080_N2107 extends AppCompatActivity {
                     if (!Gothrough.IamHiden(bi.llN2091)) {
                         return false;
                     }
+                    if (!Gothrough.TextHidden(
+                            bi.cbN2091OT.isChecked() ? bi.edN2091OT : null)) {
+                        return false;
+                    }
 
                     if (!bi.cbN20915.isChecked() && !bi.cbN20916.isChecked() && !bi.cbN2091OT.isChecked()
                             && !bi.cbN2091DK.isChecked()) {
                         //ll_N2092
                         if (!Gothrough.IamHiden(bi.llN2092)) {
+                            return false;
+                        }
+                        if (!Gothrough.TextHidden(
+                                bi.rbN2092OT.isChecked() ? bi.edN2092OT : null)) {
                             return false;
                         }
                     }
@@ -668,6 +700,11 @@ public class N2080_N2107 extends AppCompatActivity {
 
             //ll_N2093
             if (!Gothrough.IamHiden(bi.llN2093)) {
+                return false;
+            }
+            if (!Gothrough.TextHidden(
+                    bi.rbN20938.isChecked() ? bi.edN20938 : bi.rbN209312.isChecked() ? bi.edN209312
+                            : bi.rbN2093OT.isChecked() ? bi.edN2093OT : null)) {
                 return false;
             }
 
@@ -694,6 +731,10 @@ public class N2080_N2107 extends AppCompatActivity {
 
                 //ll_N2098
                 if (!Gothrough.IamHiden(bi.llN2098)) {
+                    return false;
+                }
+                if (!Gothrough.TextHidden(
+                        bi.rbN209810.isChecked() ? bi.edN209810 : bi.rbN2098OT.isChecked() ? bi.edN2098OT : null)) {
                     return false;
                 }
 
