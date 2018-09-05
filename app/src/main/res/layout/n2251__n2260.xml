@@ -551,6 +551,13 @@
 
                                 </LinearLayout>
 
+                                <EditText
+                                    android:id="@+id/edN2255"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits="0123456789/"
+                                    android:maxLength="10" />
+
                                 <CheckBox
                                     android:id="@+id/cb_N2255_1"
                                     style="@style/CheckBox"

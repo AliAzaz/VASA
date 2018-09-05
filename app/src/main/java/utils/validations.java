@@ -62,4 +62,20 @@ public class validations {
         }
     }
 
+    public static boolean RangeTextBox(EditText txt, int value, int min, int max, int defaultVal, String type) {
+
+        if (value != defaultVal) {
+            if (value < min || value > max) {
+                txt.setError("Range is " + min + " to " + max + " or " + defaultVal + " " + type + " ... ");    // Set Error on last radio button
+                return false;
+            } else {
+                txt.setError(null);
+                return true;
+            }
+        } else {
+            txt.setError(null);
+            return true;
+        }
+    }
+
 }
