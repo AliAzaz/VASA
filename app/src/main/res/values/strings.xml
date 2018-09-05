@@ -612,7 +612,7 @@
     <string name="txt_N2253">N2253:	Do you have any health care records that belonged to the deceased?	</string>
     <string name="txt_N2254">N2254:	Can I see the health records?	</string>
     <string name="txt_N2255_1check">N2255_1check: Is the date of the most recent (last) visit available?	</string>
-    <string name="txt_N2255_1">N255_1: Record the date of the most recent (last) visit	</string>
+    <string name="txt_N2255_1">N2255_1: Record the date of the most recent (last) visit	</string>
     <string name="txt_N2255_2check">N2255_2check: Is the date of the second most recent visit available?	</string>
     <string name="txt_N2255_2">N2255_2:	Record the date of the second most recent visit	</string>
     <string name="txt_N2256">N2256:	Record the date of the last note on the health records	</string>
