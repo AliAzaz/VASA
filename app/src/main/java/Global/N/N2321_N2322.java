@@ -5,6 +5,16 @@ public class N2321_N2322 {
     public String N2321 = "N2321";
     public String N2322 = "N2322";
 
+    public String STUDYID = "STUDYID";
+
+    public String getSTUDYID() {
+        return STUDYID;
+    }
+
+    public void setSTUDYID(String STUDYID) {
+        this.STUDYID = STUDYID;
+    }
+
     public String getN2321() {
         return N2321;
     }
@@ -24,5 +34,6 @@ public class N2321_N2322 {
     public interface sub_N2321_N2322 {
         String N2321 = "N2321";
         String N2322 = "N2322";
+        String STUDYID = "study_id";
     }
 }

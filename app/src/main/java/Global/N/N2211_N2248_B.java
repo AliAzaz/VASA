@@ -7,6 +7,16 @@ public class N2211_N2248_B {
     public String N2213_4 = "N2213_4";
     public String ACT_COUNT = "ACT_COUNT";
 
+    public String STUDYID = "STUDYID";
+
+    public String getSTUDYID() {
+        return STUDYID;
+    }
+
+    public void setSTUDYID(String STUDYID) {
+        this.STUDYID = STUDYID;
+    }
+
     public String getACT_COUNT() {
         return ACT_COUNT;
     }
@@ -44,5 +54,6 @@ public class N2211_N2248_B {
         String N2213_2A = "N2213_2A";
         String N2213_4 = "N2213_4";
         String ACT_COUNT = "ACT_COUNT";
+        String STUDYID = "study_id";
     }
 }

@@ -6,8 +6,9 @@ public class N2271_N2284 {
 
     public static String getCreateQuery() {
         String query;
-        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, 'study_id' INTEGER,   " +
+        query = "CREATE TABLE '" + TABLE_NAME + "' ('id' INTEGER PRIMARY KEY AUTOINCREMENT, " +
 
+                Global.N.N2271_N2284.sub_N2271_N2284.STUDYID + " INTEGER," +
                 Global.N.N2271_N2284.sub_N2271_N2284.N2271 + " TEXT," +
                 Global.N.N2271_N2284.sub_N2271_N2284.N2272 + " TEXT," +
                 Global.N.N2271_N2284.sub_N2271_N2284.N2273 + " TEXT," +

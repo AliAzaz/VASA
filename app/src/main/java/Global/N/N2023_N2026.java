@@ -9,6 +9,16 @@ public class N2023_N2026 {
     public String N2025D = "N2025D";
     public String N2026 = "N2026";
 
+    public String STUDYID = "STUDYID";
+
+    public String getSTUDYID() {
+        return STUDYID;
+    }
+
+    public void setSTUDYID(String STUDYID) {
+        this.STUDYID = STUDYID;
+    }
+
     public String getN2023() {
         return N2023;
     }
@@ -64,5 +74,6 @@ public class N2023_N2026 {
         String N2025U = "N2025U";
         String N2025D = "N2025D";
         String N2026 = "N2026";
+        String STUDYID = "study_id";
     }
 }

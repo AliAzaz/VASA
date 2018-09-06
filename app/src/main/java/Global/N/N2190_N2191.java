@@ -28,6 +28,16 @@ public class N2190_N2191 {
     public String N2191_1 = "N2191_1";
     public String N2191_2 = "N2191_2";
 
+    public String STUDYID = "STUDYID";
+
+    public String getSTUDYID() {
+        return STUDYID;
+    }
+
+    public void setSTUDYID(String STUDYID) {
+        this.STUDYID = STUDYID;
+    }
+
     public String getN2190() {
         return N2190;
     }
@@ -254,5 +264,6 @@ public class N2190_N2191 {
         String N2190_22 = "N2190_22";
         String N2191_1 = "N2191_1";
         String N2191_2 = "N2191_2";
+        String STUDYID = "study_id";
     }
 }
