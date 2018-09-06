@@ -196,7 +196,7 @@ public class N2251_N2260 extends AppCompatActivity {
                     if (!Gothrough.IamHiden(bi.llN22551)) {
                         return false;
                     }
-                    if (!val_n22551.ValFlag()) {
+                    if (!val_n22551.ValFlag() || !val_n22551.TextLen()) {
                         Toast.makeText(this, "Error: " + getString(R.string.txt_N2255_1), Toast.LENGTH_SHORT).show();
                         return false;
                     }
@@ -212,7 +212,7 @@ public class N2251_N2260 extends AppCompatActivity {
                     if (!Gothrough.IamHiden(bi.llN22552)) {
                         return false;
                     }
-                    if (!val_n22552.ValFlag()) {
+                    if (!val_n22552.ValFlag() || !val_n22552.TextLen()) {
                         Toast.makeText(this, "Error: " + getString(R.string.txt_N2255_2), Toast.LENGTH_SHORT).show();
                         return false;
                     }
@@ -222,7 +222,7 @@ public class N2251_N2260 extends AppCompatActivity {
                 if (!Gothrough.IamHiden(bi.llN2256)) {
                     return false;
                 }
-                if (!val_n2256.ValFlag()) {
+                if (!val_n2256.ValFlag() || !val_n2256.TextLen()) {
                     Toast.makeText(this, "Error: " + getString(R.string.txt_N2256), Toast.LENGTH_SHORT).show();
                     return false;
                 }
