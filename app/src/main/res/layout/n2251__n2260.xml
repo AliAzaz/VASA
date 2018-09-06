@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".N2251_N2260">
 
@@ -537,7 +536,7 @@
                                     android:id="@+id/ll_N2255_1"
                                     style="@style/Q_Linerlayout_v">
 
-                                    <io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText
+                                    <!--<io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText
                                         android:id="@+id/ed_N2255_1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
@@ -547,22 +546,25 @@
                                         android:hint="@string/txt_N2255_1"
                                         android:text='@{rbN22551check1.checked &amp;&amp; !cbN22551.checked ? edN22551.getText.toString : ""}'
                                         android:textColor="@android:color/black"
-                                        app:dateFormat="dd/MM/yyyy" />
+                                        app:dateFormat="dd/MM/yyyy" />-->
+
+                                    <EditText
+                                        android:id="@+id/ed_N2255_1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:digits="0123456789/"
+                                        android:hint="@string/txt_N2255_1"
+                                        android:maxLength="10"
+                                        android:text='@{rbN22551check1.checked ? edN22551.getText.toString : ""}'
+                                        android:textColor="@android:color/black" />
 
                                 </LinearLayout>
 
-                                <EditText
-                                    android:id="@+id/edN2255"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:digits="0123456789/"
-                                    android:maxLength="10" />
-
-                                <CheckBox
+                                <!--<CheckBox
                                     android:id="@+id/cb_N2255_1"
                                     style="@style/CheckBox"
                                     android:checked="@{rbN22551check2.checked ? false : false}"
-                                    android:text="@string/dnt" />
+                                    android:text="@string/dnt" />-->
 
                             </LinearLayout>
 
@@ -616,7 +618,7 @@
                                     android:id="@+id/ll_N2255_2"
                                     style="@style/Q_Linerlayout_v">
 
-                                    <io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText
+                                    <!--<io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText
                                         android:id="@+id/ed_N2255_2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
@@ -626,15 +628,25 @@
                                         android:hint="@string/txt_N2255_2"
                                         android:text='@{rbN22552check1.checked &amp;&amp; !cbN22552.checked ? edN22552.getText.toString : ""}'
                                         android:textColor="@android:color/black"
-                                        app:dateFormat="dd/MM/yyyy" />
+                                        app:dateFormat="dd/MM/yyyy" />-->
+
+                                    <EditText
+                                        android:id="@+id/ed_N2255_2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:digits="0123456789/"
+                                        android:hint="@string/txt_N2255_2"
+                                        android:maxLength="10"
+                                        android:text='@{rbN22552check1.checked ? edN22552.getText.toString : ""}'
+                                        android:textColor="@android:color/black" />
 
                                 </LinearLayout>
 
-                                <CheckBox
+                                <!--<CheckBox
                                     android:id="@+id/cb_N2255_2"
                                     style="@style/CheckBox"
                                     android:checked="@{rbN22552check2.checked ? false : false}"
-                                    android:text="@string/dnt" />
+                                    android:text="@string/dnt" />-->
 
                             </LinearLayout>
 
@@ -654,7 +666,7 @@
                                     android:id="@+id/ll_N2256"
                                     style="@style/Q_Linerlayout_v">
 
-                                    <io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText
+                                    <!--<io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText
                                         android:id="@+id/ed_N2256"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
@@ -664,15 +676,25 @@
                                         android:hint="@string/txt_N2256"
                                         android:text='@{(rbN22531.checked || rbN22541.checked) &amp;&amp; !cbN2256.checked ? edN2256.getText.toString : ""}'
                                         android:textColor="@android:color/black"
-                                        app:dateFormat="dd/MM/yyyy" />
+                                        app:dateFormat="dd/MM/yyyy" />-->
+
+                                    <EditText
+                                        android:id="@+id/ed_N2256"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:digits="0123456789/"
+                                        android:hint="@string/txt_N2256"
+                                        android:maxLength="10"
+                                        android:text='@{(rbN22531.checked || rbN22541.checked) ? edN2256.getText.toString : ""}'
+                                        android:textColor="@android:color/black" />
 
                                 </LinearLayout>
 
-                                <CheckBox
+                                <!--<CheckBox
                                     android:id="@+id/cb_N2256"
                                     style="@style/CheckBox"
                                     android:checked="@{!(rbN22531.checked || rbN22541.checked) ? false : false}"
-                                    android:text="@string/dnt" />
+                                    android:text="@string/dnt" />-->
 
                             </LinearLayout>
 

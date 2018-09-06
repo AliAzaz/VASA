@@ -4,31 +4,24 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.view.KeyEvent;
-import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.muhammadfarooqui.neonate.databinding.N2251N2260Binding;
 
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 import data.DBHelper;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
-import utils.validations;
+import utils.ValidateDate;
 
 public class N2251_N2260 extends AppCompatActivity {
 
     N2251N2260Binding bi;
     String dtToday = new SimpleDateFormat("dd/MM/yyyy HH:mm").format(new Date().getTime());
-
-    boolean flag_n255 = true;
-    String txt_n255;
+    ValidateDate val_n22551, val_n22552, val_n2256;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +30,10 @@ public class N2251_N2260 extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.n2251__n2260);
         bi.setCallback(this);
 
+        val_n22551 = new ValidateDate();
+        val_n22552 = new ValidateDate();
+        val_n2256 = new ValidateDate();
+
         SetContentUI();
 
     }
@@ -44,14 +41,15 @@ public class N2251_N2260 extends AppCompatActivity {
     public void SetContentUI() {
 
         //Initializing datepickers
-        bi.edN22551.setManager(getSupportFragmentManager());
+
+       /* bi.edN22551.setManager(getSupportFragmentManager());
         bi.edN22551.setMaxDate(dtToday);
 
         bi.edN22552.setManager(getSupportFragmentManager());
         bi.edN22552.setMaxDate(dtToday);
 
         bi.edN2256.setManager(getSupportFragmentManager());
-        bi.edN2256.setMaxDate(dtToday);
+        bi.edN2256.setMaxDate(dtToday);*/
 
         bi.rgN2251.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -80,112 +78,9 @@ public class N2251_N2260 extends AppCompatActivity {
             }
         });
 
-        bi.edN2255.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-                txt_n255 = String.valueOf(charSequence);
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-                if (bi.edN2255.getText().length() != 0 && flag_n255) {
-
-                    try {
-
-                        switch (bi.edN2255.getText().length()) {
-
-                            case 2:
-
-                                if (!validations.RangeTextBox(bi.edN2255, Integer.valueOf(bi.edN2255.getText().toString().substring(0, 2)), 1, 30, 99, "Days")) {
-                                    flag_n255 = false;
-                                    return;
-                                }
-                                flag_n255 = true;
-                                bi.edN2255.setText(bi.edN2255.getText().append('/'));
-
-                                break;
-                            case 5:
-
-                                if (!validations.RangeTextBox(bi.edN2255, Integer.valueOf(bi.edN2255.getText().toString().substring(3, 5)), 1, 12, 99, "Months")) {
-                                    flag_n255 = false;
-                                    return;
-                                }
-                                flag_n255 = true;
-                                bi.edN2255.setText(bi.edN2255.getText().append('/'));
-
-                                break;
-                            case 10:
-
-                                Calendar ci = Calendar.getInstance();
-                                ci.setTime(new Date());
-
-                                if (!validations.RangeTextBox(bi.edN2255, Integer.valueOf(bi.edN2255.getText().toString().substring(6, 10)), 1900, ci.get(Calendar.YEAR), 9999, "Year")) {
-                                    flag_n255 = false;
-                                    return;
-                                }
-
-                                if (bi.edN2255.getText().toString().substring(6, 10).equals("9999")) {
-                                    if (!bi.edN2255.getText().toString().equals("99/99/9999")) {
-                                        bi.edN2255.setError("Wrong presentation!! Requires: 99/99/9999");
-                                        flag_n255 = false;
-                                        return;
-                                    }
-                                }
-
-                                flag_n255 = true;
-
-                                break;
-
-                            default:
-                                bi.edN2255.setError(null);
-                                break;
-                        }
-                    } catch (Exception e) {
-                        bi.edN2255.setError("Pattern: XX/XX/XXXX");
-                    }
-
-                }
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-                bi.edN2255.setSelection(bi.edN2255.getText().length());
-            }
-        });
-
-        bi.edN2255.setOnKeyListener(new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if (keyCode == KeyEvent.KEYCODE_DEL) {
-
-                    flag_n255 = true;
-
-                    if (bi.edN2255.getText().length() != 0 && bi.edN2255.getText().toString().equals(txt_n255)) {
-
-                        switch (bi.edN2255.getText().length()) {
-
-                            case 3:
-                                bi.edN2255.setText(bi.edN2255.getText().toString().substring(0, 1));
-                                break;
-                            case 6:
-                                bi.edN2255.setText(bi.edN2255.getText().toString().substring(0, 4));
-                                bi.edN2255.setSelection(bi.edN2255.getText().length());
-                                break;
-
-                        }
-
-                    } else {
-                        txt_n255 = bi.edN2255.getText().toString();
-                    }
-
-
-                }
-                return false;
-            }
-        });
+        val_n22551.ValDate(bi.edN22551);
+        val_n22552.ValDate(bi.edN22552);
+        val_n2256.ValDate(bi.edN2256);
 
     }
 
@@ -301,6 +196,10 @@ public class N2251_N2260 extends AppCompatActivity {
                     if (!Gothrough.IamHiden(bi.llN22551)) {
                         return false;
                     }
+                    if (!val_n22551.ValFlag()) {
+                        Toast.makeText(this, "Error: " + getString(R.string.txt_N2255_1), Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
                 }
 
                 //ll_N2255_2check
@@ -313,12 +212,21 @@ public class N2251_N2260 extends AppCompatActivity {
                     if (!Gothrough.IamHiden(bi.llN22552)) {
                         return false;
                     }
+                    if (!val_n22552.ValFlag()) {
+                        Toast.makeText(this, "Error: " + getString(R.string.txt_N2255_2), Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
                 }
 
                 //ll_N2256
                 if (!Gothrough.IamHiden(bi.llN2256)) {
                     return false;
                 }
+                if (!val_n2256.ValFlag()) {
+                    Toast.makeText(this, "Error: " + getString(R.string.txt_N2256), Toast.LENGTH_SHORT).show();
+                    return false;
+                }
+
                 //ll_N2257
                 if (!Gothrough.IamHiden(bi.llN2257)) {
                     return false;
