@@ -46,7 +46,6 @@ public class N2311_N2317 {
     public String N2317 = "N2317";
     public String STUDYID = "STUDYID";
 
-
     public String getN2311() {
         return N2311;
     }

@@ -53,5 +53,6 @@ public class N2012_N2016 {
         String N2014 = "N2014";
         String N2015 = "N2015";
         String N2016 = "N2016";
+        String STUDYID = "study_id";
     }
 }

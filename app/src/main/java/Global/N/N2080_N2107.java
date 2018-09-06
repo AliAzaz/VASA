@@ -120,6 +120,16 @@ public class N2080_N2107 {
     public String N2107_2 = "N2107_2";
     public String N2107_3 = "N2107_3";
 
+    public String STUDYID = "STUDYID";
+
+    public String getSTUDYID() {
+        return STUDYID;
+    }
+
+    public void setSTUDYID(String STUDYID) {
+        this.STUDYID = STUDYID;
+    }
+
     public String getN20801() {
         return N2080_1;
     }
@@ -1182,5 +1192,6 @@ public class N2080_N2107 {
         String N2107_1 = "N2107_1";
         String N2107_2 = "N2107_2";
         String N2107_3 = "N2107_3";
+        String STUDYID = "study_id";
     }
 }
