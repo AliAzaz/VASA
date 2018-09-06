@@ -233,7 +233,7 @@ public class N2080_N2107 extends AppCompatActivity {
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
-                startActivity(new Intent(this, N2110_N2189a.class));
+                startActivity(new Intent(this, bi.rbN21061.isChecked() ? N2271_N2284.class : N2110_N2189a.class));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }
@@ -552,9 +552,12 @@ public class N2080_N2107 extends AppCompatActivity {
             }
 
             if (!bi.cbN2082DK.isChecked()) {
-                //ll_N2087
-                if (!Gothrough.IamHiden(bi.llN2087)) {
-                    return false;
+
+                if (bi.rbN20811.isChecked() || (!bi.cbN20825.isChecked() || !bi.cbN20826.isChecked() || !bi.cbN2082OT.isChecked())) {
+                    //ll_N2087
+                    if (!Gothrough.IamHiden(bi.llN2087)) {
+                        return false;
+                    }
                 }
             }
         }
@@ -799,6 +802,12 @@ public class N2080_N2107 extends AppCompatActivity {
 
             //ll_N2107_3
             return Gothrough.IamHiden(bi.llN21073);
+        }
+
+        // Condition
+        if (!bi.rbN20811.isChecked() || (bi.cbN20825.isChecked() || bi.cbN20826.isChecked() || bi.cbN2082OT.isChecked())) {
+            //ll_N2087
+            ClearAllcontrol.ClearAll(bi.llN2087); //bi.llN2087
         }
 
         return true;

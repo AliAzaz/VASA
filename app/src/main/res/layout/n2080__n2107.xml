@@ -1155,7 +1155,9 @@
                     <!-- Check Box N2086 Ends -->
 
                     <!-- Radio Buttons N2087 Starts -->
-                    <android.support.v7.widget.CardView style="@style/Q_CardView">
+                    <android.support.v7.widget.CardView
+                        style="@style/Q_CardView"
+                        android:visibility="@{rbN20811.checked || (!cbN20825.checked || !cbN20826.checked || !cbN2082OT.checked) ? View.VISIBLE : View.GONE}">
 
 
                         <LinearLayout
@@ -1199,8 +1201,7 @@
                 <android.support.v7.widget.CardView style="@style/Q_CardView">
 
 
-                    <LinearLayout
-                        style="@style/Q_Linerlayout_v">
+                    <LinearLayout style="@style/Q_Linerlayout_v">
 
                         <TextView
                             style="@style/TextView"
@@ -2043,11 +2044,11 @@
                                     android:text="@string/rb_N2089_OT" />
 
                                 <EditText
-                                    android:text='@{rbN2089OT.checked ? edN2089OT.getText.toString : ""}'
-                                    android:visibility="@{rbN2089OT.checked ? View.VISIBLE : View.GONE}"
                                     android:id="@+id/ed_N2089_OT"
                                     style="@style/EditText_varchar"
-                                    android:hint="Other" />
+                                    android:hint="Other"
+                                    android:text='@{rbN2089OT.checked ? edN2089OT.getText.toString : ""}'
+                                    android:visibility="@{rbN2089OT.checked ? View.VISIBLE : View.GONE}" />
 
                             </RadioGroup>
 
