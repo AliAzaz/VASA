@@ -39,7 +39,7 @@ public class N2110_N2189a extends AppCompatActivity {
         DBHelper db = new DBHelper(this);
 
         String n2006 = db.getSpecificData(data.N.N2001_N2011.TABLE_NAME, "id", N2001_N2011.sub_N2001_N2011.N2006);
-        if (Integer.valueOf(n2006) >= 3 || Integer.valueOf(n2006) <= 10) {
+        if (Integer.valueOf(n2006) >= 3 && Integer.valueOf(n2006) <= 10) {
             flag_n2006 = false;
         }
 
