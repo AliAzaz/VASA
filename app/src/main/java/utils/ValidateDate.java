@@ -15,6 +15,27 @@ public class ValidateDate {
 
     boolean flag_n255 = true;
     String txt_n255;
+    int length = 0;
+
+    public static boolean RangeTextBox(EditText txt, int value, int min, int max, int defaultVal, String type) {
+
+        if (value != defaultVal) {
+            if (value < min || value > max) {
+                txt.setError("Range is " + min + " to " + max + " or " + defaultVal + " " + type + " ... ");    // Set Error on last radio button
+                return false;
+            } else {
+                txt.setError(null);
+                return true;
+            }
+        } else {
+            txt.setError(null);
+            return true;
+        }
+    }
+
+    public boolean ValFlag() {
+        return flag_n255;
+    }
 
     public void ValDate(final EditText editText) {
 
@@ -36,7 +57,7 @@ public class ValidateDate {
 
                             case 2:
 
-                                if (!validations.RangeTextBox(editText, Integer.valueOf(editText.getText().toString().substring(0, 2)), 1, 30, 99, "Days")) {
+                                if (!RangeTextBox(editText, Integer.valueOf(editText.getText().toString().substring(0, 2)), 1, 30, 99, "Days")) {
                                     flag_n255 = false;
                                     return;
                                 }
@@ -46,7 +67,7 @@ public class ValidateDate {
 //                      break;
                             case 5:
                                 if (flag_n255) {
-                                    if (!validations.RangeTextBox(editText, Integer.valueOf(editText.getText().toString().substring(3, 5)), 1, 12, 99, "Months")) {
+                                    if (!RangeTextBox(editText, Integer.valueOf(editText.getText().toString().substring(3, 5)), 1, 12, 99, "Months")) {
                                         flag_n255 = false;
                                         return;
                                     }
@@ -61,7 +82,7 @@ public class ValidateDate {
                                     Calendar ci = Calendar.getInstance();
                                     ci.setTime(new Date());
 
-                                    if (!validations.RangeTextBox(editText, Integer.valueOf(editText.getText().toString().substring(6, 10)), 1900, ci.get(Calendar.YEAR), 9999, "Year")) {
+                                    if (!RangeTextBox(editText, Integer.valueOf(editText.getText().toString().substring(6, 10)), 1900, ci.get(Calendar.YEAR), 9999, "Year")) {
                                         flag_n255 = false;
                                         return;
                                     }
@@ -141,6 +162,8 @@ public class ValidateDate {
 
                 editText.setSelection(editText.getText().length());
 
+                length = editText.getText().length();
+
             }
 
         });
@@ -191,8 +214,8 @@ public class ValidateDate {
 
     }
 
-    public boolean ValFlag() {
-        return flag_n255;
+    public boolean TextLen() {
+        return length == 10;
     }
 
 }

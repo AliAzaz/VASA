@@ -3,11 +3,19 @@ package com.example.muhammadfarooqui.neonate;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.muhammadfarooqui.neonate.databinding.N2001N2011Binding;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 
 import data.DBHelper;
 import utils.ClearAllcontrol;
@@ -25,7 +33,57 @@ public class N2001_N2011 extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.n2001__n2011);
         bi.setCallback(this);
 
+        dbBackup();
+
         SetContentUI();
+    }
+
+    public void dbBackup() {
+
+        File folder = new File(Environment.getExternalStorageDirectory() + File.separator + "VASA10");
+        boolean success = true;
+        if (!folder.exists()) {
+            success = folder.mkdirs();
+        }
+        if (success) {
+
+            folder = new File(folder.getPath());
+            if (!folder.exists()) {
+                success = folder.mkdirs();
+            }
+            if (success) {
+
+                try {
+                    File dbFile = new File(this.getDatabasePath(DBHelper.DB_NAME).getPath());
+                    FileInputStream fis = new FileInputStream(dbFile);
+
+                    String outFileName = folder.getPath() + File.separator +
+                            DBHelper.DB_NAME;
+
+                    // Open the empty db as the output stream
+                    OutputStream output = new FileOutputStream(outFileName);
+
+                    // Transfer bytes from the inputfile to the outputfile
+                    byte[] buffer = new byte[1024];
+                    int length;
+                    while ((length = fis.read(buffer)) > 0) {
+                        output.write(buffer, 0, length);
+                    }
+                    // Close the streams
+                    output.flush();
+                    output.close();
+                    fis.close();
+                } catch (IOException e) {
+                    Log.e("dbBackup:", e.getMessage());
+                }
+
+            }
+
+        } else {
+            Toast.makeText(this, "Not create folder", Toast.LENGTH_SHORT).show();
+        }
+
+
     }
 
     private void SetContentUI() {
