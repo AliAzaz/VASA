@@ -20,6 +20,15 @@ public class N2001_N2011 {
     public String N2009_4 = "N2009_4";
     public String N2010 = "N2010";
     public String N2011 = "N2011";
+    public String STUDYID = "STUDYID";
+
+    public String getSTUDYID() {
+        return STUDYID;
+    }
+
+    public void setSTUDYID(String STUDYID) {
+        this.STUDYID = STUDYID;
+    }
 
     public String getN2001() {
         return N2001;
@@ -184,5 +193,6 @@ public class N2001_N2011 {
         String N2009_4 = "N2009_4";
         String N2010 = "N2010";
         String N2011 = "N2011";
+        String STUDYID = "study_id";
     }
 }

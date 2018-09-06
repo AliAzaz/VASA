@@ -22,6 +22,16 @@ public class N2251_N2260 {
     public String N2259 = "N2259";
     public String N2260 = "N2260";
 
+    public String STUDYID = "STUDYID";
+
+    public String getSTUDYID() {
+        return STUDYID;
+    }
+
+    public void setSTUDYID(String STUDYID) {
+        this.STUDYID = STUDYID;
+    }
+
     public String getN2251() {
         return N2251;
     }
@@ -194,5 +204,6 @@ public class N2251_N2260 {
         String N2258 = "N2258";
         String N2259 = "N2259";
         String N2260 = "N2260";
+        String STUDYID = "study_id";
     }
 }

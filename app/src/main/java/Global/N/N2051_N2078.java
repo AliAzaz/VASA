@@ -74,6 +74,16 @@ public class N2051_N2078 {
     public String N2078_OT = "N2078_OT";
     public String N2078_OTx = "N2078_OTx";
 
+    public String STUDYID = "STUDYID";
+
+    public String getSTUDYID() {
+        return STUDYID;
+    }
+
+    public void setSTUDYID(String STUDYID) {
+        this.STUDYID = STUDYID;
+    }
+
     public String getN2051() {
         return N2051;
     }
@@ -713,6 +723,7 @@ public class N2051_N2078 {
         String N2078_DK = "N2078_DK";
         String N2078_OT = "N2078_OT";
         String N2078_OTx = "N2078_OTx";
+        String STUDYID = "study_id";
 
     }
 

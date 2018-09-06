@@ -13,6 +13,15 @@ public class N2017_N2022_3 {
     public String N2022_1 = "N2022_1";
     public String N2022_2 = "N2022_2";
     public String N2022_3 = "N2022_3";
+    public String STUDYID = "STUDYID";
+
+    public String getSTUDYID() {
+        return STUDYID;
+    }
+
+    public void setSTUDYID(String STUDYID) {
+        this.STUDYID = STUDYID;
+    }
 
     public String getN2017() {
         return N2017;
@@ -114,5 +123,6 @@ public class N2017_N2022_3 {
         String N2022_1 = "N2022_1";
         String N2022_2 = "N2022_2";
         String N2022_3 = "N2022_3";
+        String STUDYID = "study_id";
     }
 }
