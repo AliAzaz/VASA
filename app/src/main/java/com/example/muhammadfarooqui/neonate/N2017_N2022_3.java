@@ -96,6 +96,7 @@ public class N2017_N2022_3 extends AppCompatActivity {
         n2017.setN20223(bi.rbN202231.isChecked() ? "1" : bi.rbN202232.isChecked() ? "2" : bi.rbN20223DK.isChecked() ? "9"
                 : bi.rbN20223RA.isChecked() ? "8" : "");
 
+        n2017.setSTUDYID("");
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2017(n2017);
 

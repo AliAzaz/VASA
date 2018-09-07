@@ -51,6 +51,8 @@ public class N2012_N2016 extends AppCompatActivity {
                 : bi.rbN2015RA.isChecked() ? "8" : "");
         n2012.setN2016(bi.rbN20161.isChecked() ? "1" : bi.rbN20162.isChecked() ? "2" : "");
 
+        n2012.setSTUDYID("");
+
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2012(n2012);
 

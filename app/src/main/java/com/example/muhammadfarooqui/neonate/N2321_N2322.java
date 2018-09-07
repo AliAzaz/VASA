@@ -53,6 +53,7 @@ public class N2321_N2322 extends AppCompatActivity {
                 : bi.rbN2322DK.isChecked() ? "9" : "");
 
 
+        n2321.setSTUDYID("");
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2321(n2321);
 

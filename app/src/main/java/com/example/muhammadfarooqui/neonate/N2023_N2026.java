@@ -50,6 +50,7 @@ public class N2023_N2026 extends AppCompatActivity {
         n2023.setN2026(bi.rbN20261.isChecked() ? "1" : bi.rbN20262.isChecked() ? "2" : bi.rbN2026DK.isChecked() ? "9"
                 : bi.rbN2026RA.isChecked() ? "8" : "");
 
+        n2023.setSTUDYID("");
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2023(n2023);
 

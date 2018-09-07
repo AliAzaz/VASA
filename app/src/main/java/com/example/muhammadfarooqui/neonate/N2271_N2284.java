@@ -79,6 +79,7 @@ public class N2271_N2284 extends AppCompatActivity {
                 : bi.rbN2283DK.isChecked() ? "9" : bi.rbN2283RA.isChecked() ? "8" : "");
         n2271.setN2284(bi.edN2284.getText().toString());
 
+        n2271.setSTUDYID("");
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2271(n2271);
 

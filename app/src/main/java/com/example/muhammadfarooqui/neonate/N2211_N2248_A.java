@@ -46,6 +46,7 @@ public class N2211_N2248_A extends AppCompatActivity {
         n2211.setN22112(bi.rbN221121.isChecked() ? "1" : bi.rbN221122.isChecked() ? "2" : bi.rbN221123.isChecked() ? "3" : bi.rbN22112DK.isChecked() ? "9" : "");
         n2211.setN2212(bi.rbN22121.isChecked() ? "1" : bi.rbN22122.isChecked() ? "2" : bi.rbN2212DK.isChecked() ? "9" : "");
 
+        n2211.setSTUDYID("");
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2211_A_C(n2211);
 
