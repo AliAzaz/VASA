@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.muhammadfarooqui.neonate.databinding.N2211N2248CBinding;
 
+import Global.N.N2211_N2248_A_C;
 import data.DBHelper;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
@@ -20,7 +21,7 @@ import static com.example.muhammadfarooqui.neonate.N2211_N2248_A.n2211A_ID;
 public class N2211_N2248_C extends AppCompatActivity {
 
     N2211N2248CBinding bi;
-    boolean N2241Flag = true;
+    boolean N2241Flag = true, flag_n2212 = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,18 @@ public class N2211_N2248_C extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.n2211__n2248_c);
         bi.setCallback(this);
 
+        GetDataFromDB();
         SetContentUI();
+
+    }
+
+    private void GetDataFromDB() {
+
+        DBHelper db = new DBHelper(this);
+        String n2212 = db.getSpecificData(data.N.N2211_N2248_A_C.TABLE_NAME, "id", N2211_N2248_A_C.sub_N2211_N2248_A_C.N2212);
+        if (Integer.valueOf(n2212) == 2) {
+            flag_n2212 = false;
+        }
 
     }
 
@@ -364,12 +376,18 @@ public class N2211_N2248_C extends AppCompatActivity {
         bi.cbN2240OT.setOnCheckedChangeListener(cbx_2240);
         bi.cbN2240DK.setOnCheckedChangeListener(cbx_2240);
 
+        //conditions
+        if (!flag_n2212) {
+            ClearAllcontrol.ClearAll(bi.llN22217N2248); //ll_N22217_N2248
+            bi.llN22217N2248.setVisibility(View.GONE);
+        }
+
     }
 
     public void BtnContinue() {
         if (validateField()) {
             if (SaveData()) {
-                startActivity(new Intent(this, N2251_N2260.class));
+                startActivity(new Intent(this, flag_n2212 ? N2251_N2260.class : N2271_N2284.class));
             } else {
                 Toast.makeText(this, "Can't add data!!", Toast.LENGTH_SHORT).show();
             }
