@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.muhammadfarooqui.neonate.databinding.N2051N2078Binding;
 
+import Global.N.N2001_N2011.sub_N2001_N2011;
 import data.DBHelper;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
@@ -16,6 +18,7 @@ import utils.Gothrough;
 public class N2051_N2078 extends AppCompatActivity {
 
     N2051N2078Binding bi;
+    boolean flag_n2006 = true, flag_n2008 = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +28,28 @@ public class N2051_N2078 extends AppCompatActivity {
         bi.setCallback(this);
 
         SetContentUI();
+        GetDataFromDB();
 
     }
 
-    public void SetContentUI() {
+    private void GetDataFromDB() {
+
+        DBHelper db = new DBHelper(this);
+
+        String n2006 = db.getSpecificData(data.N.N2001_N2011.TABLE_NAME, "id", sub_N2001_N2011.N2006);
+        if (n2006.equals("99") || n2006.equals("1") || n2006.equals("2")) {
+            flag_n2006 = false;
+        }
+
+        String n2008 = db.getSpecificData(data.N.N2001_N2011.TABLE_NAME, "id", sub_N2001_N2011.N2008);
+        if (n2008.equals("9")) {
+            flag_n2008 = false;
+        }
+
+
+    }
+
+    private void SetContentUI() {
 
         bi.rgN2052.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -65,6 +86,11 @@ public class N2051_N2078 extends AppCompatActivity {
                 }
             }
         });
+
+        if (!flag_n2006 && !flag_n2008) {
+            ClearAllcontrol.ClearAll(bi.llN2075N2078); //ll_N2075_N2078
+            bi.llN2075N2078.setVisibility(View.GONE);
+        }
 
     }
 
@@ -357,30 +383,33 @@ public class N2051_N2078 extends AppCompatActivity {
             return false;
         }
 
-        //ll_N2076
-        if (!Gothrough.IamHiden(bi.llN2076)) {
-            return false;
-        }
-        if (!Gothrough.TextHidden(
-                bi.rbN20766.isChecked() ? bi.edN20766 : null)) {
-            return false;
-        }
+        if (flag_n2006 && flag_n2008) {
 
-        //ll_N2077
-        if (!Gothrough.IamHiden(bi.llN2077)) {
-            return false;
-        }
-
-        if (bi.rbN20771.isChecked()) {
-            //ll_N2078
-            if (!Gothrough.IamHiden(bi.llN2078)) {
+            //ll_N2076
+            if (!Gothrough.IamHiden(bi.llN2076)) {
                 return false;
             }
             if (!Gothrough.TextHidden(
-                    bi.cbN20784.isChecked() ? bi.edN20784 : null)) {
+                    bi.rbN20766.isChecked() ? bi.edN20766 : null)) {
                 return false;
             }
-            return Gothrough.TextHidden(bi.cbN2078OT.isChecked() ? bi.edN2078OT : null);
+
+            //ll_N2077
+            if (!Gothrough.IamHiden(bi.llN2077)) {
+                return false;
+            }
+
+            if (bi.rbN20771.isChecked()) {
+                //ll_N2078
+                if (!Gothrough.IamHiden(bi.llN2078)) {
+                    return false;
+                }
+                if (!Gothrough.TextHidden(
+                        bi.cbN20784.isChecked() ? bi.edN20784 : null)) {
+                    return false;
+                }
+                return Gothrough.TextHidden(bi.cbN2078OT.isChecked() ? bi.edN2078OT : null);
+            }
         }
 
         return true;

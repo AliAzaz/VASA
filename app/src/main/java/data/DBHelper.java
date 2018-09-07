@@ -1012,4 +1012,44 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
 
+    public String getSpecificData(String table_name, String id, String column) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = null;
+        String[] columns = {
+                column,
+                "MAX(" + id + ") as " + id
+        };
+        String whereClause = null;
+        String[] whereArgs = null;
+        String groupBy = null;
+        String having = null;
+
+        String orderBy =
+                id + " DESC LIMIT 1";
+
+        String allFC = null;
+        try {
+            c = db.query(
+                    table_name,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            if (c.moveToFirst()) {
+                allFC = c.getString(c.getColumnIndex(column));
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return allFC;
+    }
+
 }
