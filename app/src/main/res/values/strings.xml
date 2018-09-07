@@ -17,6 +17,58 @@
     <string name="time">Times</string>
     <string name="fv">First Visit</string>
 
+    Headings:
+    <string name="h_n_sec_2">SECTION 2: BACKGROUND</string>
+    <string name="h_n_sec_2.1">2.1 GENERAL DELIVERY CONTEXT (for 0-27 day olds) </string>
+    <string name="h_n_sec_2.2">2.2 STILLBIRTH / NEONATAL DEATH DETERMINATION (for 0-27 day olds) </string>
+    <string name="h_n_sec_2.3">2.3 GENERAL SIGNS AND SYMPTOMS FOR STILLBIRTHS </string>
+    <string name="h_n_sec_2.4">2.4 BACKGROUNDAND FATAL ILLNESS DURATION (FOR NEONATAL DEATHS) </string>
+    <string name="h_n_sec_3">SECTION 3: MATERNAL HISTORY (FOR STILLBIRTHS AND NEONATAL DEATHS) </string>
+    <string name="h_n_sec_4">SECTION 4: MATERNAL SYMPTOMS & CARESEEKING (FOR STILLBIRTHS AND NEONATAL DEATHS) </string>
+    <string name="h_n_sec_5">SECTION 5: CARE OF THE NEWBORN AND SIGNS AND SYMPTOMS ASSOCIATED WITH
+    THE FATAL ILLNESS (FOR NEONATAL DEATHS)
+    <string name="h_n_sec_I_A">Injuries and Accidents </string>
+    <string name="h_n_sec_6">POSTNATAL CARE OF THE NEWBORN (FOR NEONATAL DEATHS) </string>
+    <string name="h_n_sec_10">SECTION 10: CARE-SEEKING FOR THE FATAL ILLNESS (FOR NEONATAL DEATHS) </string>
+    <string name="h_n_sec_11">SECTION 11: TREATMENTS RECEIVED DURING THE FATAL ILLNESS (FOR NEONATAL DEATHS) </string>
+    <string name="h_n_sec_12">SECTION 12: DEATH CERTIFICATE AND CIVIL REGISTRATION (FOR STILLBIRTHS AND NEONATAL DEATHS) </string>
+    <string name="h_n_sec_13">SECTION 13: THE HOUSEHOLD </string>
+    <string name="h_n_sec_14">SECTION 14: SOCIAL CAPITAL AND HIV/AIDS QUESTIONS (FOR STILLBIRTHS, NEONATAL) </string>
+    <string name="h_n_sec_15">SECTION 15: OPEN ENDED RESPONSE & INTERVIEWER COMMENTS/OBSERVATIONS (FOR STILLBIRTHS, NEONATAL) </string>
+
+    <string name="h_a_sec_2.4">2.4 BACKGROUND and GENERAL SIGNS AND SYMPTOMS </string>
+    <string name="h_a_sec_9">SECTION 9: SIGNS AND SYMPTOMS FOR ADULTS DEATHS (12 years and above)</string>
+    <string name="h_a_sec_I_A">Injuries and Accidents</string>
+    <string name="h_a_sec_10">SECTION 10: CARE-SEEKING FOR THE FATAL ILLNESS (ADULT DEATHS)</string>
+    <string name="h_a_sec_11">SECTION 11: TREATMENTS RECEIVED DURING THE FATAL ILLNESS (ADULT DEATHS) </string>
+    <string name="h_a_sec_12">SECTION 12: DEATH CERTIFICATE AND CIVIL REGISTRATION (ADULT DEATHS)</string>
+    <string name="h_a_sec_13">SECTION 13: THE HOUSEHOLD</string>
+    <string name="h_a_sec_14">SECTION 14: SOCIAL CAPITAL AND HIV/AIDS QUESTIONS</string>
+    <string name="h_a_sec_15">SECTION 15: OPEN ENDED RESPONSE & INTERVIEWER COMMENTS/OBSERVATIONS</string>
+
+    <string name="h_g_sec_1">SECTION 1: GENERAL INFORMATION</string>
+    <string name="h_g_sec_1.1">1.1 Information about the prevalence of HIV and malaria</string>
+    <string name="h_g_sec_1.2">1.2 Information about the deceased</string>
+    <string name="h_g_sec_1.3">1.3: Information about the interview</string>
+    <string name="h_g_sec_I_R">IDENTIFY THE BEST RESPONDENT</string>
+    <string name="h_g_sec_1.4">1.4 Information about the respondent</string>
+    <string name="h_g_sec_1.5">1.5 Information about others at the interview</string>
+    <string name="h_g_sec_1.6">1.6 Deceased child or adults sex and age at death</string>
+
+    <string name="h_c_sec_2">SECTION 2: BACKGROUND</string>
+    <string name="h_c_sec_2.1">2.1 GENERAL DELIVERY CONTEXT (for 28 day-11 month olds)</string>
+    <string name="h_c_sec_2.4">2.4 BACKGROUND (CHILD DEATHS)</string>
+    <string name="h_c_sec_6">SECTION 6: SIGNS AND SYMPTOMS ASSOCIATED WITH THE FATAL ILLNESS (FOR 28 DAYS – 11 MONTHS OLD DEATHS)</string>
+    <string name="h_c_sec_7">SECTION 7: PREVENTIVE CARE OF CHILDREN (FOR 28 DAYS – 11 YEARS CHILD DEATHS)</string>
+    <string name="h_c_sec_8">SECTION 8: SIGNS AND SYMPTOMS ASSOCIATED WITH THE FATAL ILLNESS (FOR CHILD DEATHS 28 DAYS – 11 YEARS OLD)</string>
+    <string name="h_c_sec_I_A">Injuries and Accidents</string>
+    <string name="h_c_sec_10">SECTION 10: CARE-SEEKING FOR THE FATAL ILLNESS (CHILD DEATHS)</string>
+    <string name="h_c_sec_11">SECTION 11: TREATMENTS RECEIVED DURING THE FATAL ILLNESS (CHILD DEATHS)</string>
+    <string name="h_c_sec_12">SECTION 12: DEATH CERTIFICATE AND CIVIL REGISTRATION (CHILD DEATHS)</string>
+    <string name="h_c_sec_13">SECTION 13: THE HOUSEHOLD</string>
+    <string name="h_c_sec_14">SECTION 14: SOCIAL CAPITAL AND HIV/AIDS QUESTIONS (CHILD DEATHS)</string>
+    <string name="h_c_sec_15">SECTION 15: OPEN ENDED RESPONSE & INTERVIEWER COMMENTS/OBSERVATIONS (CHILD DEATHS)</string>
+
 
     <!--NEW FROM IRFAN-->
 
