@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.example.muhammadfarooqui.neonate.databinding.N2311N2317Binding;
 
+import Global.N.N2012_N2016;
 import data.DBHelper;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
@@ -16,7 +17,8 @@ import utils.Gothrough;
 public class N2311_N2317 extends AppCompatActivity {
 
     N2311N2317Binding bi;
-    boolean valFlag;
+    boolean valFlag, flag_n2016 = true;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +27,18 @@ public class N2311_N2317 extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.n2311__n2317);
         bi.setCallback(this);
 
+        GetDataFromDB();
         SetContentUI();
+
+    }
+
+    private void GetDataFromDB() {
+
+        DBHelper db = new DBHelper(this);
+        String n2016 = db.getSpecificData(data.N.N2012_N2016.TABLE_NAME, "id", N2012_N2016.sub_N2012_N2016.N2016);
+        if (Integer.valueOf(n2016) == 1) {
+            flag_n2016 = false;
+        }
 
     }
 
@@ -37,6 +50,12 @@ public class N2311_N2317 extends AppCompatActivity {
         if (valFlag) {
             ClearAllcontrol.ClearAll(bi.llN2311N2313); //ll_N2311_N2313
             bi.llN2311N2313.setVisibility(View.GONE);
+        }
+
+        //conditions
+        if (!flag_n2016) {
+            ClearAllcontrol.ClearAll(bi.llN2314N2315); //ll_N2314_N2315
+            bi.llN2314N2315.setVisibility(View.GONE);
         }
 
     }
@@ -266,14 +285,17 @@ public class N2311_N2317 extends AppCompatActivity {
 
         }
 
-        //ll_N2314
-        if (!Gothrough.IamHiden(bi.llN2314)) {
-            return false;
+        if (flag_n2016) {
+            //ll_N2314
+            if (!Gothrough.IamHiden(bi.llN2314)) {
+                return false;
+            }
+            //ll_N2315
+            if (!Gothrough.IamHiden(bi.llN2315)) {
+                return false;
+            }
         }
-        //ll_N2315
-        if (!Gothrough.IamHiden(bi.llN2315)) {
-            return false;
-        }
+
         //ll_N2316
         if (!Gothrough.IamHiden(bi.llN2316)) {
             return false;

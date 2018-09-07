@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.example.muhammadfarooqui.neonate.databinding.N2110N2189aBinding;
 
 import Global.N.N2001_N2011;
+import Global.N.N2051_N2078;
 import data.DBHelper;
 import utils.ClearAllcontrol;
 import utils.Gothrough;
@@ -20,7 +21,7 @@ import utils.Gothrough;
 public class N2110_N2189a extends AppCompatActivity {
 
     N2110N2189aBinding bi;
-    boolean flag_n2006 = true;
+    boolean flag_n2006 = true, flag_n2006_2 = true, flag_n2066 = true, flag_n2067 = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,18 @@ public class N2110_N2189a extends AppCompatActivity {
         String n2006 = db.getSpecificData(data.N.N2001_N2011.TABLE_NAME, "id", N2001_N2011.sub_N2001_N2011.N2006);
         if (Integer.valueOf(n2006) >= 3 && Integer.valueOf(n2006) <= 10) {
             flag_n2006 = false;
+        }
+        if (Integer.valueOf(n2006) == 1 || Integer.valueOf(n2006) == 2 || Integer.valueOf(n2006) == 11 || Integer.valueOf(n2006) == 12 || Integer.valueOf(n2006) == 99) {
+            flag_n2006_2 = false;
+        }
+
+        String n2066 = db.getSpecificData(data.N.N2051_N2078.TABLE_NAME, "id", N2051_N2078.sub_N2051_N2078.N2066);
+        if (Integer.valueOf(n2066) != 1) {
+            flag_n2066 = false;
+        }
+        String n2067 = db.getSpecificData(data.N.N2051_N2078.TABLE_NAME, "id", N2051_N2078.sub_N2051_N2078.N2067);
+        if (Integer.valueOf(n2067) == 9 || Integer.valueOf(n2067) == 10) {
+            flag_n2067 = false;
         }
 
     }
@@ -217,6 +230,11 @@ public class N2110_N2189a extends AppCompatActivity {
         if (!flag_n2006) {
             ClearAllcontrol.ClearAll(bi.llN2110N2112); //ll_N2110_N2112
             bi.llN2110N2112.setVisibility(View.GONE);
+        }
+
+        if ((!flag_n2066 && !flag_n2067) || !flag_n2006_2) {
+            ClearAllcontrol.ClearAll(bi.llN2129N2130); //ll_N2129_N2130
+            bi.llN2129N2130.setVisibility(View.GONE);
         }
 
     }
@@ -492,13 +510,16 @@ public class N2110_N2189a extends AppCompatActivity {
             if (!Gothrough.IamHiden(bi.llN2128)) {
                 return false;
             }
-            //ll_N2129
-            if (!Gothrough.IamHiden(bi.llN2129)) {
-                return false;
-            }
-            //ll_N2130
-            if (!Gothrough.IamHiden(bi.llN2130)) {
-                return false;
+
+            if ((flag_n2066 && flag_n2067) || flag_n2006_2) {
+                //ll_N2129
+                if (!Gothrough.IamHiden(bi.llN2129)) {
+                    return false;
+                }
+                //ll_N2130
+                if (!Gothrough.IamHiden(bi.llN2130)) {
+                    return false;
+                }
             }
         }
 
