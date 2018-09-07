@@ -130,6 +130,7 @@ public class N2251_N2260 extends AppCompatActivity {
                 : bi.rbN2259RA.isChecked() ? "8" : "");
         n2251.setN2260(bi.edN2260.getText().toString());
 
+        n2251.setSTUDYID("");
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2251(n2251);
 

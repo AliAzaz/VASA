@@ -115,6 +115,8 @@ public class N2291_N2304 extends AppCompatActivity {
         n2291.setN2304_1(bi.edN23041.getText().toString());
         n2291.setN2304_2(bi.edN23042.getText().toString());
 
+
+        n2291.setSTUDYID("");
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2291(n2291);
 

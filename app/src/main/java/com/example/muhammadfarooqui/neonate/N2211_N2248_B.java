@@ -67,6 +67,7 @@ public class N2211_N2248_B extends AppCompatActivity {
         n2211B.setN22134(bi.edN22134.getText().toString());
         n2211B.setACT_COUNT(String.valueOf(count));
 
+        n2211B.setSTUDYID("");
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2211_B(n2211B);
 

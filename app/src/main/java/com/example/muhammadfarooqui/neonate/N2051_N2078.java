@@ -168,6 +168,7 @@ public class N2051_N2078 extends AppCompatActivity {
         n2051.setN2078OTx(bi.edN2078OT.getText().toString());
         n2051.setN2078DK(bi.cbN2078DK.isChecked() ? "99" : "");
 
+        n2051.setSTUDYID("");
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2051(n2051);
 
