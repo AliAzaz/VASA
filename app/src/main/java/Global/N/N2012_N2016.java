@@ -7,6 +7,16 @@ public class N2012_N2016 {
     public String N2015 = "N2015";
     public String N2016 = "N2016";
 
+    public String STUDYID = "STUDYID";
+
+    public String getSTUDYID() {
+        return STUDYID;
+    }
+
+    public void setSTUDYID(String STUDYID) {
+        this.STUDYID = STUDYID;
+    }
+
     public String getN2012() {
         return N2012;
     }

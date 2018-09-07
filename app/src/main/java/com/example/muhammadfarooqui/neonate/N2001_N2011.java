@@ -211,6 +211,8 @@ public class N2001_N2011 extends AppCompatActivity {
         n2001.setN2010(bi.edN2010.getText().toString());
         n2001.setN2011(bi.rbN20111.isChecked() ? "1" : bi.rbN20112.isChecked() ? "2" : "");
 
+        n2001.setSTUDYID("");
+
 
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2001(n2001);

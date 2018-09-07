@@ -521,6 +521,7 @@ public class N2211_N2248_C extends AppCompatActivity {
 
         n2211C.setN2248(bi.edN2248.getText().toString());
 
+        n2211C.setSTUDYID("");
 
         DBHelper db = new DBHelper(this);
         Long row = db.update_N2211C(n2211C, n2211A_ID);

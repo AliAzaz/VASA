@@ -136,6 +136,8 @@ public class N2192_N2202 extends AppCompatActivity {
         n2192.setN2202_3(bi.cbN22023.isChecked() ? "3" : "");
         n2192.setN2202_DK(bi.cbN2202DK.isChecked() ? "9" : "");
 
+
+        n2192.setSTUDYID("");
         DBHelper db = new DBHelper(this);
         Long row = db.add_N2192(n2192);
 
